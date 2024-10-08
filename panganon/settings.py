@@ -1,3 +1,4 @@
+import os
 """
 Django settings for panganon project.
 
@@ -23,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-v^=&9_(-sxik9!7ru39c!l*t5h6r*jwi8_our1v-n4nf+sc+&x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+PRODUCTION = os.getenv("Production", False)
+DEBUG = not PRODUCTION
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1","brian-altan-panganon.pbp.cs.ui.ac.id"]
 

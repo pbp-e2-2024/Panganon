@@ -16,16 +16,21 @@ Halaman utama aplikasi yang menjadi titik awal bagi pengguna.
 Pengguna harus mendaftar atau masuk terlebih dahulu sebelum dapat menggunakan fitur-fitur aplikasi lainnya.
 
 ### **Modul Utama**
-- **Modul Daftar Makanan**  
-Pengguna dapat mencari tempat makan berdasarkan kategori makanan, status halal, dan lokasi terdekat menggunakan GPS.
+- **Modul Daftar Toko**  
+Pengguna dapat mencari tempat makan berdasarkan kategori makanan, status halal, dan lokasi terdekat menggunakan GPS.  
+*Dikerjakan oleh Ilham Ghani Adrin Sapta*
 - **Modul Forum**  
-Fitur ini memungkinkan pengguna untuk berinteraksi dengan pengguna lain, berbagi rekomendasi tempat makan, atau berdiskusi tentang topik terkait kuliner.
+Fitur ini memungkinkan pengguna untuk berinteraksi dengan pengguna lain, berbagi rekomendasi tempat makan, atau berdiskusi tentang topik terkait kuliner.  
+*Dikerjakan oleh Muhammad Ruzbehan Baqli*
 - **Modul Favorites**  
-Pengguna dapat menandai tempat makan yang telah dikunjungi sebagai favorit. Modul ini juga memungkinkan pengguna memberikan *rating* dan ulasan untuk membantu orang lain memilih restoran terbaik.
-- **Modul Pemesanan Makanan**  
-Pengguna dapat memesan makanan langsung melalui aplikasi untuk restoran yang telah bekerja sama dengan platform ini.
-- **Modul User Toko**  
-Pengguna dapat mendaftarkan toko mereka sebagai akun penjual dapat menambah makanan pada tokonya.
+Pengguna dapat menandai tempat makan yang telah dikunjungi sebagai favorit. Modul ini juga memungkinkan pengguna memberikan *rating* dan ulasan untuk membantu orang lain memilih restoran terbaik.  
+*Dikerjakan oleh Gabriel Selwas Aboyaman Fenanlampir*
+- **Modul Edit Profil**  
+Pengguna dapat mengkostumisasi profil untuk menampilkan informasi seperti nama dan preferensi makanan yang disuka dan lain-lain.
+*Dikerjakan oleh Rosanne Valerie*
+- **Modul Chatbot AI**  
+Pengguna dapat menanyakan informasi seputar Medan kepada Chatbot.  
+*Dikerjakan oleh Brian Altan*
 
 ## **4. Sumber initial dataset kategori utama produk**
 Untuk mengumpulkan *dataset*, kami menggunakan **Selenium** untuk melakukan proses *scraping* pada **Google Maps**. Selenium memungkinkan otomatisasi proses pengambilan data dengan mensimulasikan aktivitas pengguna sungguhan. Data yang kami peroleh mencakup **nama restoran**, **rating**, **jumlah rating**, **kisaran harga**, **alamat**, **jam buka**, **layanan** yang ditawarkan, *link* ke halaman toko pada Google Maps dan **letak koordinat** geografis toko.
@@ -33,20 +38,15 @@ Untuk mengumpulkan *dataset*, kami menggunakan **Selenium** untuk melakukan pros
 ## **5. Role atau peran pengguna beserta deskripsinya (karena bisa saja lebih dari satu jenis pengguna yang mengakses aplikasi)**
 ### **Admin**
 - Mengelola dan memverifikasi data tempat makan yang terdaftar.
-- Mengelola *role* pengguna (memblokir pengguna yang melanggar kebijakan, menambahkan *role* toko).
+- Mengelola *role* pengguna (memblokir pengguna yang melanggar kebijakan).
 - Mengelola diskusi di forum dan ulasan pengguna.  
 
 ### **User-Customer**
 - Mencari tempat makan berdasarkan kategori, status halal, atau lokasi terdekat.
 - Menambahkan tempat makan ke daftar favorit.
 - Memberikan ulasan dan *rating* untuk tempat makan.
-- Mengikuti diskusi di forum.
+- Membuat atau mengikuti diskusi di forum.
 - Melakukan pemesanan makanan secara daring (untuk restoran yang mendukung).
-
-### **User-Toko**
-- Mengelola profil restoran mereka (jam buka, menu, layanan yang ditawarkan, dll).
-- Mengelola pesanan yang masuk melalui aplikasi.
-- Melihat ulasan dan *rating* yang diberikan oleh pengguna.
 
 ## **6. Tautan deployment aplikasi**
 [Panganon](http://brian-altan-panganon.pbp.cs.ui.ac.id/)

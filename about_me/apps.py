@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class EditProfilConfig(AppConfig):
+class AboutMeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'edit_profil'
+    name = 'about_me'

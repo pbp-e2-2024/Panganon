@@ -9,28 +9,30 @@
 **Panganon** adalah aplikasi pencarian tempat makan di Medan yang membantu pengguna menemukan makanan favorit sesuai dengan selera dan kebutuhan mereka. Aplikasi ini menawarkan pencarian berdasarkan **kategori makanan**, **status halal**, **jam operasional** tempat makan tersebut, dan **jarak terdekat** melalui fitur GPS. Selain itu, pengguna bisa berbagi **ulasan**, **rekomendasi**, serta **memesan makanan** langsung dari restoran yang bekerja sama. Panganon mempermudah pengalaman kuliner warga Medan dan turis, membantu mereka menemukan tempat terbaik untuk menikmati makanan lokal dengan mudah dan cepat.
 
 ## **3. Daftar modul yang akan diimplementasikan**
-### **Modul Wajib**
-- **Main (Home Page)**  
-Halaman utama aplikasi yang menjadi titik awal bagi pengguna.
-- **Modul Authentication**  
-Pengguna harus mendaftar atau masuk terlebih dahulu sebelum dapat menggunakan fitur-fitur aplikasi lainnya.
-
 ### **Modul Utama**
+
 - **Modul Daftar Toko**  
-Pengguna dapat mencari tempat makan berdasarkan kategori makanan, status halal, dan lokasi terdekat menggunakan GPS.  
-*Dikerjakan oleh Ilham Ghani Adrin Sapta*
+  Pengguna dapat mencari tempat makan berdasarkan kategori makanan, status halal, dan lokasi terdekat menggunakan GPS.
+
+  *Dikerjakan oleh Ilham Ghani Adrin Sapta*
+
 - **Modul Forum**  
-Fitur ini memungkinkan pengguna untuk berinteraksi dengan pengguna lain, berbagi rekomendasi tempat makan, atau berdiskusi tentang topik terkait kuliner.  
-*Dikerjakan oleh Muhammad Ruzbehan Baqli*
+  Fitur ini memungkinkan pengguna untuk berinteraksi dengan pengguna lain, berbagi rekomendasi tempat makan, atau berdiskusi tentang topik terkait kuliner.
+
+  *Dikerjakan oleh Brian Altan*
 - **Modul Favorites**  
-Pengguna dapat menandai tempat makan yang telah dikunjungi sebagai favorit. Modul ini juga memungkinkan pengguna memberikan *rating* dan ulasan untuk membantu orang lain memilih restoran terbaik.  
-*Dikerjakan oleh Gabriel Selwas Aboyaman Fenanlampir*
-- **Modul Edit Profil**  
-Pengguna dapat mengkostumisasi profil untuk menampilkan informasi seperti nama dan preferensi makanan yang disuka dan lain-lain.
-*Dikerjakan oleh Rosanne Valerie*
-- **Modul Chatbot AI**  
-Pengguna dapat menanyakan informasi seputar Medan kepada Chatbot.  
-*Dikerjakan oleh Brian Altan*
+  Pengguna dapat menandai tempat makan yang telah dikunjungi sebagai favorit. Modul ini juga memungkinkan pengguna memberikan *rating* dan ulasan untuk membantu orang lain memilih restoran terbaik.
+
+  *Dikerjakan oleh Gabriel Selwas Aboyaman Fenanlampir* 
+
+- **Modul About Me**  
+  Pengguna dapat melakukan kostumisasi laman tentang dirinya untuk menampilkan informasi seperti preferensi makanan, pesan di forum yang ia kirim, hal-hal yang disukai, review makanan, dan lain-lainnya.
+
+  *Dikerjakan oleh Rosanne Valerie*  
+- **Modul Event**  
+  Pengguna dapat membuat, melihat, memperbarui, dan menghapus acara kuliner. Fitur ini memungkinkan pengguna untuk membuat acara seperti festival makanan, melihat daftar acara yang akan datang, merevisi deskripsi acara, serta menghapus acara kuliner jika diperlukan.
+
+  *Dikerjakan oleh Muhammad Ruzbehan Baqli*  
 
 ## **4. Sumber initial dataset kategori utama produk**
 Untuk mengumpulkan *dataset*, kami menggunakan **Selenium** untuk melakukan proses *scraping* pada **Google Maps**. Selenium memungkinkan otomatisasi proses pengambilan data dengan mensimulasikan aktivitas pengguna sungguhan. Data yang kami peroleh mencakup **nama restoran**, **rating**, **jumlah rating**, **kisaran harga**, **alamat**, **jam buka**, **layanan** yang ditawarkan, *link* ke halaman toko pada Google Maps dan **letak koordinat** geografis toko.
@@ -38,10 +40,10 @@ Untuk mengumpulkan *dataset*, kami menggunakan **Selenium** untuk melakukan pros
 ## **5. Role atau peran pengguna beserta deskripsinya (karena bisa saja lebih dari satu jenis pengguna yang mengakses aplikasi)**
 ### **Admin**
 - Mengelola dan memverifikasi data tempat makan yang terdaftar.
-- Mengelola *role* pengguna (memblokir pengguna yang melanggar kebijakan).
+- Mengelola *role* pengguna (memblokir/menghapus akun dan postingan yang melanggar kebijakan).
 - Mengelola diskusi di forum dan ulasan pengguna.  
 
-### **User-Customer**
+### **User**
 - Mencari tempat makan berdasarkan kategori, status halal, atau lokasi terdekat.
 - Menambahkan tempat makan ke daftar favorit.
 - Memberikan ulasan dan *rating* untuk tempat makan.

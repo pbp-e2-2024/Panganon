@@ -1,0 +1,645 @@
+{
+  "Nh0TlIXc": {
+    "name": "Daging Durian Medan (Durianpelawi.com)",
+    "rating": 4.1,
+    "rating_amount": 329,
+    "price_range": "Sedang",
+    "address": "",
+    "opening_hours": null,
+    "services": [
+      "Ambil di toko"
+    ],
+    "links": "https://www.google.com/maps/place/Daging+Durian+Medan+%28Durianpelawi.com%29/data=!4m7!3m6!1s0x30312e342c316197:0x8b8a40964b243ce6!8m2!3d3.5853551!4d98.6411375!16s%2Fg%2F11b73tvm4r!19sChIJl2ExLDQuMTAR5jwkS5ZAios?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5853551,
+      "longitude": 98.6411375
+    }
+  },
+  "vFWpWThA": {
+    "name": "Si Bolang Durian",
+    "rating": 4.4,
+    "rating_amount": null,
+    "price_range": null,
+    "address": null,
+    "opening_hours": null,
+    "services": [
+      "Layanan di tempat"
+    ],
+    "links": "https://www.google.com/maps/place/Si+Bolang+Durian/data=!4m7!3m6!1s0x303131d54d1d95b1:0xe40aea00be67cf45!8m2!3d3.5821646!4d98.6609033!16s%2Fg%2F11bzsh5vjz!19sChIJsZUdTdUxMTARRc9nvgDqCuQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5821646,
+      "longitude": 98.6609033
+    }
+  },
+  "rIe7Sp2G": {
+    "name": "Durian Sitepu",
+    "rating": 4.1,
+    "rating_amount": 307,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Sunggal No.51, Sei Sikambing B, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20122",
+    "opening_hours": {
+      "Senin": "08.00-00.00",
+      "Selasa": "08.00-00.00",
+      "Rabu": "08.00-00.00",
+      "Kamis": "08.00-00.00",
+      "Jumat": "08.00-00.00",
+      "Sabtu": "08.00-01.00",
+      "Minggu": "08.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Durian+Sitepu/data=!4m7!3m6!1s0x30312e342c0cc9b7:0x750e05329ae87499!8m2!3d3.5855425!4d98.6412519!16s%2Fg%2F11byhlhq02!19sChIJt8kMLDQuMTARmXTomjIFDnU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5855425,
+      "longitude": 98.6412519
+    }
+  },
+  "IGhjaW5e": {
+    "name": "Nisbar Durian",
+    "rating": 4.4,
+    "rating_amount": 34,
+    "price_range": null,
+    "address": null,
+    "opening_hours": null,
+    "services": [],
+    "links": "https://www.google.com/maps/place/Nisbar+Durian/data=!4m7!3m6!1s0x303133e23e2765cb:0x64f8c9d85c8a2efc!8m2!3d3.6206005!4d98.7335325!16s%2Fg%2F11cryfbb5v!19sChIJy2UnPuIzMTAR_C6KXNjJ-GQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6206005,
+      "longitude": 98.7335325
+    }
+  },
+  "y3JbQxrd": {
+    "name": "Pelawi Durian",
+    "rating": 4.2,
+    "rating_amount": null,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Kutilang No.10, Sei Sikambing B, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20119",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Pelawi+Durian/data=!4m7!3m6!1s0x30312e342ec026f9:0xb72dbac9992797a0!8m2!3d3.5852032!4d98.6410549!16s%2Fg%2F11c5bhn9f4!19sChIJ-SbALjQuMTARoJcnmcm6Lbc?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5852032,
+      "longitude": 98.6410549
+    }
+  },
+  "Rofxvx8t": {
+    "name": "Durian sidedek",
+    "rating": 4.7,
+    "rating_amount": 30,
+    "price_range": null,
+    "address": "GHGW+X7J, Unnamed Road, Tj. Anom, Kec. Pancur Batu, Kabupaten Deli Serdang, Sumatera Utara 20134",
+    "opening_hours": {
+      "Senin": "08.00-21.00",
+      "Selasa": "08.00-21.00",
+      "Rabu": "08.00-21.00",
+      "Kamis": "08.00-21.00",
+      "Jumat": "08.00-21.00",
+      "Sabtu": "08.00-21.00",
+      "Minggu": "08.00-21.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Durian+sidedek/data=!4m7!3m6!1s0x303125fe5d805749:0x435cf7ccc5d400b6!8m2!3d3.5274719!4d98.5956521!16s%2Fg%2F11h7fnk4zq!19sChIJSVeAXf4lMTARtgDUxcz3XEM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5274719,
+      "longitude": 98.5956521
+    }
+  },
+  "NSMR82p6": {
+    "name": "Durian Panjaitan",
+    "rating": 4.6,
+    "rating_amount": 21,
+    "price_range": null,
+    "address": "Jl. Pembangunan I No.2, Paya Geli, Kec. Sunggal, Kabupaten Deli Serdang, Sumatera Utara 20351",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Belanja di toko"
+    ],
+    "links": "https://www.google.com/maps/place/Durian+Panjaitan/data=!4m7!3m6!1s0x30312f0cc06d7fe1:0xb792c0cb8c940ce1!8m2!3d3.6069308!4d98.5799827!16s%2Fg%2F11mvc01yks!19sChIJ4X9twAwvMTAR4QyUjMvAkrc?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6069308,
+      "longitude": 98.5799827
+    }
+  },
+  "aq5gZlXl": {
+    "name": "Reza Durian",
+    "rating": 4.6,
+    "rating_amount": 62,
+    "price_range": null,
+    "address": null,
+    "opening_hours": null,
+    "services": [],
+    "links": "https://www.google.com/maps/place/Reza+Durian/data=!4m7!3m6!1s0x3031305eadfb6d07:0xff833c071a9234a!8m2!3d3.564913!4d98.699224!16s%2Fg%2F11bt_h9mr2!19sChIJB237rV4wMTARSiOpccAz-A8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.564913,
+      "longitude": 98.699224
+    }
+  },
+  "jlRXaGTQ": {
+    "name": "Es Durian Barah Atala",
+    "rating": 4.5,
+    "rating_amount": 32,
+    "price_range": null,
+    "address": "Jl. Garu 1 No.59, RT.02, Sitirejo III, Kec. Medan Amplas, Kota Medan, Sumatera Utara 20147",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Es+Durian+Barah+Atala/data=!4m7!3m6!1s0x303131f08ef37ef3:0x5dd02594f728ee08!8m2!3d3.5478138!4d98.7033515!16s%2Fg%2F11f9j82txl!19sChIJ837zjvAxMTARCO4o95Ql0F0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5478138,
+      "longitude": 98.7033515
+    }
+  },
+  "elJbcBa6": {
+    "name": "Bana Durian",
+    "rating": 4.2,
+    "rating_amount": 48,
+    "price_range": null,
+    "address": "Jl. Utama 4 Depan Mesjid Al - Hikmah No.214 Dusun 8, Mekar Sari, Kec. Deli Tua, Kabupaten Deli Serdang, Sumatera Utara 20355",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Ambil di toko",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Bana+Durian/data=!4m7!3m6!1s0x30313ae00d963dbb:0x3a016e01906f7622!8m2!3d3.5013111!4d98.6828047!16s%2Fg%2F11b8zz0w8s!19sChIJuz2WDeA6MTARInZvkAFuATo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5013111,
+      "longitude": 98.6828047
+    }
+  },
+  "Ta293Igp": {
+    "name": "Grosir Durian Iwan",
+    "rating": 4.1,
+    "rating_amount": 90,
+    "price_range": null,
+    "address": null,
+    "opening_hours": null,
+    "services": [],
+    "links": "https://www.google.com/maps/place/Grosir+Durian+Iwan/data=!4m7!3m6!1s0x30312d575da2afc9:0x8c4f7f49dbe8b71b!8m2!3d3.691383!4d98.655845!16s%2Fg%2F11b7xvsl0p!19sChIJya-iXVctMTARG7fo20l_T4w?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.691383,
+      "longitude": 98.655845
+    }
+  },
+  "kmlCxhxo": {
+    "name": "SERBA DURIAN",
+    "rating": 4.8,
+    "rating_amount": 12,
+    "price_range": null,
+    "address": "HPVC+H88, Bantan, Kec. Medan Tembung, Kota Medan, Sumatera Utara 20224",
+    "opening_hours": {
+      "Senin": "09.00-18.00",
+      "Selasa": "09.00-18.00",
+      "Rabu": "09.00-18.00",
+      "Kamis": "09.00-18.00",
+      "Jumat": "09.00-18.00",
+      "Sabtu": "09.00-18.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SERBA+DURIAN/data=!4m7!3m6!1s0x30313116b5c55f5d:0x196d9789255c7699!8m2!3d3.5939105!4d98.7208226!16s%2Fg%2F11g01t_pfz!19sChIJXV_FtRYxMTARmXZcJYmXbRk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5939105,
+      "longitude": 98.7208226
+    }
+  },
+  "LCmgtow6": {
+    "name": "Durian Corner",
+    "rating": 4.6,
+    "rating_amount": 14,
+    "price_range": null,
+    "address": "HMQ8+4M8, Jl.Majapahit, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111",
+    "opening_hours": {
+      "Senin": "07.00-22.30",
+      "Selasa": "07.00-22.30",
+      "Rabu": "07.00-22.30",
+      "Kamis": "07.00-22.30",
+      "Jumat": "07.00-22.30",
+      "Sabtu": "07.00-22.30",
+      "Minggu": "07.00-22.30"
+    },
+    "services": [
+      "Ambil di toko"
+    ],
+    "links": "https://www.google.com/maps/place/Durian+Corner/data=!4m7!3m6!1s0x303131d12154d3ff:0x7b3c9d1e4effd4ca!8m2!3d3.5877857!4d98.6666979!16s%2Fg%2F12qf7n7fl!19sChIJ_9NUIdExMTARytT_Th6dPHs?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5877857,
+      "longitude": 98.6666979
+    }
+  },
+  "6AXxcjvt": {
+    "name": "Rumah Durian Tomang",
+    "rating": 4.8,
+    "rating_amount": 10,
+    "price_range": null,
+    "address": "Jl. Gatot Subroto No.115, Simpang Tj., Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20118",
+    "opening_hours": {
+      "Senin": "09.00-20.00",
+      "Selasa": "09.00-20.00",
+      "Rabu": "09.00-20.00",
+      "Kamis": "09.00-20.00",
+      "Jumat": "09.00-20.00",
+      "Sabtu": "09.00-20.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Ambil di toko",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Rumah+Durian+Tomang/data=!4m7!3m6!1s0x30312fba6bf2ee55:0x8f239f174dd580f3!8m2!3d3.5901724!4d98.6402799!16s%2Fg%2F11fsx5l4pp!19sChIJVe7ya7ovMTAR84DVTRefI48?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5901724,
+      "longitude": 98.6402799
+    }
+  },
+  "Gi3HjFKd": {
+    "name": "Pancake Durian Mei Cin",
+    "rating": 4.6,
+    "rating_amount": 148,
+    "price_range": null,
+    "address": "Jl. Ketapang No.3 E, Sekip, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111",
+    "opening_hours": {
+      "Senin": "06.00-21.30",
+      "Selasa": "06.00-21.30",
+      "Rabu": "06.00-21.30",
+      "Kamis": "06.00-21.30",
+      "Jumat": "06.00-21.30",
+      "Sabtu": "06.00-21.30",
+      "Minggu": "06.00-21.30"
+    },
+    "services": [
+      "Ambil di toko",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Pancake+Durian+Mei+Cin/data=!4m7!3m6!1s0x3031318ffddf66e7:0x34fb50017a8eeda9!8m2!3d3.5965295!4d98.6659009!16s%2Fg%2F1jkz6r_g4!19sChIJ52bf_Y8xMTARqe2OegFQ-zQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5965295,
+      "longitude": 98.6659009
+    }
+  },
+  "hQl2iPJc": {
+    "name": "DURIAN EMAS Tamora",
+    "rating": 4.6,
+    "rating_amount": 17,
+    "price_range": null,
+    "address": "JL Batang Kuis Pasar 9, Buntu Bedimbar, Lubuk Pakam, Kabupaten Deli Serdang, 20362, Limau Manis, Kec. Tj. Morawa, Kabupaten Deli Serdang, Sumatera Utara 20362",
+    "opening_hours": {
+      "Senin": "09.10-00.00",
+      "Selasa": "09.10-00.00",
+      "Rabu": "09.10-00.00",
+      "Kamis": "09.10-00.00",
+      "Jumat": "09.10-00.00",
+      "Sabtu": "09.10-00.00",
+      "Minggu": "09.10-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/DURIAN+EMAS+Tamora/data=!4m7!3m6!1s0x303139d7438bbda5:0x94c9a1618de4530b!8m2!3d3.5353398!4d98.7820971!16s%2Fg%2F11fy1db9c1!19sChIJpb2LQ9c5MTARC1PkjWGhyZQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5353398,
+      "longitude": 98.7820971
+    }
+  },
+  "oGtF9dYt": {
+    "name": "DURIAN KUPAS MEDAN DENAI",
+    "rating": 4.5,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "Jl. Rw. Cangkuk I No.13, Tegal Sari Mandala III, Kec. Medan Denai, Kota Medan, Sumatera Utara 20227",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Drive-through",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/DURIAN+KUPAS+MEDAN+DENAI/data=!4m7!3m6!1s0x303131458acc1be1:0xc17559dc8988b3f5!8m2!3d3.5799566!4d98.7152389!16s%2Fg%2F11q956xjl_!19sChIJ4RvMikUxMTAR9bOIidxZdcE?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5799566,
+      "longitude": 98.7152389
+    }
+  },
+  "YlBqNnuf": {
+    "name": "Durian Nusantara (Durian Kupas)",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. Eka Sama No.2, Gedung Johor, Kec. Medan Johor, Kota Medan, Sumatera Utara 20147",
+    "opening_hours": {
+      "Senin": "09.00-22.00",
+      "Selasa": "09.00-22.00",
+      "Rabu": "09.00-22.00",
+      "Kamis": "09.00-22.00",
+      "Jumat": "09.00-22.00",
+      "Sabtu": "09.00-22.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Durian+Nusantara+%28Durian+Kupas%29/data=!4m7!3m6!1s0x30313b30bde1b869:0xc9c7627e2a2705a9!8m2!3d3.5260422!4d98.6780436!16s%2Fg%2F11fmscn16_!19sChIJabjhvTA7MTARqQUnKn5ix8k?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5260422,
+      "longitude": 98.6780436
+    }
+  },
+  "koxpBS2u": {
+    "name": "LG Durian 8899",
+    "rating": 5.0,
+    "rating_amount": 10,
+    "price_range": null,
+    "address": "Gg. Melati III, Mekar Sari, Kec. Deli Tua, Kabupaten Deli Serdang, Sumatera Utara 20355",
+    "opening_hours": {
+      "Senin": "08.00-23.45",
+      "Selasa": "08.00-23.45",
+      "Rabu": "08.00-23.45",
+      "Kamis": "08.00-23.45",
+      "Jumat": "08.00-23.45",
+      "Sabtu": "08.00-23.45",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/LG+Durian+8899/data=!4m7!3m6!1s0x30313b9d43cdf2b5:0x4f45a67ea176f435!8m2!3d3.5099347!4d98.6933731!16s%2Fg%2F11g4dl7z10!19sChIJtfLNQ507MTARNfR2oX6mRU8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5099347,
+      "longitude": 98.6933731
+    }
+  },
+  "K0i1QFD4": {
+    "name": "Rumah Produksi Maidanii Pancake Durian",
+    "rating": 4.4,
+    "rating_amount": 16,
+    "price_range": null,
+    "address": "Jl. Swadaya II No.66, Bandar Khalipah, Kec. Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara 20371",
+    "opening_hours": {
+      "Senin": "08.00-17.00",
+      "Selasa": "08.00-17.00",
+      "Rabu": "08.00-17.00",
+      "Kamis": "08.00-17.00",
+      "Jumat": "08.00-17.00",
+      "Sabtu": "08.00-17.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Rumah+Produksi+Maidanii+Pancake+Durian/data=!4m7!3m6!1s0x30313472de073551:0x929ba658373c65e1!8m2!3d3.6410775!4d98.7567786!16s%2Fg%2F11g02svkqz!19sChIJUTUH3nI0MTAR4WU8N1imm5I?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6410775,
+      "longitude": 98.7567786
+    }
+  },
+  "dy3VhUBw": {
+    "name": "Ginting Durian",
+    "rating": 4.9,
+    "rating_amount": 7,
+    "price_range": null,
+    "address": null,
+    "opening_hours": null,
+    "services": [],
+    "links": "https://www.google.com/maps/place/Ginting+Durian/data=!4m7!3m6!1s0x30313b207a1f1aab:0xaded2958243c72f6!8m2!3d3.4999679!4d98.6798745!16s%2Fg%2F11d_pwr43n!19sChIJqxofeiA7MTAR9nI8JFgp7a0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.4999679,
+      "longitude": 98.6798745
+    }
+  },
+  "WCBxisEW": {
+    "name": "Pulut Durian Mak Uwo",
+    "rating": 4.4,
+    "rating_amount": 21,
+    "price_range": null,
+    "address": null,
+    "opening_hours": null,
+    "services": [],
+    "links": "https://www.google.com/maps/place/Pulut+Durian+Mak+Uwo/data=!4m7!3m6!1s0x303130fbc39c8453:0x3cb2ac58fba557b!8m2!3d3.5736371!4d98.7104347!16s%2Fg%2F11gf9pmtbg!19sChIJU4Scw_swMTARe1W6j8UqywM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5736371,
+      "longitude": 98.7104347
+    }
+  },
+  "EW3SxSwj": {
+    "name": "Distributor Daging Durian (Yeaa Durian)",
+    "rating": 3.9,
+    "rating_amount": 26,
+    "price_range": null,
+    "address": "Jalan Cengkeh, Jl. Bajak IV Gg. Hidayah No.49, Harjosari II, Kec. Medan Amplas, Kota Medan, Sumatera Utara 20147",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Ambil di toko",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Distributor+Daging+Durian+%28Yeaa+Durian%29/data=!4m7!3m6!1s0x30313a7e165baabd:0xf7c795a1d66cf518!8m2!3d3.5338359!4d98.7042148!16s%2Fg%2F11csrpqqbq!19sChIJvapbFn46MTARGPVs1qGVx_c?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5338359,
+      "longitude": 98.7042148
+    }
+  },
+  "I0FmXpaf": {
+    "name": "SM. Raja Durian",
+    "rating": 4.0,
+    "rating_amount": 26,
+    "price_range": null,
+    "address": null,
+    "opening_hours": null,
+    "services": [],
+    "links": "https://www.google.com/maps/place/SM.+Raja+Durian/data=!4m7!3m6!1s0x1011455c9eb305bb:0x14a9ff532dab589b!8m2!3d3.5657833!4d98.6917067!16s%2Fg%2F11b7hkmq93!19sChIJuwWznlxFERARm1irLVP_qRQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5657833,
+      "longitude": 98.6917067
+    }
+  },
+  "7BM1JsbH": {
+    "name": "Palding Durian",
+    "rating": 4.7,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "Jl. Pasar III No.146, Tegal Rejo, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20236",
+    "opening_hours": {
+      "Senin": "09.00-18.00",
+      "Selasa": "09.00-18.00",
+      "Rabu": "09.00-18.00",
+      "Kamis": "09.00-18.00",
+      "Jumat": "09.00-18.00",
+      "Sabtu": "09.00-18.00",
+      "Minggu": "09.00-18.00"
+    },
+    "services": [
+      "Belanja di toko"
+    ],
+    "links": "https://www.google.com/maps/place/Palding+Durian/data=!4m7!3m6!1s0x30313188dbb99165:0x4b46db51f67ebe4c!8m2!3d3.6161566!4d98.6908655!16s%2Fg%2F11c3k6c6g_!19sChIJZZG524gxMTARTL5-9lHbRks?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6161566,
+      "longitude": 98.6908655
+    }
+  },
+  "EDmYuqxm": {
+    "name": "Abeng Durian Ruko",
+    "rating": 4.1,
+    "rating_amount": 116,
+    "price_range": null,
+    "address": "",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Abeng+Durian+Ruko/data=!4m7!3m6!1s0x30312d2120d4acf7:0xd0575c8e73555890!8m2!3d3.690919!4d98.6562352!16s%2Fg%2F11g10kdhfj!19sChIJ96zUICEtMTARkFhVc45cV9A?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.690919,
+      "longitude": 98.6562352
+    }
+  },
+  "I1AoerAY": {
+    "name": "Futzhi Durian",
+    "rating": 4.2,
+    "rating_amount": 9,
+    "price_range": null,
+    "address": null,
+    "opening_hours": null,
+    "services": [],
+    "links": "https://www.google.com/maps/place/Futzhi+Durian/data=!4m7!3m6!1s0x303149fa99b15511:0x6a66f8f374705eb5!8m2!3d3.6085157!4d98.8477858!16s%2Fg%2F11g9h91pr5!19sChIJEVWxmfpJMTARtV5wdPP4Zmo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6085157,
+      "longitude": 98.8477858
+    }
+  },
+  "238CPcm0": {
+    "name": "Jeje Pancake Durian Pendidikan",
+    "rating": 4.7,
+    "rating_amount": 21,
+    "price_range": "Murah",
+    "address": "Jl. Pendidikan Gang Rahayu Desa, Bandar Khalipah, Kec. Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara 20371",
+    "opening_hours": {
+      "Senin": "07.00-22.00",
+      "Selasa": "07.00-22.00",
+      "Rabu": "07.00-22.00",
+      "Kamis": "07.00-22.00",
+      "Jumat": "07.00-22.00",
+      "Sabtu": "07.00-22.00",
+      "Minggu": "07.00-22.00"
+    },
+    "services": [
+      "Ambil di toko",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Jeje+Pancake+Durian+Pendidikan/data=!4m7!3m6!1s0x3031377d97b4d729:0x4f18fe4c26e47f98!8m2!3d3.6141795!4d98.7532423!16s%2Fg%2F11h3dq8ckq!19sChIJKde0l303MTARmH_kJkz-GE8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6141795,
+      "longitude": 98.7532423
+    }
+  },
+  "N4ryojs9": {
+    "name": "RATU Pancake Durian",
+    "rating": 4.3,
+    "rating_amount": 16,
+    "price_range": null,
+    "address": "",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/RATU+Pancake+Durian/data=!4m7!3m6!1s0x303136c2100d8869:0xf53ea8469aedea8f!8m2!3d3.5936524!4d98.7691239!16s%2Fg%2F11c318gvqg!19sChIJaYgNEMI2MTARj-rtmkaoPvU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5936524,
+      "longitude": 98.7691239
+    }
+  },
+  "8pMZ4zlS": {
+    "name": "UCOK DURIAN MEDAN",
+    "rating": 4.5,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Jl. K.H. Wahid Hasyim No.30-32, Babura, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/UCOK+DURIAN+MEDAN/data=!4m7!3m6!1s0x30312e2b0180ac79:0xb862c35ec4eb0e3!8m2!3d3.582722!4d98.6574579!16s%2Fg%2F1hm4qyqyz!19sChIJeayAASsuMTAR47BO7DUshgs?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.582722,
+      "longitude": 98.6574579
+    }
+  }
+}

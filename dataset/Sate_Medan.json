@@ -1,0 +1,2810 @@
+{
+  "mBBPJOh5": {
+    "name": "Sate Madura",
+    "rating": 4.4,
+    "rating_amount": 142,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Melati Raya No.1b, Sempakata, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20133",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura/data=!4m7!3m6!1s0x3031257df5ce52cf:0x459e78dc87b14220!8m2!3d3.5407485!4d98.6226173!16s%2Fg%2F11g6qfkfk7!19sChIJz1LO9X0lMTARIEKxh9x4nkU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5407485,
+      "longitude": 98.6226173
+    }
+  },
+  "hAphBmuU": {
+    "name": "Sate ayam & kambing khas madura",
+    "rating": 4.6,
+    "rating_amount": 327,
+    "price_range": null,
+    "address": "Jl. Gunung Krakatau No.75, Glugur Darat II, Kec. Medan Tim., Kota Medan, Sumatera Utara 20236",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+ayam+%26+kambing+khas+madura/data=!4m7!3m6!1s0x303131f31818e629:0xa09dcb105fdbbfad!8m2!3d3.6133008!4d98.6804502!16s%2Fg%2F11g8vprzdm!19sChIJKeYYGPMxMTARrb_bXxDLnaA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6133008,
+      "longitude": 98.6804502
+    }
+  },
+  "C3mXAuMV": {
+    "name": "Pondok Sate Famili Baru",
+    "rating": 4.2,
+    "rating_amount": 68,
+    "price_range": "Rp 1-25.000",
+    "address": "HMGR+F7R, Jl. Amaliun, Kotamatsum III, Kec. Medan Kota, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Pondok+Sate+Famili+Baru/data=!4m7!3m6!1s0x30313122ee4b969b:0xf3f97711457d4e28!8m2!3d3.5762492!4d98.6906312!16s%2Fg%2F11h2hk__0r!19sChIJm5ZL7iIxMTARKE59RRF3-fM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5762492,
+      "longitude": 98.6906312
+    }
+  },
+  "xmB8LxyA": {
+    "name": "Sate Bango Pak Boy Jakarta",
+    "rating": 4.4,
+    "rating_amount": 130,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Karya Tani No.45, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20219",
+    "opening_hours": {
+      "Senin": "09.00-23.45",
+      "Selasa": "09.00-23.45",
+      "Rabu": "09.00-23.45",
+      "Kamis": "09.00-23.45",
+      "Jumat": "09.00-23.45",
+      "Sabtu": "09.00-23.45",
+      "Minggu": "09.00-23.45"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Bango+Pak+Boy+Jakarta/data=!4m7!3m6!1s0x30313b8da653ce6f:0xc7e7063206869165!8m2!3d3.5120901!4d98.6973633!16s%2Fg%2F11j9dkd877!19sChIJb85Tpo07MTARZZGGBjIG58c?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5120901,
+      "longitude": 98.6973633
+    }
+  },
+  "U2TXPcl0": {
+    "name": "Sate Padang Afrizal Amir",
+    "rating": 4.5,
+    "rating_amount": null,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Brigjend Katamso No.150B, Kp. Baru, Kec. Medan Maimun, Kota Medan, Sumatera Utara 20151",
+    "opening_hours": {
+      "Senin": "09.00-23.17",
+      "Selasa": "09.00-23.17",
+      "Rabu": "09.00-23.17",
+      "Kamis": "09.00-23.17",
+      "Jumat": "09.00-23.17",
+      "Sabtu": "09.00-23.17",
+      "Minggu": "09.00-23.17"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Afrizal+Amir/data=!4m7!3m6!1s0x3031306e60f9e053:0x9a8eece4911bd599!8m2!3d3.5546626!4d98.688431!16s%2Fg%2F1pzsx9q0w!19sChIJU-D5YG4wMTARmdUbkeTsjpo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5546626,
+      "longitude": 98.688431
+    }
+  },
+  "VUDzufKX": {
+    "name": "warung sate madura ,mas aji",
+    "rating": 4.4,
+    "rating_amount": 131,
+    "price_range": "Sedang",
+    "address": "Jl. Titi Pahlawan No.19, Paya Pasir, Kec. Medan Marelan, Kota Medan, Sumatera Utara 20252",
+    "opening_hours": {
+      "Senin": "05.45-00.29",
+      "Selasa": "05.45-00.29",
+      "Rabu": "05.45-00.29",
+      "Kamis": "05.45-00.29",
+      "Jumat": "05.45-00.29",
+      "Sabtu": "05.45-00.29",
+      "Minggu": "05.45-00.29"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/warung+sate+madura+,mas+aji/data=!4m7!3m6!1s0x3036cd581b91ff71:0x582e4281bbcb194f!8m2!3d3.7114485!4d98.6610457!16s%2Fg%2F11c5xfm5vc!19sChIJcf-RG1jNNjARTxnLu4FCLlg?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.7114485,
+      "longitude": 98.6610457
+    }
+  },
+  "d94exc60": {
+    "name": "Sate Kambing Khas Solo Nyoto Roso",
+    "rating": 4.5,
+    "rating_amount": 228,
+    "price_range": null,
+    "address": "Jl. Iskandar Muda No.7, Darat, Kec. Medan Baru, Kota Medan, Sumatera Utara 20222",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Kambing+Khas+Solo+Nyoto+Roso/data=!4m7!3m6!1s0x303130283bb6d28f:0x2af8a0749fb5cdc1!8m2!3d3.5727186!4d98.6605684!16s%2Fg%2F1hm4ybtd2!19sChIJj9K2OygwMTARwc21n3Sg-Co?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5727186,
+      "longitude": 98.6605684
+    }
+  },
+  "yiHXDUUf": {
+    "name": "Sate Matang Gurgok",
+    "rating": 4.6,
+    "rating_amount": 119,
+    "price_range": "Rp 25-50 rb",
+    "address": "HJP9+6FW, Jl. Amal, Sunggal, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20127",
+    "opening_hours": {
+      "Senin": "11.00-23.59",
+      "Selasa": "11.00-23.59",
+      "Rabu": "11.00-23.59",
+      "Kamis": "11.00-23.59",
+      "Jumat": "14.00-23.59",
+      "Sabtu": "11.00-23.59",
+      "Minggu": "11.00-23.59"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Matang+Gurgok/data=!4m7!3m6!1s0x30312e55d31321bb:0x9afc29dc79e7a223!8m2!3d3.585602!4d98.6186989!16s%2Fg%2F11b7ldmrst!19sChIJuyET01UuMTARI6Lnedwp_Jo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.585602,
+      "longitude": 98.6186989
+    }
+  },
+  "yHUJj9F5": {
+    "name": "SATE AYAM FADILAH",
+    "rating": 4.6,
+    "rating_amount": 93,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Jangka No.88, Sei Putih Bar., Kec. Medan Petisah, Kota Medan, Sumatera Utara 20118",
+    "opening_hours": {
+      "Senin": "06.30-14.00",
+      "Selasa": "06.30-14.00",
+      "Rabu": "06.30-15.30",
+      "Kamis": "06.30-14.00",
+      "Jumat": "06.30-14.00",
+      "Sabtu": "06.30-14.00",
+      "Minggu": "06.30-12.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+AYAM+FADILAH/data=!4m7!3m6!1s0x30312e3b210e2e9b:0xcfdd407ac2208431!8m2!3d3.5935292!4d98.6471919!16s%2Fg%2F11c5s400gw!19sChIJmy4OITsuMTARMYQgwnpA3c8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5935292,
+      "longitude": 98.6471919
+    }
+  },
+  "H6ocWYuD": {
+    "name": "Sate ketupat H. Amiruddin",
+    "rating": 4.5,
+    "rating_amount": 368,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Sutrisno No.729 B, Kota Matsum I, Kec. Medan Area, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": {
+      "Senin": "12.00-00.00",
+      "Selasa": "12.00-00.00",
+      "Rabu": "12.00-00.00",
+      "Kamis": "12.00-00.00",
+      "Jumat": "12.00-00.00",
+      "Sabtu": "12.00-00.00",
+      "Minggu": "12.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+ketupat+H.+Amiruddin/data=!4m7!3m6!1s0x303131acc2e08427:0x9740d3b74f4a1269!8m2!3d3.5823196!4d98.7008923!16s%2Fg%2F1pzqryh8x!19sChIJJ4TgwqwxMTARaRJKT7fTQJc?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5823196,
+      "longitude": 98.7008923
+    }
+  },
+  "id2dGXC5": {
+    "name": "Warung Sate Ceker Agus Kumis",
+    "rating": 4.4,
+    "rating_amount": 42,
+    "price_range": null,
+    "address": "Jl. Jati Ps. IV, Sei Mencirim, Kec. Sunggal, Kabupaten Deli Serdang, Sumatera Utara 20351",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "05.00-00.00",
+      "Rabu": "05.00-00.00",
+      "Kamis": "05.00-00.00",
+      "Jumat": "05.00-00.00",
+      "Sabtu": "05.00-00.00",
+      "Minggu": "05.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Sate+Ceker+Agus+Kumis/data=!4m7!3m6!1s0x30312913a22afceb:0xdb2de4386c08516d!8m2!3d3.5668611!4d98.5637687!16s%2Fg%2F11gy3jqjjn!19sChIJ6_wqohMpMTARbVEIbDjkLds?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5668611,
+      "longitude": 98.5637687
+    }
+  },
+  "Ms3NqzZh": {
+    "name": "Sate madura PAK EKO",
+    "rating": 4.4,
+    "rating_amount": 64,
+    "price_range": "Rp 1-50.000",
+    "address": "",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+madura+PAK+EKO/data=!4m7!3m6!1s0x303131167dc5baa5:0x4d9ca38a2276864c!8m2!3d3.5876466!4d98.7187035!16s%2Fg%2F11jlvz03c8!19sChIJpbrFfRYxMTARTIZ2IoqjnE0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5876466,
+      "longitude": 98.7187035
+    }
+  },
+  "ZH5M3CYp": {
+    "name": "Nasi Sate Matang \"Bang Nan\"",
+    "rating": 4.5,
+    "rating_amount": 364,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Gajah Mada, Sei Sikambing D, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20114",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Sate+Matang+%22Bang+Nan%22/data=!4m7!3m6!1s0x30312e2a33bef367:0xcd6e8025516e2b42!8m2!3d3.5849006!4d98.6574795!16s%2Fg%2F11cp5hsrkq!19sChIJZ_O-MyouMTARQituUSWAbs0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5849006,
+      "longitude": 98.6574795
+    }
+  },
+  "yz4UdHON": {
+    "name": "Sate Domba Muda",
+    "rating": 4.4,
+    "rating_amount": 321,
+    "price_range": "Sedang",
+    "address": "Jl. Asrama, Sei Sikambing C. II, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20123",
+    "opening_hours": {
+      "Senin": "10.00-23.30",
+      "Selasa": "10.00-23.30",
+      "Rabu": "10.00-23.30",
+      "Kamis": "10.00-23.30",
+      "Jumat": "10.00-23.30",
+      "Sabtu": "10.00-23.30",
+      "Minggu": "10.00-23.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Domba+Muda/data=!4m7!3m6!1s0x30312e453683c561:0x51a64a7a86651f30!8m2!3d3.5923565!4d98.6274199!16s%2Fg%2F11j30yvn1g!19sChIJYcWDNkUuMTARMB9lhnpKplE?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5923565,
+      "longitude": 98.6274199
+    }
+  },
+  "fBYKf7Ji": {
+    "name": "sate madura",
+    "rating": 4.4,
+    "rating_amount": 26,
+    "price_range": null,
+    "address": "GJGH+RQ6, Gg. Inpres, Simpang Selayang, Kec. Medan Tuntungan, Kota Medan, Sumatera Utara 20135",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/sate+madura/data=!4m7!3m6!1s0x30312520d4efdd97:0xc31a50b3c47f631e!8m2!3d3.5270346!4d98.6293831!16s%2Fg%2F11fr7w4mmy!19sChIJl93v1CAlMTARHmN_xLNQGsM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5270346,
+      "longitude": 98.6293831
+    }
+  },
+  "Ne3iKUnC": {
+    "name": "Sate Tongseng Mas Pur",
+    "rating": 4.6,
+    "rating_amount": 77,
+    "price_range": "Rp 25-50 rb",
+    "address": "PFPP+XWH, Gg. Keluarga, Dendang, Kec. Stabat, Kabupaten Langkat, Sumatera Utara 20811",
+    "opening_hours": {
+      "Senin": "10.00-22.00",
+      "Selasa": "10.00-22.00",
+      "Rabu": "10.00-22.00",
+      "Kamis": "10.00-22.00",
+      "Jumat": "10.00-22.00",
+      "Sabtu": "10.00-22.00",
+      "Minggu": "10.00-22.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Tongseng+Mas+Pur/data=!4m7!3m6!1s0x30372bef824c2971:0x76ba0762e3b60879!8m2!3d3.7375829!4d98.4874406!16s%2Fg%2F11h7fwmyh9!19sChIJcSlMgu8rNzAReQi242IHunY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.7375829,
+      "longitude": 98.4874406
+    }
+  },
+  "gCvCm4TW": {
+    "name": "Sate Padang SALERO AMBO",
+    "rating": 4.6,
+    "rating_amount": 30,
+    "price_range": null,
+    "address": "HMH6+QFR, Jl. Iskandar Muda, Babura, Kec. Medan Baru, Kota Medan, Sumatera Utara 20152",
+    "opening_hours": {
+      "Senin": "06.00-04.00",
+      "Selasa": "06.00-04.00",
+      "Rabu": "06.00-04.00",
+      "Kamis": "06.00-04.00",
+      "Jumat": "06.00-04.00",
+      "Sabtu": "06.00-04.00",
+      "Minggu": "06.00-04.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+SALERO+AMBO/data=!4m7!3m6!1s0x3031302abe883ac1:0xc88e51c4eb90cb9a!8m2!3d3.5794932!4d98.6611529!16s%2Fg%2F11gbz1c5yt!19sChIJwTqIviowMTARmsuQ68RRjsg?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5794932,
+      "longitude": 98.6611529
+    }
+  },
+  "HJMcqY3x": {
+    "name": "SATE TRIADI",
+    "rating": 4.4,
+    "rating_amount": 39,
+    "price_range": null,
+    "address": "Jalan Asia Mega Mas Blok E No.1, Sukaramai II, Kec. Medan Area, Kota Medan, Sumatera Utara 20214",
+    "opening_hours": {
+      "Senin": "11.00-22.00",
+      "Selasa": "11.00-22.00",
+      "Rabu": "11.00-22.00",
+      "Kamis": "11.00-22.00",
+      "Jumat": "11.00-22.00",
+      "Sabtu": "11.00-22.00",
+      "Minggu": "11.00-22.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+TRIADI/data=!4m7!3m6!1s0x30313107417bd2db:0xe7d6b409c51f6aa0!8m2!3d3.58625!4d98.705139!16s%2Fg%2F11c4bb1_5q!19sChIJ29J7QQcxMTARoGofxQm01uc?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.58625,
+      "longitude": 98.705139
+    }
+  },
+  "gbaPOQEq": {
+    "name": "Sate kambing Klaten",
+    "rating": 4.7,
+    "rating_amount": 52,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Garuda No.8, Sei Sikambing B, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20118",
+    "opening_hours": {
+      "Senin": "10.00-22.00",
+      "Selasa": "10.00-22.00",
+      "Rabu": "10.00-22.00",
+      "Kamis": "10.00-22.00",
+      "Jumat": "13.30-22.00",
+      "Sabtu": "10.00-22.00",
+      "Minggu": "14.00-22.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+kambing+Klaten/data=!4m7!3m6!1s0x30312f5b5e5dc8d3:0x30764065c67161a6!8m2!3d3.587712!4d98.6410291!16s%2Fg%2F11np36ltjz!19sChIJ08hdXlsvMTARpmFxxmVAdjA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.587712,
+      "longitude": 98.6410291
+    }
+  },
+  "BZT5O5Nh": {
+    "name": "Sate Padang Asia",
+    "rating": 4.9,
+    "rating_amount": 14,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Asia No.102-94, Sei Rengas I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Asia/data=!4m7!3m6!1s0x30313165cb20b8c5:0xef94e00cb90bbfb!8m2!3d3.584096!4d98.6901023!16s%2Fg%2F11szx6n6jq!19sChIJxbggy2UxMTAR-7uQywBO-Q4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.584096,
+      "longitude": 98.6901023
+    }
+  },
+  "Md4Y2Hdq": {
+    "name": "Warung Sate Bang Mail Khas Madura",
+    "rating": 4.5,
+    "rating_amount": 209,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Ayahanda No.12, Sei Putih Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20118",
+    "opening_hours": {
+      "Senin": "17.00-01.00",
+      "Selasa": "17.00-01.00",
+      "Rabu": "17.00-01.00",
+      "Kamis": "17.00-01.00",
+      "Jumat": "17.00-01.00",
+      "Sabtu": "17.00-01.00",
+      "Minggu": "17.00-01.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Sate+Bang+Mail+Khas+Madura/data=!4m7!3m6!1s0x30312e25ed026ec3:0xf76ec19c53dc59ae!8m2!3d3.5915907!4d98.6534907!16s%2Fg%2F11cn1g_ym0!19sChIJw24C7SUuMTARrlncU5zBbvc?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5915907,
+      "longitude": 98.6534907
+    }
+  },
+  "GWQoUytH": {
+    "name": "Sate Padang West",
+    "rating": 4.7,
+    "rating_amount": 12,
+    "price_range": "Rp 25-50 rb",
+    "address": "HMQR+R9F, Jl. Kalimantan, Pandau Hulu I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20233",
+    "opening_hours": {
+      "Senin": "12.00-18.00",
+      "Selasa": "12.00-18.00",
+      "Rabu": "12.00-18.00",
+      "Kamis": "12.00-18.00",
+      "Jumat": "12.00-18.00",
+      "Sabtu": "12.00-18.00",
+      "Minggu": "12.00-18.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+West/data=!4m7!3m6!1s0x303131375862db47:0xe2beee6c92926066!8m2!3d3.5895722!4d98.6909097!16s%2Fg%2F11fq3my6yg!19sChIJR9tiWDcxMTARZmCSkmzuvuI?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5895722,
+      "longitude": 98.6909097
+    }
+  },
+  "yt8uRWg7": {
+    "name": "Sate Den Siko",
+    "rating": 4.5,
+    "rating_amount": 8,
+    "price_range": "Rp 1-25.000",
+    "address": "Komplek Torganda Blok B 34 Medan, Tj. Selamat, Kec. Medan Tuntungan, Kota Medan, Sumatera Utara 20135",
+    "opening_hours": {
+      "Senin": "10.00-23.00",
+      "Selasa": "10.00-23.00",
+      "Rabu": "10.00-23.00",
+      "Kamis": "10.00-23.00",
+      "Jumat": "10.00-23.00",
+      "Sabtu": "10.00-23.00",
+      "Minggu": "10.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Den+Siko/data=!4m7!3m6!1s0x30312f1748611125:0xfd528136c36e96e1!8m2!3d3.5489176!4d98.6133228!16s%2Fg%2F11q95l32z_!19sChIJJRFhSBcvMTAR4ZZuwzaBUv0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5489176,
+      "longitude": 98.6133228
+    }
+  },
+  "M3PRAYb6": {
+    "name": "Sate Madura Cak Brengoy",
+    "rating": 5.0,
+    "rating_amount": 6,
+    "price_range": null,
+    "address": "HHX2+XXV, Medan Krio, Kec. Sunggal, Kabupaten Deli Serdang, Sumatera Utara 20351",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Cak+Brengoy/data=!4m7!3m6!1s0x3031290c5714cd73:0x94d7757f4571409d!8m2!3d3.5999796!4d98.5524072!16s%2Fg%2F11h9n6jsyf!19sChIJc80UVwwpMTARnUBxRX9115Q?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5999796,
+      "longitude": 98.5524072
+    }
+  },
+  "dfu2VdDH": {
+    "name": "SATE JO ANDAH",
+    "rating": 4.3,
+    "rating_amount": 35,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Karya Wisata No.61, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20146",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+JO+ANDAH/data=!4m7!3m6!1s0x30313bc8f23e7607:0xfe780e075f8cd1a2!8m2!3d3.5319285!4d98.6631371!16s%2Fg%2F11qg18z656!19sChIJB3Y-8sg7MTARotGMXwcOeP4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5319285,
+      "longitude": 98.6631371
+    }
+  },
+  "341FWHB1": {
+    "name": "Sate Ayam, Kambing Khas Madura",
+    "rating": 4.2,
+    "rating_amount": 18,
+    "price_range": null,
+    "address": "HMC6+P6C, Merdeka, Kec. Medan Baru, Kota Medan, Sumatera Utara 20222",
+    "opening_hours": {
+      "Senin": "06.00-03.00",
+      "Selasa": "06.00-03.00",
+      "Rabu": "06.00-03.00",
+      "Kamis": "06.00-03.00",
+      "Jumat": "06.00-03.00",
+      "Sabtu": "06.00-03.00",
+      "Minggu": "06.00-03.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Ayam,+Kambing+Khas+Madura/data=!4m7!3m6!1s0x3031319d4b7076f3:0x6dbd41ce53ac8f6d!8m2!3d3.5718079!4d98.6605035!16s%2Fg%2F11f8kd11t7!19sChIJ83ZwS50xMTARbY-sU85BvW0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5718079,
+      "longitude": 98.6605035
+    }
+  },
+  "lBRDmCCq": {
+    "name": "Sate Padang Zaldy",
+    "rating": 4.7,
+    "rating_amount": 57,
+    "price_range": "Rp 1-50.000",
+    "address": "Jl. Samanhudi No.8, Satria, Kec. Binjai Kota, Kota Binjai, Sumatera Utara 20714",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Zaldy/data=!4m7!3m6!1s0x3030d621b8723a09:0xe73d9b6ced3eaae4!8m2!3d3.6009569!4d98.4799745!16s%2Fg%2F11g8txm3xb!19sChIJCTpyuCHWMDAR5Ko-7WybPec?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6009569,
+      "longitude": 98.4799745
+    }
+  },
+  "4GiCfjft": {
+    "name": "Sate Padang Pak Kumis Pasar Ramai",
+    "rating": 4.6,
+    "rating_amount": 11,
+    "price_range": "Rp 25-50 rb",
+    "address": "HMPR+GQ7, Sei Rengas II, Kec. Medan Area, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Pak+Kumis+Pasar+Ramai/data=!4m7!3m6!1s0x303131ad55bf1c71:0x752f43738dc02c62!8m2!3d3.5862982!4d98.6919193!16s%2Fg%2F11gy1v0lj9!19sChIJcRy_Va0xMTARYizAjXNDL3U?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5862982,
+      "longitude": 98.6919193
+    }
+  },
+  "GYBdYvaa": {
+    "name": "Sate Padang Rang Tuo",
+    "rating": 4.5,
+    "rating_amount": 22,
+    "price_range": null,
+    "address": "Gg. Panjang No.18, Tegal Sari Mandala III, Kec. Medan Denai, Kota Medan, Sumatera Utara 20227",
+    "opening_hours": {
+      "Senin": "00.00-17.00",
+      "Selasa": "18.00-00.00",
+      "Rabu": "00.00-17.00",
+      "Kamis": "00.00-17.00",
+      "Jumat": "00.00-17.00",
+      "Sabtu": "00.00-17.00",
+      "Minggu": "18.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Rang+Tuo/data=!4m7!3m6!1s0x303130fcf8e75827:0x1e4612971d9b5a68!8m2!3d3.5770607!4d98.7124956!16s%2Fg%2F11fylygtwl!19sChIJJ1jn-PwwMTARaFqbHZcSRh4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5770607,
+      "longitude": 98.7124956
+    }
+  },
+  "jaSLTgUX": {
+    "name": "Sate Kerang Rahmat",
+    "rating": 4.4,
+    "rating_amount": 101,
+    "price_range": null,
+    "address": "Jl. Kruing No.2G, Sekip, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20154",
+    "opening_hours": {
+      "Senin": "11.00-17.00",
+      "Selasa": "11.00-17.00",
+      "Rabu": "11.00-17.00",
+      "Kamis": "11.00-17.00",
+      "Jumat": "11.00-17.00",
+      "Sabtu": "11.00-17.00",
+      "Minggu": "11.00-17.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Kerang+Rahmat/data=!4m7!3m6!1s0x303131d958d57139:0xed399b11438c9f43!8m2!3d3.5942218!4d98.6654563!16s%2Fg%2F11csqx77pl!19sChIJOXHVWNkxMTARQ5-MQxGbOe0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5942218,
+      "longitude": 98.6654563
+    }
+  },
+  "rsUpKXeE": {
+    "name": "Warkop Dan Sate Meranggi Barokah",
+    "rating": 4.8,
+    "rating_amount": 5,
+    "price_range": null,
+    "address": "Jl. HM. Puna Sembiring No.10a, Durian Jangak, Kec. Pancur Batu, Kabupaten Deli Serdang, Sumatera Utara 20134",
+    "opening_hours": {
+      "Senin": "10.30-23.30",
+      "Selasa": "10.30-23.30",
+      "Rabu": "10.30-23.30",
+      "Kamis": "10.30-23.30",
+      "Jumat": "10.30-23.30",
+      "Sabtu": "10.30-23.30",
+      "Minggu": "10.30-23.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warkop+Dan+Sate+Meranggi+Barokah/data=!4m7!3m6!1s0x303125e340511e5f:0xcb166cf093d15e9f!8m2!3d3.5197642!4d98.595329!16s%2Fg%2F11fr52p73p!19sChIJXx5RQOMlMTARn17Rk_BsFss?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5197642,
+      "longitude": 98.595329
+    }
+  },
+  "oKecvH9I": {
+    "name": "Sate \"Ardi\"",
+    "rating": 5.0,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "Helvetia Tengah, Kec. Medan Helvetia, Kota Medan, Sumatera Utara",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+%22Ardi%22/data=!4m7!3m6!1s0x30312e11c1e8d367:0xea0c151b41dd3bcb!8m2!3d3.6098029!4d98.6449859!16s%2Fg%2F11fmdl5s0j!19sChIJZ9PowREuMTARyzvdQRsVDOo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6098029,
+      "longitude": 98.6449859
+    }
+  },
+  "XTSfUHDa": {
+    "name": "Sate Padang Ridho Mie Rebus",
+    "rating": 4.5,
+    "rating_amount": 20,
+    "price_range": null,
+    "address": "GMPM+GH2, Jl. Brig Jend. Zein Hamid, Titi Kuning, Kec. Medan Johor, Kota Medan, Sumatera Utara 20145",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Ridho+Mie+Rebus/data=!4m7!3m6!1s0x30313a9f3c775cdf:0xa80550cd946e2659!8m2!3d3.5362694!4d98.6839055!16s%2Fg%2F11ghq3llx7!19sChIJ31x3PJ86MTARWSZulM1QBag?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5362694,
+      "longitude": 98.6839055
+    }
+  },
+  "IF1YG0aM": {
+    "name": "Sate Madura Cak Ali gg banteng",
+    "rating": 4.6,
+    "rating_amount": 174,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Banteng No.112, Dwi Kora, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20123",
+    "opening_hours": {
+      "Senin": "17.00-00.00",
+      "Selasa": "17.00-00.00",
+      "Rabu": "17.00-00.00",
+      "Kamis": "17.00-00.00",
+      "Jumat": "17.00-00.00",
+      "Sabtu": "17.00-00.00",
+      "Minggu": "17.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Cak+Ali+gg+banteng/data=!4m7!3m6!1s0x30312e41738a7ae3:0xdf5ca3e80e570737!8m2!3d3.598113!4d98.6336939!16s%2Fg%2F11j1byhjjs!19sChIJ43qKc0EuMTARNwdXDuijXN8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.598113,
+      "longitude": 98.6336939
+    }
+  },
+  "MiL8nAFk": {
+    "name": "Sate Padang Ajo 80",
+    "rating": 4.8,
+    "rating_amount": 5,
+    "price_range": null,
+    "address": "Jalan Rahmadsyah/japaris No 468A, Jl. Rahmadsyah No.360 1, Kota Matsum I, Kec. Medan Area, Kota Medan, Sumatera Utara 20215",
+    "opening_hours": {
+      "Senin": "10.00-22.00",
+      "Selasa": "10.00-22.00",
+      "Rabu": "10.00-22.00",
+      "Kamis": "10.00-22.00",
+      "Jumat": "10.00-22.00",
+      "Sabtu": "10.00-22.00",
+      "Minggu": "10.00-22.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Ajo+80/data=!4m7!3m6!1s0x303131e1f3392ea5:0xf5bafff1aa505f70!8m2!3d3.5795682!4d98.699051!16s%2Fg%2F11jlvkfg77!19sChIJpS458-ExMTARcF9QqvH_uvU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5795682,
+      "longitude": 98.699051
+    }
+  },
+  "afq3Q77N": {
+    "name": "Sate Jo Andah",
+    "rating": 4.6,
+    "rating_amount": 215,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Kapten Muslim No.207, Helvetia Tengah, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20123",
+    "opening_hours": {
+      "Senin": "15.00-23.00",
+      "Selasa": "15.00-23.00",
+      "Rabu": "15.00-23.00",
+      "Kamis": "15.00-23.00",
+      "Jumat": "15.00-23.00",
+      "Sabtu": "15.00-23.00",
+      "Minggu": "15.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Jo+Andah/data=!4m7!3m6!1s0x30312f83e5d40139:0x710a804ed1c4f54c!8m2!3d3.6035774!4d98.6453074!16s%2Fg%2F11qzz54pyf!19sChIJOQHU5YMvMTARTPXE0U6ACnE?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6035774,
+      "longitude": 98.6453074
+    }
+  },
+  "MgpD93td": {
+    "name": "SATE NASIONAL",
+    "rating": 4.5,
+    "rating_amount": 966,
+    "price_range": "Rp 25-50 rb",
+    "address": "Kesawan, Kec. Medan Bar., Kota Medan, Sumatera Utara 20231",
+    "opening_hours": {
+      "Senin": "18.00-01.00",
+      "Selasa": "18.00-01.00",
+      "Rabu": "18.00-01.00",
+      "Kamis": "18.00-01.00",
+      "Jumat": "18.00-01.00",
+      "Sabtu": "18.00-00.30",
+      "Minggu": "17.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Ambil di tepi jalan",
+      "Tidak menyediakan layanan pengiriman"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+NASIONAL/data=!4m7!3m6!1s0x303131c6f41f7c45:0xf371fcfcba7438c3!8m2!3d3.5917717!4d98.6792361!16s%2Fg%2F1pzpkwh1t!19sChIJRXwf9MYxMTARwzh0uvz8cfM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5917717,
+      "longitude": 98.6792361
+    }
+  },
+  "EONRMnBG": {
+    "name": "Sate Ampera",
+    "rating": 4.2,
+    "rating_amount": 323,
+    "price_range": null,
+    "address": "Jl. Gunung Krakatau No.208, Pulo Brayan Darat I, Kec. Medan Tim., Kota Medan, Sumatera Utara 20239",
+    "opening_hours": {
+      "Senin": "15.00-01.00",
+      "Selasa": "15.00-01.00",
+      "Rabu": "15.00-01.00",
+      "Kamis": "15.00-01.00",
+      "Jumat": "15.00-01.00",
+      "Sabtu": "15.00-01.00",
+      "Minggu": "15.00-01.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Ampera/data=!4m7!3m6!1s0x3031321f43d8b219:0xccebbabdae3f30f4!8m2!3d3.6244539!4d98.681035!16s%2Fg%2F1hm2ry3rs!19sChIJGbLYQx8yMTAR9DA_rr2668w?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6244539,
+      "longitude": 98.681035
+    }
+  },
+  "xTzY1lAf": {
+    "name": "Sate Padang Andesra",
+    "rating": 4.7,
+    "rating_amount": 6,
+    "price_range": null,
+    "address": "Jl. Asia Raya No.blok D, Sukaramai II, Kec. Medan Area, Kota Medan, Sumatera Utara 20224",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Andesra/data=!4m7!3m6!1s0x303131901e5be179:0x2243bc344af35ab0!8m2!3d3.5865579!4d98.704055!16s%2Fg%2F11fl84yxsl!19sChIJeeFbHpAxMTARsFrzSjS8QyI?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5865579,
+      "longitude": 98.704055
+    }
+  },
+  "iMbhY9ly": {
+    "name": "Sate Paris Bang Man",
+    "rating": 4.4,
+    "rating_amount": 216,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Amaliun No.16f, Kotamatsum III, Kec. Medan Kota, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": {
+      "Senin": "16.30-22.00",
+      "Selasa": "16.30-22.00",
+      "Rabu": "16.30-22.00",
+      "Kamis": "16.30-22.00",
+      "Jumat": "16.30-22.00",
+      "Sabtu": "16.30-22.00",
+      "Minggu": "16.30-20.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Paris+Bang+Man/data=!4m7!3m6!1s0x3031304c3330c451:0x6b3c577240794b50!8m2!3d3.5761015!4d98.6902224!16s%2Fg%2F11c1lx_mjk!19sChIJUcQwM0wwMTARUEt5QHJXPGs?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5761015,
+      "longitude": 98.6902224
+    }
+  },
+  "3BnWZTpR": {
+    "name": "SATE PADANG TRIADI",
+    "rating": 4.4,
+    "rating_amount": 479,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Malaka No.30, Pandau Hilir, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20233",
+    "opening_hours": {
+      "Senin": "15.00-22.00",
+      "Selasa": "15.00-22.00",
+      "Rabu": "15.00-22.00",
+      "Kamis": "15.00-22.00",
+      "Jumat": "15.00-22.00",
+      "Sabtu": "15.00-22.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+TRIADI/data=!4m7!3m6!1s0x303131bba60777c3:0x236e1cc44fa231d5!8m2!3d3.593357!4d98.6899425!16s%2Fg%2F11clyt6rnr!19sChIJw3cHprsxMTAR1TGiT8QcbiM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.593357,
+      "longitude": 98.6899425
+    }
+  },
+  "oABnLEHX": {
+    "name": "Sate kambing muda",
+    "rating": 4.3,
+    "rating_amount": 10,
+    "price_range": null,
+    "address": "GQCP+Q5H, Limau Manis, Kec. Tj. Morawa, Kabupaten Deli Serdang, Sumatera Utara 20362",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+kambing+muda/data=!4m7!3m6!1s0x303139ee289f2b49:0x99497ad0a22a6246!8m2!3d3.5219257!4d98.7854818!16s%2Fg%2F11mk7xdxbk!19sChIJSSufKO45MTARRmIqotB6SZk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5219257,
+      "longitude": 98.7854818
+    }
+  },
+  "a1liC6eo": {
+    "name": "Warung Sate Madura Cak Slamet",
+    "rating": 4.7,
+    "rating_amount": 49,
+    "price_range": "Rp 1-25.000",
+    "address": "HJHG+4GM, Jl. Arteri Ring Road, Sunggal, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20122",
+    "opening_hours": {
+      "Senin": "17.00-00.00",
+      "Selasa": "17.00-00.00",
+      "Rabu": "17.00-00.00",
+      "Kamis": "17.00-00.00",
+      "Jumat": "17.00-00.00",
+      "Sabtu": "17.00-00.00",
+      "Minggu": "16.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Sate+Madura+Cak+Slamet/data=!4m7!3m6!1s0x30312fa1755fe8d1:0x4a3c2a7a3a917c27!8m2!3d3.5778299!4d98.6263003!16s%2Fg%2F11fk1t3mdg!19sChIJ0ehfdaEvMTARJ3yROnoqPEo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5778299,
+      "longitude": 98.6263003
+    }
+  },
+  "Nl9NwowL": {
+    "name": "Sate Padang Agustian Amir .Maju Bersama Glugur",
+    "rating": 4.8,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "JM8C+HJR, Glugur Kota, Kec. Medan Bar., Kota Medan, Sumatera Utara 20238",
+    "opening_hours": {
+      "Senin": "11.00-21.00",
+      "Selasa": "11.00-21.00",
+      "Rabu": "11.00-21.00",
+      "Kamis": "11.00-21.00",
+      "Jumat": "11.00-21.00",
+      "Sabtu": "11.00-21.00",
+      "Minggu": "11.00-21.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Agustian+Amir+.Maju+Bersama+Glugur/data=!4m7!3m6!1s0x303131f75c943acd:0xb4058c41e21af33f!8m2!3d3.6164834!4d98.671513!16s%2Fg%2F11f3n304m7!19sChIJzTqUXPcxMTARP_Ma4kGMBbQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6164834,
+      "longitude": 98.671513
+    }
+  },
+  "j7o1coo1": {
+    "name": "Sate padang Tri Bukit WR Supratman",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "Jl. Lahat No.56, Sei Rengas I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+padang+Tri+Bukit+WR+Supratman/data=!4m7!3m6!1s0x3031316591772daf:0xc5136354ce4771e5!8m2!3d3.5844151!4d98.6902348!16s%2Fg%2F11rgn5z864!19sChIJry13kWUxMTAR5XFHzlRjE8U?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5844151,
+      "longitude": 98.6902348
+    }
+  },
+  "LXMFo1PA": {
+    "name": "Sate Madura H. Rasyidi",
+    "rating": 4.4,
+    "rating_amount": 635,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Karya Bakti No.157 B, Ps. Merah Tim., Kec. Medan Area, Kota Medan, Sumatera Utara 20227",
+    "opening_hours": {
+      "Senin": "16.00-23.00",
+      "Selasa": "16.00-23.00",
+      "Rabu": "16.00-23.00",
+      "Kamis": "16.00-23.00",
+      "Jumat": "16.00-23.00",
+      "Sabtu": "16.00-23.00",
+      "Minggu": "16.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+H.+Rasyidi/data=!4m7!3m6!1s0x30313057f70347cd:0x3f3829ba93ed1366!8m2!3d3.5705233!4d98.7032744!16s%2Fg%2F11b6ln02lp!19sChIJzUcD91cwMTARZhPtk7opOD8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5705233,
+      "longitude": 98.7032744
+    }
+  },
+  "fp01ohCa": {
+    "name": "Sate Wak Saleh",
+    "rating": 4.4,
+    "rating_amount": 143,
+    "price_range": "Sedang",
+    "address": "HMHW+RMP, Jl. Rahmadsyah, Kota Matsum I, Kec. Medan Area, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "19.00-23.00",
+      "Rabu": "19.00-23.00",
+      "Kamis": "19.00-23.00",
+      "Jumat": "19.00-23.00",
+      "Sabtu": "19.00-23.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Wak+Saleh/data=!4m7!3m6!1s0x303130533a41dfc1:0x18a0f14b50b9a7b9!8m2!3d3.5795994!4d98.6966998!16s%2Fg%2F1hm37h588!19sChIJwd9BOlMwMTARuae5UEvxoBg?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5795994,
+      "longitude": 98.6966998
+    }
+  },
+  "fpszkkS2": {
+    "name": "Sate Madura (Ayam,Kambing,Sapi)",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "JJ46+QQ6, Jl. Cempaka, Tj. Gusta, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20124",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+%28Ayam,Kambing,Sapi%29/data=!4m7!3m6!1s0x30312f7d865ec5e5:0x8f8437d122c2a337!8m2!3d3.6069182!4d98.611904!16s%2Fg%2F11lh4x2btv!19sChIJ5cVehn0vMTARN6PCItE3hI8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6069182,
+      "longitude": 98.611904
+    }
+  },
+  "poNmLaaB": {
+    "name": "Sate Jakarta",
+    "rating": 4.4,
+    "rating_amount": 79,
+    "price_range": "Sedang",
+    "address": "Jl. Iskandar Muda No.36 A 141, Petisah Hulu, Medan Baru, Medan City, North Sumatra 20154",
+    "opening_hours": {
+      "Senin": "15.30-00.00",
+      "Selasa": "15.30-00.00",
+      "Rabu": "15.30-00.00",
+      "Kamis": "15.30-00.00",
+      "Jumat": "15.30-00.00",
+      "Sabtu": "15.30-00.00",
+      "Minggu": "15.30-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Jakarta/data=!4m7!3m6!1s0x3031302a6f4d36f9:0xcf62a3f5af169d0a!8m2!3d3.5773674!4d98.6610709!16s%2Fg%2F1hm2xn5n_!19sChIJ-TZNbyowMTARCp0Wr_WjYs8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5773674,
+      "longitude": 98.6610709
+    }
+  },
+  "NChXNv5E": {
+    "name": "Sate Nasi Matang",
+    "rating": 5.0,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "Sei Sikambing C. II, Kec. Medan Helvetia, Kota Medan, Sumatera Utara",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Nasi+Matang/data=!4m7!3m6!1s0x30312e5abd74ba25:0xe5bf4be94957d6ab!8m2!3d3.5918243!4d98.6257761!16s%2Fg%2F11k2vcv48v!19sChIJJbp0vVouMTARq9ZXSelLv-U?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5918243,
+      "longitude": 98.6257761
+    }
+  },
+  "iDiX2BTe": {
+    "name": "Sate Tulung Agung",
+    "rating": 4.6,
+    "rating_amount": 78,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Jenderal Besar A.H. Nasution, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20143",
+    "opening_hours": {
+      "Senin": "18.00-23.30",
+      "Selasa": "18.00-23.30",
+      "Rabu": "18.00-23.30",
+      "Kamis": "18.00-23.30",
+      "Jumat": "18.00-23.30",
+      "Sabtu": "18.00-23.30",
+      "Minggu": "18.00-22.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Ambil di tepi jalan"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Tulung+Agung/data=!4m7!3m6!1s0x3031300a8eede989:0x690aa459ce2a476b!8m2!3d3.5415292!4d98.6652967!16s%2Fg%2F11bc7qdzs7!19sChIJientjgowMTARa0cqzlmkCmk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5415292,
+      "longitude": 98.6652967
+    }
+  },
+  "dgTOmEjc": {
+    "name": "Sate Madura Cak Heri",
+    "rating": 4.5,
+    "rating_amount": 30,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Ps. 1 No.276, Tj. Sari, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20133",
+    "opening_hours": {
+      "Senin": "16.30-00.00",
+      "Selasa": "16.30-23.30",
+      "Rabu": "16.30-23.30",
+      "Kamis": "16.30-00.00",
+      "Jumat": "16.30-23.30",
+      "Sabtu": "16.30-23.30",
+      "Minggu": "16.30-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Cak+Heri/data=!4m7!3m6!1s0x30312f84a1e9a1db:0x9557218ce6b2e9be!8m2!3d3.558552!4d98.6267564!16s%2Fg%2F11h_wyhtll!19sChIJ26HpoYQvMTARvumy5owhV5U?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.558552,
+      "longitude": 98.6267564
+    }
+  },
+  "PG4Uzuxa": {
+    "name": "Aheng E-mie & Sate",
+    "rating": 4.4,
+    "rating_amount": 23,
+    "price_range": null,
+    "address": "HMMR+P4F, Jl. Asia Dalam, Sei Rengas I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": {
+      "Senin": "12.00-17.00",
+      "Selasa": "12.00-17.00",
+      "Rabu": "12.00-17.00",
+      "Kamis": "12.00-17.00",
+      "Jumat": "12.00-17.00",
+      "Sabtu": "12.00-17.00",
+      "Minggu": "12.00-17.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Aheng+E-mie+%26+Sate/data=!4m7!3m6!1s0x303131b3cb5df09b:0xed1014ec0761dd7e!8m2!3d3.5843184!4d98.6902962!16s%2Fg%2F11c60bs5n9!19sChIJm_Bdy7MxMTARft1hB-wUEO0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5843184,
+      "longitude": 98.6902962
+    }
+  },
+  "IT6q4qMX": {
+    "name": "Sate Jon",
+    "rating": 4.4,
+    "rating_amount": 112,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Gunung Krakatau No.204, Pulo Brayan Darat I, Kec. Medan Tim., Kota Medan, Sumatera Utara 20239",
+    "opening_hours": {
+      "Senin": "18.00-01.00",
+      "Selasa": "18.00-01.00",
+      "Rabu": "18.00-01.00",
+      "Kamis": "18.00-01.00",
+      "Jumat": "18.00-01.00",
+      "Sabtu": "18.00-01.00",
+      "Minggu": "18.00-01.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Jon/data=!4m7!3m6!1s0x3031321f697b0e5b:0xd0521af04e7f0b3!8m2!3d3.6241595!4d98.6810715!16s%2Fg%2F11dymwtfym!19sChIJWw57aR8yMTARs_DnBK8hBQ0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6241595,
+      "longitude": 98.6810715
+    }
+  },
+  "2gcayKmW": {
+    "name": "Sate Madura ''BINTANG TIMUR\"",
+    "rating": 4.5,
+    "rating_amount": 127,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Mandala By Pass Jl. Pukat IV No.simpang, Bantan, Kec. Medan Tembung, Kota Medan, Sumatera Utara 20223",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+%27%27BINTANG+TIMUR%22/data=!4m7!3m6!1s0x3031310eed9ea0d5:0x4e750fa767439650!8m2!3d3.5935051!4d98.7114618!16s%2Fg%2F11fxdzww8n!19sChIJ1aCe7Q4xMTARUJZDZ6cPdU4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5935051,
+      "longitude": 98.7114618
+    }
+  },
+  "oNEWNdX9": {
+    "name": "Sate Madura Katamso",
+    "rating": 4.5,
+    "rating_amount": 58,
+    "price_range": "Rp 25-50 rb",
+    "address": "Gg. Datuk No.26, Kp. Baru, Kec. Medan Maimun, Kota Medan, Sumatera Utara 20218",
+    "opening_hours": {
+      "Senin": "18.00-23.00",
+      "Selasa": "18.00-23.00",
+      "Rabu": "18.00-23.00",
+      "Kamis": "18.00-23.00",
+      "Jumat": "18.00-23.00",
+      "Sabtu": "18.00-23.00",
+      "Minggu": "18.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Katamso/data=!4m7!3m6!1s0x3031306ebb0ba001:0x37c55ca11ec15cee!8m2!3d3.5544685!4d98.6885004!16s%2Fg%2F11c7srchw2!19sChIJAaALu24wMTAR7lzBHqFcxTc?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5544685,
+      "longitude": 98.6885004
+    }
+  },
+  "QoxwuN4y": {
+    "name": "SATE MEDAN",
+    "rating": 4.3,
+    "rating_amount": 95,
+    "price_range": "Sedang",
+    "address": "Jl. Karya Wisata No.22 D, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20145",
+    "opening_hours": {
+      "Senin": "17.00-00.00",
+      "Selasa": "17.00-00.00",
+      "Rabu": "17.00-00.00",
+      "Kamis": "17.00-00.00",
+      "Jumat": "17.00-00.00",
+      "Sabtu": "17.00-00.00",
+      "Minggu": "17.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+MEDAN/data=!4m7!3m6!1s0x30313aaa53f0bb85:0x6c24f47f6e1d5888!8m2!3d3.5382864!4d98.6631787!16s%2Fg%2F11c2jx8qvw!19sChIJhbvwU6o6MTARiFgdbn_0JGw?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5382864,
+      "longitude": 98.6631787
+    }
+  },
+  "vvpNjRJE": {
+    "name": "Resto sate goreng taichan",
+    "rating": 5.0,
+    "rating_amount": 5,
+    "price_range": null,
+    "address": "HJCG+FGV, Jl. Gagak Hitam Jl. Arteri Ring Road, Sunggal, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20122",
+    "opening_hours": {
+      "Senin": "12.00-22.00",
+      "Selasa": "12.00-22.00",
+      "Rabu": "12.00-22.00",
+      "Kamis": "12.00-22.00",
+      "Jumat": "12.00-22.00",
+      "Sabtu": "12.00-23.00",
+      "Minggu": "12.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Resto+sate+goreng+taichan/data=!4m7!3m6!1s0x30312fbccefb6e25:0x3ed5bb65629633f4!8m2!3d3.5712295!4d98.6262945!16s%2Fg%2F11h55nm9tm!19sChIJJW77zrwvMTAR9DOWYmW71T4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5712295,
+      "longitude": 98.6262945
+    }
+  },
+  "KXEmCuMY": {
+    "name": "SATE PADANG UDA EDI MESJID AGUNG BINJAI",
+    "rating": 4.0,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "JF5X+633, Timbang Langkat, Kec. Binjai Tim., Kota Binjai, Sumatera Utara 20735",
+    "opening_hours": {
+      "Senin": "11.00-20.00",
+      "Selasa": "11.00-20.00",
+      "Rabu": "11.00-20.00",
+      "Kamis": "11.00-20.00",
+      "Jumat": "11.00-20.00",
+      "Sabtu": "11.00-20.00",
+      "Minggu": "11.00-20.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+UDA+EDI+MESJID+AGUNG+BINJAI/data=!4m7!3m6!1s0x3031292bc041496b:0xb1c48ad13cf7f8f4!8m2!3d3.6080166!4d98.4976619!16s%2Fg%2F11gmwqn9wx!19sChIJa0lBwCspMTAR9Pj3PNGKxLE?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6080166,
+      "longitude": 98.4976619
+    }
+  },
+  "bqWFAB4V": {
+    "name": "SATE PADANG UDA EDI MESJID AGUNG BINJAI",
+    "rating": 4.0,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "JF5X+633, Timbang Langkat, Kec. Binjai Tim., Kota Binjai, Sumatera Utara 20735",
+    "opening_hours": {
+      "Senin": "11.00-20.00",
+      "Selasa": "11.00-20.00",
+      "Rabu": "11.00-20.00",
+      "Kamis": "11.00-20.00",
+      "Jumat": "11.00-20.00",
+      "Sabtu": "11.00-20.00",
+      "Minggu": "11.00-20.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+UDA+EDI+MESJID+AGUNG+BINJAI/data=!4m7!3m6!1s0x3031292bc041496b:0xb1c48ad13cf7f8f4!8m2!3d3.6080166!4d98.4976619!16s%2Fg%2F11gmwqn9wx!19sChIJa0lBwCspMTAR9Pj3PNGKxLE?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6080166,
+      "longitude": 98.4976619
+    }
+  },
+  "CUv8JGHd": {
+    "name": "Sate Padang Simpang Waspada",
+    "rating": 4.4,
+    "rating_amount": 444,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Letjen Suprapto No.3, A U R, Kec. Medan Maimun, Kota Medan, Sumatera Utara 20212",
+    "opening_hours": {
+      "Senin": "17.30-00.00",
+      "Selasa": "17.30-00.00",
+      "Rabu": "17.30-00.00",
+      "Kamis": "17.30-00.00",
+      "Jumat": "17.30-00.00",
+      "Sabtu": "17.30-00.00",
+      "Minggu": "17.30-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Simpang+Waspada/data=!4m7!3m6!1s0x303131b55798ea81:0x795ebaa8fa33ecbc!8m2!3d3.580777!4d98.6818406!16s%2Fg%2F11f2s154r0!19sChIJgeqYV7UxMTARvOwz-qi6Xnk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.580777,
+      "longitude": 98.6818406
+    }
+  },
+  "hu7NkOoY": {
+    "name": "Ai - Ai Sate Ayam & Lontong Bumbu Kacang",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. DR. F.L. Tobing No.15A, Pusat Ps., Kec. Medan Kota, Kota Medan, Sumatera Utara 20212",
+    "opening_hours": {
+      "Senin": "10.00-16.00",
+      "Selasa": "10.00-16.00",
+      "Rabu": "10.00-16.00",
+      "Kamis": "10.00-16.00",
+      "Jumat": "10.00-16.00",
+      "Sabtu": "10.00-16.00",
+      "Minggu": "10.00-16.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Ai+-+Ai+Sate+Ayam+%26+Lontong+Bumbu+Kacang/data=!4m7!3m6!1s0x1011501778e09171:0x7d8414b9a9e26443!8m2!3d3.5918439!4d98.6876912!16s%2Fg%2F11b7hhd3kg!19sChIJcZHgeBdQERARQ2TiqbkUhH0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5918439,
+      "longitude": 98.6876912
+    }
+  },
+  "Zmi8V1Eg": {
+    "name": "SATE PADANG AL'LATIF",
+    "rating": 5.0,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "Jl. Sei Batang Hari No.49a, Babura Sunggal, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20119",
+    "opening_hours": {
+      "Senin": "12.00-18.00",
+      "Selasa": "12.00-18.00",
+      "Rabu": "12.00-18.00",
+      "Kamis": "12.00-18.00",
+      "Jumat": "12.00-18.00",
+      "Sabtu": "12.00-18.00",
+      "Minggu": "12.00-18.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+AL%27LATIF/data=!4m7!3m6!1s0x30312f84cf520be7:0x1fc5946f39cb90a8!8m2!3d3.5849892!4d98.6427786!16s%2Fg%2F11rfp12lg9!19sChIJ5wtSz4QvMTARqJDLOW-UxR8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5849892,
+      "longitude": 98.6427786
+    }
+  },
+  "QQkgXOCP": {
+    "name": "Bakso & Sate Ponorogo",
+    "rating": 4.3,
+    "rating_amount": 76,
+    "price_range": "Rp 1-25.000",
+    "address": "GHJR+QGX, Jl. Besar Tj. Selamat, Tj. Anom, Kec. Pancur Batu, Kabupaten Deli Serdang, Sumatera Utara 20351",
+    "opening_hours": {
+      "Senin": "09.00-22.00",
+      "Selasa": "09.00-22.00",
+      "Rabu": "09.00-22.00",
+      "Kamis": "09.00-22.00",
+      "Jumat": "09.00-22.00",
+      "Sabtu": "09.00-22.00",
+      "Minggu": "09.00-22.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Bakso+%26+Sate+Ponorogo/data=!4m7!3m6!1s0x303125f289d195b7:0xa664bfdd7c716d21!8m2!3d3.5319822!4d98.5913701!16s%2Fg%2F11j8qd_skl!19sChIJt5XRifIlMTARIW1xfN2_ZKY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5319822,
+      "longitude": 98.5913701
+    }
+  },
+  "F6Hqm00V": {
+    "name": "SATEBIR",
+    "rating": 4.9,
+    "rating_amount": 44,
+    "price_range": "Rp 50-75 rb",
+    "address": "Komplek Cemara Asri, Jl. Boulevard Timur.88GG, HH, Medan Estate, Kabupaten Deli Serdang, Sumatera Utara 20371",
+    "opening_hours": {
+      "Senin": "17.00-00.00",
+      "Selasa": "17.00-00.00",
+      "Rabu": "17.00-00.00",
+      "Kamis": "17.00-00.00",
+      "Jumat": "17.00-01.00",
+      "Sabtu": "17.00-01.00",
+      "Minggu": "17.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Drive-through",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/SATEBIR/data=!4m7!3m6!1s0x3031333246c30af9:0x732400975d4fc521!8m2!3d3.6333952!4d98.7074345!16s%2Fg%2F11v6xrs_nr!19sChIJ-QrDRjIzMTARIcVPXZcAJHM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6333952,
+      "longitude": 98.7074345
+    }
+  },
+  "XIiM7Ono": {
+    "name": "Sate Madura pojur 2",
+    "rating": 5.0,
+    "rating_amount": 6,
+    "price_range": null,
+    "address": "Jl. Selebes No.3 3, Belawan I, Medan Kota Belawan, Kota Medan, Sumatera Utara 20412",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+pojur+2/data=!4m7!3m6!1s0x3036cf8c52fe98e3:0x43c23bf7e9d4287e!8m2!3d3.7827037!4d98.6849631!16s%2Fg%2F11qmp8c77_!19sChIJ45j-UozPNjARfijU6fc7wkM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.7827037,
+      "longitude": 98.6849631
+    }
+  },
+  "vEDv7eRZ": {
+    "name": "Sate madura pojur1",
+    "rating": 4.5,
+    "rating_amount": 21,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Bilal Ujung No.190a, Pulo Brayan Darat I, Kec. Medan Tim., Kota Medan, Sumatera Utara 20236",
+    "opening_hours": {
+      "Senin": "18.45-00.00",
+      "Selasa": "18.45-00.00",
+      "Rabu": "18.45-00.00",
+      "Kamis": "18.45-00.00",
+      "Jumat": "18.45-00.00",
+      "Sabtu": "18.45-00.00",
+      "Minggu": "18.45-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+madura+pojur1/data=!4m7!3m6!1s0x303133ea47af4a1b:0x54cef8e77eb8a8c2!8m2!3d3.6225261!4d98.685198!16s%2Fg%2F11h57ghl72!19sChIJG0qvR-ozMTARwqi4fuf4zlQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6225261,
+      "longitude": 98.685198
+    }
+  },
+  "ijRQbNMv": {
+    "name": "Sate Goyang Lidah",
+    "rating": 3.5,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "FPQ7+PCR, JL Pertahanan, Psr V, Patumbak II, Patumbak, Deli Serdang, Lantasan Baru, Lubuk Pakam, Kabupaten Deli Serdang, Sumatera Utara 20361",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Goyang+Lidah/data=!4m7!3m6!1s0x30313ba568881315:0xb3ed24f8cf62b8ec!8m2!3d3.4893613!4d98.7135277!16s%2Fg%2F11bc7r33qd!19sChIJFROIaKU7MTAR7Lhiz_gk7bM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.4893613,
+      "longitude": 98.7135277
+    }
+  },
+  "4FlBY4WZ": {
+    "name": "SATE PADANG & SATE KACANG ALHAMDULILLAH",
+    "rating": 4.3,
+    "rating_amount": 233,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Brigjend Katamso No.742, Kp. Baru, Kec. Medan Maimun, Kota Medan, Sumatera Utara 20217",
+    "opening_hours": {
+      "Senin": "16.00-23.00",
+      "Selasa": "16.00-23.00",
+      "Rabu": "16.00-23.00",
+      "Kamis": "16.00-23.00",
+      "Jumat": "16.00-23.00",
+      "Sabtu": "16.00-23.00",
+      "Minggu": "16.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+%26+SATE+KACANG+ALHAMDULILLAH/data=!4m7!3m6!1s0x303131effbe04beb:0x98e4302f19073ab2!8m2!3d3.5465755!4d98.6872482!16s%2Fg%2F11r_wn1gj6!19sChIJ60vg--8xMTARsjoHGS8w5Jg?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5465755,
+      "longitude": 98.6872482
+    }
+  },
+  "pmvBhI6D": {
+    "name": "SATE PADANG RIZQI GUNAWAN",
+    "rating": 4.5,
+    "rating_amount": 334,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Bogor, simpang, Jl. Surabaya, Pasar Baru, Medan Kota, Medan City, North Sumatra 20212",
+    "opening_hours": {
+      "Senin": "17.00-23.00",
+      "Selasa": "17.00-23.00",
+      "Rabu": "17.30-23.00",
+      "Kamis": "17.00-23.00",
+      "Jumat": "17.00-23.00",
+      "Sabtu": "17.00-23.00",
+      "Minggu": "17.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+RIZQI+GUNAWAN/data=!4m7!3m6!1s0x303131b44a9bf5cf:0x748ada43c4b6c70d!8m2!3d3.5841318!4d98.6848798!16s%2Fg%2F11b7k0rc3q!19sChIJz_WbSrQxMTARDce2xEPainQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5841318,
+      "longitude": 98.6848798
+    }
+  },
+  "DcC7RTZS": {
+    "name": "Sate Madura Simpang Pondok Surya",
+    "rating": 3.0,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "Jl. Pembangunan No.67, Helvetia Tim., Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20124",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Simpang+Pondok+Surya/data=!4m7!3m6!1s0x30312fd6e6b83757:0xf25cb66fb727fde!8m2!3d3.6098343!4d98.6572485!16s%2Fg%2F11ss6v14l4!19sChIJVze45tYvMTAR3n9y-2bLJQ8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6098343,
+      "longitude": 98.6572485
+    }
+  },
+  "vNpecFC1": {
+    "name": "Sate Padang Al'fresco",
+    "rating": 4.3,
+    "rating_amount": 418,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Setia Budi No.213a, Tj. Rejo, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20154",
+    "opening_hours": {
+      "Senin": "17.00-00.00",
+      "Selasa": "17.00-00.00",
+      "Rabu": "17.00-00.00",
+      "Kamis": "17.00-00.00",
+      "Jumat": "17.00-00.00",
+      "Sabtu": "17.00-00.00",
+      "Minggu": "17.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Al%27fresco/data=!4m7!3m6!1s0x30312fc72b5f1ab7:0xb8295ef566a57f14!8m2!3d3.5658037!4d98.6404886!16s%2Fg%2F1hm3jgz41!19sChIJtxpfK8cvMTARFH-lZvVeKbg?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5658037,
+      "longitude": 98.6404886
+    }
+  },
+  "F2yHu644": {
+    "name": "Warung Sate Madura Cak Udin",
+    "rating": 4.5,
+    "rating_amount": 57,
+    "price_range": "Rp 1-50.000",
+    "address": "Jl. Abd. Sani Mutalib, Terjun, Kec. Medan Marelan, Kota Medan, Sumatera Utara 20256",
+    "opening_hours": {
+      "Senin": "16.30-00.00",
+      "Selasa": "16.30-00.00",
+      "Rabu": "16.30-00.00",
+      "Kamis": "16.30-00.00",
+      "Jumat": "16.30-00.00",
+      "Sabtu": "16.30-00.00",
+      "Minggu": "16.30-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Sate+Madura+Cak+Udin/data=!4m7!3m6!1s0x3036d2cae0a2588d:0x2ac64e76ac243b3!8m2!3d3.7026154!4d98.6355723!16s%2Fg%2F11cjvbzjy_!19sChIJjVii4MrSNjARs0PCaudkrAI?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.7026154,
+      "longitude": 98.6355723
+    }
+  },
+  "HRCzIEH1": {
+    "name": "Sate Madura Cak Kur",
+    "rating": 4.7,
+    "rating_amount": 34,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Beo No.7, Sei Sikambing B, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20119",
+    "opening_hours": {
+      "Senin": "17.30-23.55",
+      "Selasa": "17.30-23.55",
+      "Rabu": "17.30-23.55",
+      "Kamis": "17.30-23.55",
+      "Jumat": "17.30-23.55",
+      "Sabtu": "18.30-23.55",
+      "Minggu": "17.30-23.55"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Cak+Kur/data=!4m7!3m6!1s0x30312fabaeae0e15:0x507e805f87600ba5!8m2!3d3.5860906!4d98.6415068!16s%2Fg%2F11hzxs9bgz!19sChIJFQ6urqsvMTARpQtgh1-AflA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5860906,
+      "longitude": 98.6415068
+    }
+  },
+  "CVsIbih1": {
+    "name": "Sate Madura bang kumis",
+    "rating": 4.1,
+    "rating_amount": 42,
+    "price_range": null,
+    "address": "Jl. Karya Wisata No.149, Gedung Johor, Kec. Medan Johor, Kota Medan, Sumatera Utara 20146",
+    "opening_hours": {
+      "Senin": "17.00-00.00",
+      "Selasa": "17.00-00.00",
+      "Rabu": "17.00-00.00",
+      "Kamis": "17.00-00.00",
+      "Jumat": "17.00-00.00",
+      "Sabtu": "17.00-00.00",
+      "Minggu": "17.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+bang+kumis/data=!4m7!3m6!1s0x30313bf4a45c030d:0x33990622b5a07d18!8m2!3d3.5195392!4d98.6619197!16s%2Fg%2F11kgr7clq5!19sChIJDQNcpPQ7MTARGH2gtSIGmTM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5195392,
+      "longitude": 98.6619197
+    }
+  },
+  "GOan6atm": {
+    "name": "Warung SATE MADURA ASLI Bang Udin",
+    "rating": 4.3,
+    "rating_amount": 38,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Ps. 7 No.78, Hutan, Kec. Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara 20371",
+    "opening_hours": {
+      "Senin": "17.30-00.00",
+      "Selasa": "17.30-00.00",
+      "Rabu": "17.30-00.00",
+      "Kamis": "17.30-00.00",
+      "Jumat": "17.30-00.00",
+      "Sabtu": "17.30-00.00",
+      "Minggu": "17.30-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+SATE+MADURA+ASLI+Bang+Udin/data=!4m7!3m6!1s0x303137ca003349ef:0xca7cc0cc841f44be!8m2!3d3.5931143!4d98.7550399!16s%2Fg%2F11h5vgmr6y!19sChIJ70kzAMo3MTARvkQfhMzAfMo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5931143,
+      "longitude": 98.7550399
+    }
+  },
+  "lkdxL5cP": {
+    "name": "Sate Memeng",
+    "rating": 4.2,
+    "rating_amount": null,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Irian Barat No.2, Gg. Buntu, Kec. Medan Tim., Kota Medan, Sumatera Utara 20136",
+    "opening_hours": {
+      "Senin": "17.00-23.00",
+      "Selasa": "17.00-23.00",
+      "Rabu": "17.00-23.00",
+      "Kamis": "17.00-23.00",
+      "Jumat": "17.00-23.00",
+      "Sabtu": "17.00-23.00",
+      "Minggu": "17.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Memeng/data=!4m7!3m6!1s0x303131c820b477e3:0xd6ed9e9486ec372!8m2!3d3.5870496!4d98.682729!16s%2Fg%2F1pzykn4xg!19sChIJ43e0IMgxMTARcsNuSOnZbg0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5870496,
+      "longitude": 98.682729
+    }
+  },
+  "Xo8haRAY": {
+    "name": "Sate Afrizal Amir",
+    "rating": 4.6,
+    "rating_amount": 106,
+    "price_range": "Rp 25-50 rb",
+    "address": "GMRH+FRR, Jl. Medan - Tebing Tinggi, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20219",
+    "opening_hours": {
+      "Senin": "17.00-23.56",
+      "Selasa": "17.00-23.56",
+      "Rabu": "17.00-23.56",
+      "Kamis": "17.00-23.56",
+      "Jumat": "17.00-23.56",
+      "Sabtu": "17.00-23.56",
+      "Minggu": "17.00-23.56"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Afrizal+Amir/data=!4m7!3m6!1s0x3031300a89780a67:0x422bfb3e8f09b327!8m2!3d3.5412447!4d98.6795015!16s%2Fg%2F11ggngd8bn!19sChIJZwp4iQowMTARJ7MJjz77K0I?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5412447,
+      "longitude": 98.6795015
+    }
+  },
+  "eaMFBk9e": {
+    "name": "dlezza sate seafood",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "JF7W+J9G, Jl. Tengku Amir Hamzah, Pahlawan, Kec. Binjai Utara, Kota Binjai, Sumatera Utara 20743",
+    "opening_hours": {
+      "Senin": "11.30-22.00",
+      "Selasa": "11.30-22.00",
+      "Rabu": "11.30-22.00",
+      "Kamis": "11.30-22.00",
+      "Jumat": "Tutup",
+      "Sabtu": "11.30-22.00",
+      "Minggu": "11.30-22.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/dlezza+sate+seafood/data=!4m7!3m6!1s0x303129669f8c1c67:0xbb593e216e42c44a!8m2!3d3.6140593!4d98.4959544!16s%2Fg%2F11j_wg2ymr!19sChIJZxyMn2YpMTARSsRCbiE-Wbs?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6140593,
+      "longitude": 98.4959544
+    }
+  },
+  "ztqhbnF5": {
+    "name": "Sate Madura Denai",
+    "rating": 4.1,
+    "rating_amount": 56,
+    "price_range": null,
+    "address": "Jl. Denai No.555, Denai, Kec. Medan Denai, Kota Medan, Sumatera Utara 20371",
+    "opening_hours": {
+      "Senin": "16.00-22.00",
+      "Selasa": "16.00-22.00",
+      "Rabu": "16.00-22.00",
+      "Kamis": "16.00-22.00",
+      "Jumat": "16.00-22.00",
+      "Sabtu": "16.00-22.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Denai/data=!4m7!3m6!1s0x3031312085847323:0xffdb9be625d8fc01!8m2!3d3.5817076!4d98.7123456!16s%2Fg%2F11g871cqzm!19sChIJI3OEhSAxMTARAfzYJeab2_8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5817076,
+      "longitude": 98.7123456
+    }
+  },
+  "aKNF3bvj": {
+    "name": "Sate Kerang Tanjung Balai",
+    "rating": 5.0,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "Jl. Sei Petani No.30, Merdeka, Kec. Medan Baru, Kota Medan, Sumatera Utara 20154",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Kerang+Tanjung+Balai/data=!4m7!3m6!1s0x30312fe8a096dfb1:0xb26f12ab22640a50!8m2!3d3.5764485!4d98.6580604!16s%2Fg%2F11k4l6p0xv!19sChIJsd-WoOgvMTARUApkIqsSb7I?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5764485,
+      "longitude": 98.6580604
+    }
+  },
+  "1LQTd3fz": {
+    "name": "Sate pariaman",
+    "rating": 4.7,
+    "rating_amount": 42,
+    "price_range": null,
+    "address": "Jl. Cemara Asri Boulevard Raya No.88e, Medan Estate, Kec. Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara 20221",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+pariaman/data=!4m7!3m6!1s0x3031323160d7bb9d:0x7e110e8591026324!8m2!3d3.6346235!4d98.6984884!16s%2Fg%2F11g6z53jn5!19sChIJnbvXYDEyMTARJGMCkYUOEX4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6346235,
+      "longitude": 98.6984884
+    }
+  },
+  "v6an4Nim": {
+    "name": "Sate Padang Andesra",
+    "rating": 4.3,
+    "rating_amount": 101,
+    "price_range": "Rp 50-75 rb",
+    "address": "Jl. S. Parman No.52, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111",
+    "opening_hours": {
+      "Senin": "16.30-00.00",
+      "Selasa": "16.30-00.00",
+      "Rabu": "16.30-00.00",
+      "Kamis": "16.30-00.00",
+      "Jumat": "16.30-00.00",
+      "Sabtu": "16.30-00.00",
+      "Minggu": "16.30-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Andesra/data=!4m7!3m6!1s0x303131d0743a8973:0x1c2251ead712432f!8m2!3d3.5904725!4d98.6694717!16s%2Fg%2F11c2qzrm6w!19sChIJc4k6dNAxMTARL0MS1-pRIhw?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5904725,
+      "longitude": 98.6694717
+    }
+  },
+  "5SijUD09": {
+    "name": "Stasiun Sate Madura",
+    "rating": 4.6,
+    "rating_amount": 56,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Brig Jend. Zein Hamid No.28, Kedai Durian, Kec. Medan Johor, Kota Medan, Sumatera Utara 20147",
+    "opening_hours": {
+      "Senin": "18.00-00.00",
+      "Selasa": "18.00-00.00",
+      "Rabu": "18.00-00.00",
+      "Kamis": "18.00-00.00",
+      "Jumat": "18.00-00.00",
+      "Sabtu": "18.00-00.00",
+      "Minggu": "18.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Stasiun+Sate+Madura/data=!4m7!3m6!1s0x30313ac040cbfea9:0x42aa5df5e949b5ad!8m2!3d3.5187931!4d98.6806068!16s%2Fg%2F11gf4p0xmh!19sChIJqf7LQMA6MTARrbVJ6fVdqkI?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5187931,
+      "longitude": 98.6806068
+    }
+  },
+  "5cloX82g": {
+    "name": "Sate Maranggi Aa Jung Khas Cianjur",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Jl. K.H. Wahid Hasyim No.51-76, Babura, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "08.00-17.00",
+      "Rabu": "08.00-17.00",
+      "Kamis": "08.00-17.00",
+      "Jumat": "08.00-17.00",
+      "Sabtu": "08.00-17.00",
+      "Minggu": "08.00-17.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Maranggi+Aa+Jung+Khas+Cianjur/data=!4m7!3m6!1s0x30312fdf54d3a6cf:0x2a2d68bc5a2f71df!8m2!3d3.5802906!4d98.6575065!16s%2Fg%2F11frnx5yh5!19sChIJz6bTVN8vMTAR33EvWrxoLSo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5802906,
+      "longitude": 98.6575065
+    }
+  },
+  "FLBoMpW6": {
+    "name": "sate madura \" pojur \"",
+    "rating": 4.3,
+    "rating_amount": 17,
+    "price_range": null,
+    "address": "MM4G+WJH, Jl. Mangaan III Ps. II, M A B A R, Kec. Medan Deli, Kota Medan, Sumatera Utara 20242",
+    "opening_hours": {
+      "Senin": "17.30-00.30",
+      "Selasa": "17.30-00.30",
+      "Rabu": "17.30-00.30",
+      "Kamis": "17.30-00.30",
+      "Jumat": "17.30-00.30",
+      "Sabtu": "17.30-01.00",
+      "Minggu": "17.30-00.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/sate+madura+%22+pojur+%22/data=!4m7!3m6!1s0x303132617d2f9141:0x5deb719d171ba26e!8m2!3d3.6573213!4d98.6766018!16s%2Fg%2F11bzrj9mff!19sChIJQZEvfWEyMTARbqIbF51x610?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6573213,
+      "longitude": 98.6766018
+    }
+  },
+  "3T9uXoYu": {
+    "name": "Sate chaniago",
+    "rating": 4.8,
+    "rating_amount": 30,
+    "price_range": null,
+    "address": "GMW8+C59, Jl. Karya Bakti II, Sari Rejo, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20157",
+    "opening_hours": {
+      "Senin": "18.00-00.00",
+      "Selasa": "18.00-00.00",
+      "Rabu": "18.00-00.00",
+      "Kamis": "18.00-00.00",
+      "Jumat": "18.00-00.00",
+      "Sabtu": "18.00-00.00",
+      "Minggu": "18.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+chaniago/data=!4m7!3m6!1s0x303131156fa078f9:0x93802e49e47bb5ca!8m2!3d3.5460338!4d98.6654855!16s%2Fg%2F11h07yh6zb!19sChIJ-XigbxUxMTARyrV75EkugJM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5460338,
+      "longitude": 98.6654855
+    }
+  },
+  "l2suEksn": {
+    "name": "Sate Madura Sabila",
+    "rating": 3.5,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "Jl. Bhayangkara No.457, Indra Kasih, Kec. Medan Tembung, Kota Medan, Sumatera Utara 20221",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Sabila/data=!4m7!3m6!1s0x303133d5a672ebf3:0x80c4d7d84c275ece!8m2!3d3.6220373!4d98.7071355!16s%2Fg%2F11hz8z0hhy!19sChIJ8-typtUzMTARzl4nTNjXxIA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6220373,
+      "longitude": 98.7071355
+    }
+  },
+  "HrJK1Vy7": {
+    "name": "Sate Mie Rebus Bang War",
+    "rating": 4.6,
+    "rating_amount": 493,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Jenderal Besar A.H. Nasution No.14, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20219",
+    "opening_hours": {
+      "Senin": "15.30-23.00",
+      "Selasa": "15.30-23.00",
+      "Rabu": "15.30-23.00",
+      "Kamis": "15.30-23.00",
+      "Jumat": "15.30-23.00",
+      "Sabtu": "15.30-23.00",
+      "Minggu": "15.30-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Mie+Rebus+Bang+War/data=!4m7!3m6!1s0x30313a9ff217cca9:0x33a858ba0271ac3!8m2!3d3.5406113!4d98.6804622!16s%2Fg%2F11bc7t84lp!19sChIJqcwX8p86MTARwxonoIuFOgM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5406113,
+      "longitude": 98.6804622
+    }
+  },
+  "DsHDFmNR": {
+    "name": "Warung Sate / Mie Rebus Mak Etek",
+    "rating": 4.6,
+    "rating_amount": 56,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Karya No.109, Sei Agul, Kec. Medan Bar., Kota Medan, Sumatera Utara 20235",
+    "opening_hours": {
+      "Senin": "18.00-00.00",
+      "Selasa": "18.00-00.00",
+      "Rabu": "18.00-00.00",
+      "Kamis": "18.00-00.00",
+      "Jumat": "18.00-00.00",
+      "Sabtu": "18.00-00.00",
+      "Minggu": "18.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Sate+%2F+Mie+Rebus+Mak+Etek/data=!4m7!3m6!1s0x303131e35829f5dd:0x58884179af8b1124!8m2!3d3.6105441!4d98.6653378!16s%2Fg%2F11cncv74s0!19sChIJ3fUpWOMxMTARJBGLr3lBiFg?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6105441,
+      "longitude": 98.6653378
+    }
+  },
+  "s2q1OEWR": {
+    "name": "Sate Padang Kupak",
+    "rating": 4.3,
+    "rating_amount": 819,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Bromo No.73 D, Tegal Sari III, Kec. Medan Area, Kota Medan, Sumatera Utara 20216",
+    "opening_hours": {
+      "Senin": "16.00-22.00",
+      "Selasa": "16.00-22.00",
+      "Rabu": "16.00-22.00",
+      "Kamis": "16.00-22.00",
+      "Jumat": "16.00-22.00",
+      "Sabtu": "16.00-22.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Kupak/data=!4m7!3m6!1s0x303130fc7eece63d:0x6cdb15911e5e1aab!8m2!3d3.5753148!4d98.7092212!16s%2Fg%2F11bc7prcp7!19sChIJPebsfvwwMTARqxpeHpEV22w?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5753148,
+      "longitude": 98.7092212
+    }
+  },
+  "da130qWW": {
+    "name": "Sate Padang Mizan",
+    "rating": 4.9,
+    "rating_amount": 13,
+    "price_range": "Rp 1-25.000",
+    "address": "GMMC+FJC, Jl. Karya Kasih, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20219",
+    "opening_hours": {
+      "Senin": "17.00-23.00",
+      "Selasa": "17.00-23.00",
+      "Rabu": "17.00-23.00",
+      "Kamis": "17.00-23.00",
+      "Jumat": "17.00-23.00",
+      "Sabtu": "17.00-23.00",
+      "Minggu": "17.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Mizan/data=!4m7!3m6!1s0x30313b0db2b89bd5:0xf0a4a51a6b23f695!8m2!3d3.5336982!4d98.6715092!16s%2Fg%2F11gl0zsrzg!19sChIJ1Zu4sg07MTARlfYjaxqlpPA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5336982,
+      "longitude": 98.6715092
+    }
+  },
+  "RFGBsN7Q": {
+    "name": "Sate Padang Bang Agus",
+    "rating": 4.5,
+    "rating_amount": 68,
+    "price_range": "Murah",
+    "address": "Jl. Sisingamangaraja No.53, Sitirejo II, Kec. Medan Amplas, Kota Medan, Sumatera Utara 20217",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Bang+Agus/data=!4m7!3m6!1s0x3031307c9eb0d613:0x74a818406e9d7159!8m2!3d3.548705!4d98.698967!16s%2Fg%2F1hm2gfsn4!19sChIJE9awnnwwMTARWXGdbkAYqHQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.548705,
+      "longitude": 98.698967
+    }
+  },
+  "zb8G9nNA": {
+    "name": "SATE PADANG AKBAR",
+    "rating": 4.8,
+    "rating_amount": 13,
+    "price_range": null,
+    "address": "A Dua Coffee, Jl. Abdullah Lubis No.2, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20153",
+    "opening_hours": {
+      "Senin": "17.00-23.00",
+      "Selasa": "17.00-23.00",
+      "Rabu": "17.00-23.00",
+      "Kamis": "17.00-23.00",
+      "Jumat": "17.00-23.00",
+      "Sabtu": "17.00-23.00",
+      "Minggu": "17.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+AKBAR/data=!4m7!3m6!1s0x3031302c0bb3a575:0x6be0508a4fb6b96!8m2!3d3.5768643!4d98.6657731!16s%2Fg%2F11bwkfwc22!19sChIJdaWzCywwMTARlmv7pAgFvgY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5768643,
+      "longitude": 98.6657731
+    }
+  },
+  "wOUtpVfN": {
+    "name": "Sate Bang Tampan",
+    "rating": 3.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "Jl. Sisingamangaraja No.294, RW.02, Siti Rejo I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20159",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Bang+Tampan/data=!4m7!3m6!1s0x3031312f436e96e3:0x363ef188d0c49020!8m2!3d3.558344!4d98.6941666!16s%2Fg%2F11nnpr_82q!19sChIJ45ZuQy8xMTARIJDE0IjxPjY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.558344,
+      "longitude": 98.6941666
+    }
+  },
+  "f7Pp8mAP": {
+    "name": "Sate Taichan",
+    "rating": 4.2,
+    "rating_amount": 10,
+    "price_range": null,
+    "address": "HMGX+HH6, Gg. Raja Batu, Kota Matsum II, Kec. Medan Area, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": {
+      "Senin": "10.00-22.00",
+      "Selasa": "10.00-22.00",
+      "Rabu": "10.00-22.00",
+      "Kamis": "10.00-22.00",
+      "Jumat": "10.00-22.00",
+      "Sabtu": "10.00-22.00",
+      "Minggu": "10.00-22.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Taichan/data=!4m7!3m6!1s0x3031315f106fdc11:0x49a24eaff19af4fe!8m2!3d3.5764224!4d98.6988776!16s%2Fg%2F11hdjhn_fr!19sChIJEdxvEF8xMTAR_vSa8a9Ookk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5764224,
+      "longitude": 98.6988776
+    }
+  },
+  "GhvSntdM": {
+    "name": "Sate Madura \"Wak Doel\"",
+    "rating": 4.4,
+    "rating_amount": 14,
+    "price_range": "Rp 1-25.000",
+    "address": "GPP9+279, Jl. Pertahanan, Timbang Deli, Kec. Medan Amplas, Kota Medan, Sumatera Utara 20148",
+    "opening_hours": {
+      "Senin": "17.00-23.00",
+      "Selasa": "17.00-23.00",
+      "Rabu": "17.00-23.00",
+      "Kamis": "17.00-23.00",
+      "Jumat": "17.00-23.00",
+      "Sabtu": "17.00-23.00",
+      "Minggu": "17.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+%22Wak+Doel%22/data=!4m7!3m6!1s0x30313a76d347ed97:0x50349a62a91f84a1!8m2!3d3.5350483!4d98.7182267!16s%2Fg%2F11h6npdk53!19sChIJl-1H03Y6MTARoYQfqWKaNFA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5350483,
+      "longitude": 98.7182267
+    }
+  },
+  "LDAULFwK": {
+    "name": "Mie Rebus & Sate Ajo",
+    "rating": 4.5,
+    "rating_amount": 11,
+    "price_range": null,
+    "address": "HMQ8+HHW, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111",
+    "opening_hours": {
+      "Senin": "07.00-15.30",
+      "Selasa": "07.00-15.30",
+      "Rabu": "07.00-15.30",
+      "Kamis": "07.00-15.30",
+      "Jumat": "07.00-15.30",
+      "Sabtu": "07.00-15.30",
+      "Minggu": "07.00-15.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Mie+Rebus+%26+Sate+Ajo/data=!4m7!3m6!1s0x303131d0c7b5fecf:0x8cdd8f262dd1b0db!8m2!3d3.5889908!4d98.6664492!16s%2Fg%2F11fzf6cc4d!19sChIJz_61x9AxMTAR27DRLSaP3Yw?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5889908,
+      "longitude": 98.6664492
+    }
+  },
+  "zIFzrdQQ": {
+    "name": "Sate Madura Cinta Rasa",
+    "rating": 4.6,
+    "rating_amount": 81,
+    "price_range": "Rp 1-25.000",
+    "address": "jln garuda 2 no8 di depan masjid muhajirin prumnas, mandala, Tegal Sari Mandala II, Kec. Medan Denai, Kota Medan, Sumatera Utara 20226",
+    "opening_hours": {
+      "Senin": "17.00-00.00",
+      "Selasa": "17.00-00.00",
+      "Rabu": "17.00-00.00",
+      "Kamis": "17.00-00.00",
+      "Jumat": "17.00-00.00",
+      "Sabtu": "17.00-00.00",
+      "Minggu": "17.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Cinta+Rasa/data=!4m7!3m6!1s0x303131b96fdf4d41:0x9684f95d2df918fa!8m2!3d3.5871389!4d98.7214985!16s%2Fg%2F11f647lwdq!19sChIJQU3fb7kxMTAR-hj5LV35hJY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5871389,
+      "longitude": 98.7214985
+    }
+  },
+  "AFjeZXTq": {
+    "name": "Sate Padang Minang Setia",
+    "rating": 4.3,
+    "rating_amount": 74,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. M. Nawi Harahap No.189, Sudirejo II, Kec. Medan Kota, Kota Medan, Sumatera Utara 20215",
+    "opening_hours": {
+      "Senin": "18.00-23.00",
+      "Selasa": "18.00-23.00",
+      "Rabu": "18.00-23.00",
+      "Kamis": "18.00-23.00",
+      "Jumat": "18.00-23.00",
+      "Sabtu": "18.00-23.00",
+      "Minggu": "18.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Minang+Setia/data=!4m7!3m6!1s0x303130884b8e1ce5:0x654acc2829ba8125!8m2!3d3.552475!4d98.706493!16s%2Fg%2F11c60q3ptp!19sChIJ5RyOS4gwMTARJYG6KSjMSmU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.552475,
+      "longitude": 98.706493
+    }
+  },
+  "5Bul9UDt": {
+    "name": "Sate & Mie Rebus Kasuari",
+    "rating": 4.7,
+    "rating_amount": 269,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Kasuari No.31, Sei Sikambing B, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20119",
+    "opening_hours": {
+      "Senin": "18.00-01.00",
+      "Selasa": "18.00-01.00",
+      "Rabu": "18.00-01.00",
+      "Kamis": "18.00-01.00",
+      "Jumat": "18.00-01.00",
+      "Sabtu": "18.00-01.00",
+      "Minggu": "18.00-01.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+%26+Mie+Rebus+Kasuari/data=!4m7!3m6!1s0x30312f6851b1bb07:0xef2eb6f8fe919ae4!8m2!3d3.5842331!4d98.638494!16s%2Fg%2F11gy3jdp77!19sChIJB7uxUWgvMTAR5JqR_vi2Lu8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5842331,
+      "longitude": 98.638494
+    }
+  },
+  "pBloSoNq": {
+    "name": "SATE PADANG BUNDA DENAI",
+    "rating": 4.6,
+    "rating_amount": 65,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Denai No.72 C, Tegal Sari Mandala III, Kec. Medan Denai, Kota Medan, Sumatera Utara 20227",
+    "opening_hours": {
+      "Senin": "14.00-01.00",
+      "Selasa": "14.00-01.00",
+      "Rabu": "14.00-01.00",
+      "Kamis": "14.00-01.00",
+      "Jumat": "14.00-01.00",
+      "Sabtu": "14.00-01.00",
+      "Minggu": "14.00-01.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+BUNDA+DENAI/data=!4m7!3m6!1s0x303130e7df5c3ff9:0x55e2f83bc683f1be!8m2!3d3.581708!4d98.7113639!16s%2Fg%2F1pzyn0lyq!19sChIJ-T9c3-cwMTARvvGDxjv44lU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.581708,
+      "longitude": 98.7113639
+    }
+  },
+  "EXpIfvZf": {
+    "name": "Sate khas Madura Cak Anwar",
+    "rating": 4.0,
+    "rating_amount": 14,
+    "price_range": null,
+    "address": "GQ9V+GCF, Jl. Pahlawan, Bandar Labuhan, Kec. Tj. Morawa, Kabupaten Deli Serdang, Sumatera Utara 20362",
+    "opening_hours": {
+      "Senin": "17.00-23.00",
+      "Selasa": "17.00-23.00",
+      "Rabu": "17.00-23.00",
+      "Kamis": "17.00-23.00",
+      "Jumat": "17.00-23.00",
+      "Sabtu": "17.00-23.00",
+      "Minggu": "17.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+khas+Madura+Cak+Anwar/data=!4m7!3m6!1s0x3031384aa279c515:0xa60563992d582023!8m2!3d3.5188239!4d98.7935364!16s%2Fg%2F11c2kgstss!19sChIJFcV5oko4MTARIyBYLZljBaY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5188239,
+      "longitude": 98.7935364
+    }
+  },
+  "wubnP7Uf": {
+    "name": "Sate Sayang Bang Barum",
+    "rating": 4.2,
+    "rating_amount": 14,
+    "price_range": null,
+    "address": "Jl. Prof. H. M. Yamin No.133, Sei Kera Hilir II, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20222",
+    "opening_hours": {
+      "Senin": "17.00-23.30",
+      "Selasa": "17.00-23.30",
+      "Rabu": "17.00-23.30",
+      "Kamis": "17.00-23.30",
+      "Jumat": "17.00-23.30",
+      "Sabtu": "17.00-23.30",
+      "Minggu": "17.00-23.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Sayang+Bang+Barum/data=!4m7!3m6!1s0x303131a24862f7f9:0x64e8a9f1d71a3beb!8m2!3d3.5988024!4d98.6938292!16s%2Fg%2F11gbksh4zl!19sChIJ-fdiSKIxMTAR6zsa1_Gp6GQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5988024,
+      "longitude": 98.6938292
+    }
+  },
+  "QTLjWzO7": {
+    "name": "Andespa Sate Padang",
+    "rating": 4.5,
+    "rating_amount": 81,
+    "price_range": null,
+    "address": "Jl. Ps. 1 No.14, Tj. Sari, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20132",
+    "opening_hours": {
+      "Senin": "15.00-23.00",
+      "Selasa": "15.00-23.00",
+      "Rabu": "15.00-23.00",
+      "Kamis": "15.00-23.00",
+      "Jumat": "15.00-23.00",
+      "Sabtu": "15.00-23.00",
+      "Minggu": "15.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Andespa+Sate+Padang/data=!4m7!3m6!1s0x30312f95afc3f8d3:0xc20f9dc4a9333164!8m2!3d3.5589149!4d98.6346599!16s%2Fg%2F11bc7mw65j!19sChIJ0_jDr5UvMTARZDEzqcSdD8I?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5589149,
+      "longitude": 98.6346599
+    }
+  },
+  "KyFsKuk1": {
+    "name": "Sate Padang Kacang Dan Mie Rebus Bg Ajo",
+    "rating": 4.1,
+    "rating_amount": 8,
+    "price_range": null,
+    "address": "HJVV+6RG, Jl. Kapten Muslim, Sei Sikambing C. II, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20118",
+    "opening_hours": {
+      "Senin": "00.00-14.00",
+      "Selasa": "00.00-14.00",
+      "Rabu": "00.00-14.00",
+      "Kamis": "00.00-14.00",
+      "Jumat": "00.00-14.00",
+      "Sabtu": "00.00-14.00",
+      "Minggu": "00.00-14.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Kacang+Dan+Mie+Rebus+Bg+Ajo/data=!4m7!3m6!1s0x30312e3a32c36d01:0x6b389eaaade29690!8m2!3d3.5930737!4d98.644592!16s%2Fg%2F11g6vjvkz1!19sChIJAW3DMjouMTARkJbiraqeOGs?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5930737,
+      "longitude": 98.644592
+    }
+  },
+  "cXTyyB7i": {
+    "name": "Sate Madura Pak Amir",
+    "rating": 4.8,
+    "rating_amount": 18,
+    "price_range": null,
+    "address": "Jl. Binjai No.408, Lalang, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20126",
+    "opening_hours": {
+      "Senin": "18.00-00.00",
+      "Selasa": "18.00-00.00",
+      "Rabu": "18.00-00.00",
+      "Kamis": "18.00-00.00",
+      "Jumat": "18.00-00.00",
+      "Sabtu": "18.00-00.00",
+      "Minggu": "18.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Pak+Amir/data=!4m7!3m6!1s0x30312ef3a933e679:0x7355b8f041b8de4e!8m2!3d3.598272!4d98.6085207!16s%2Fg%2F11f3cjk8hj!19sChIJeeYzqfMuMTARTt64QfC4VXM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.598272,
+      "longitude": 98.6085207
+    }
+  },
+  "4dDTDO0H": {
+    "name": "Sate padang triadi",
+    "rating": 4.8,
+    "rating_amount": 21,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. G.B. Joshua No.18, Sidodadi, Kec. Medan Tim., Kota Medan, Sumatera Utara 20233",
+    "opening_hours": {
+      "Senin": "15.00-22.00",
+      "Selasa": "15.00-22.00",
+      "Rabu": "15.00-22.00",
+      "Kamis": "15.00-22.00",
+      "Jumat": "15.00-22.00",
+      "Sabtu": "15.00-22.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+padang+triadi/data=!4m7!3m6!1s0x3031316f9088d49b:0xa5b698258cd82d46!8m2!3d3.5961415!4d98.6905852!16s%2Fg%2F11lm9c17h2!19sChIJm9SIkG8xMTARRi3YjCWYtqU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5961415,
+      "longitude": 98.6905852
+    }
+  },
+  "ofj1nxOf": {
+    "name": "SATE PADANG PUTRA PASAMAN",
+    "rating": 4.5,
+    "rating_amount": 25,
+    "price_range": null,
+    "address": "GMXF+64X, Sari Rejo, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20158",
+    "opening_hours": {
+      "Senin": "18.00-23.00",
+      "Selasa": "18.00-23.00",
+      "Rabu": "18.00-23.00",
+      "Kamis": "18.00-23.00",
+      "Jumat": "18.00-23.00",
+      "Sabtu": "18.00-23.00",
+      "Minggu": "18.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+PUTRA+PASAMAN/data=!4m7!3m6!1s0x3031300fa6d174d7:0x91bb7b7462389d52!8m2!3d3.548117!4d98.6728494!16s%2Fg%2F11f3n3yshc!19sChIJ13TRpg8wMTARUp04YnR7u5E?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.548117,
+      "longitude": 98.6728494
+    }
+  },
+  "ersJ5SiE": {
+    "name": "Sate Memeng",
+    "rating": 4.5,
+    "rating_amount": 16,
+    "price_range": null,
+    "address": "Jl. Nusantara, Kotamatsum III, Kec. Medan Kota, Kota Medan, Sumatera Utara 20212",
+    "opening_hours": {
+      "Senin": "17.00-01.00",
+      "Selasa": "17.00-01.00",
+      "Rabu": "17.00-01.00",
+      "Kamis": "17.00-01.00",
+      "Jumat": "17.00-01.00",
+      "Sabtu": "17.00-01.00",
+      "Minggu": "17.00-01.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Drive-through",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Memeng/data=!4m7!3m6!1s0x30313103def717e3:0x45f27c3b2145e351!8m2!3d3.5779713!4d98.6886098!16s%2Fg%2F11jty8hlsm!19sChIJ4xf33gMxMTARUeNFITt88kU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5779713,
+      "longitude": 98.6886098
+    }
+  },
+  "Z2dOpFpQ": {
+    "name": "Sate Selatan Jaya (Padang dan Kacang )",
+    "rating": 4.2,
+    "rating_amount": 48,
+    "price_range": null,
+    "address": "Jl. Besar Delitua No.40-16, Suka Makmur, Kec. Deli Tua, Kabupaten Deli Serdang, Sumatera Utara 20147",
+    "opening_hours": {
+      "Senin": "17.00-21.45",
+      "Selasa": "17.00-00.00",
+      "Rabu": "17.00-00.00",
+      "Kamis": "17.00-00.00",
+      "Jumat": "17.00-23.45",
+      "Sabtu": "17.00-00.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Selatan+Jaya+%28Padang+dan+Kacang+%29/data=!4m7!3m6!1s0x30313b792c1e3da1:0xe516efe8019038c1!8m2!3d3.5182396!4d98.6804086!16s%2Fg%2F11fqb328xb!19sChIJoT0eLHk7MTARwTiQAejvFuU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5182396,
+      "longitude": 98.6804086
+    }
+  },
+  "4AxWAgTs": {
+    "name": "Sate Padang Goyang Lidah Ceker",
+    "rating": 5.0,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "Jl. Setia, Tj. Gusta, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20126",
+    "opening_hours": {
+      "Senin": "17.00-00.00",
+      "Selasa": "17.00-00.00",
+      "Rabu": "17.00-00.00",
+      "Kamis": "17.00-00.00",
+      "Jumat": "17.00-00.00",
+      "Sabtu": "17.00-00.00",
+      "Minggu": "17.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Ambil di tepi jalan"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Goyang+Lidah+Ceker/data=!4m7!3m6!1s0x3031296e80c9cc71:0xb27606013010bfd4!8m2!3d3.6091576!4d98.6100203!16s%2Fg%2F11h8bb1vxg!19sChIJcczJgG4pMTAR1L8QMAEGdrI?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6091576,
+      "longitude": 98.6100203
+    }
+  },
+  "PYXBgE89": {
+    "name": "Sate Padang Di Ambang Sore",
+    "rating": 4.6,
+    "rating_amount": 31,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. KH. Zainul Arifin No.177, Petisah Hulu, Kec. Medan Baru, Kota Medan, Sumatera Utara 20151",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Di+Ambang+Sore/data=!4m7!3m6!1s0x303131d3bf225195:0xee3324781df1a03d!8m2!3d3.5839734!4d98.6676457!16s%2Fg%2F11c2q75bqc!19sChIJlVEiv9MxMTARPaDxHXgkM-4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5839734,
+      "longitude": 98.6676457
+    }
+  },
+  "m8QCGWwN": {
+    "name": "Sate Padang ALIDA CHANIAGO",
+    "rating": 4.3,
+    "rating_amount": 54,
+    "price_range": null,
+    "address": "Jl. Halat No.75, Kota Matsum II, Kec. Medan Kota, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+ALIDA+CHANIAGO/data=!4m7!3m6!1s0x303131fc99ff51fd:0xaac81e945bb14d83!8m2!3d3.5724568!4d98.692594!16s%2Fg%2F11h37rzv3p!19sChIJ_VH_mfwxMTARg02xW5QeyKo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5724568,
+      "longitude": 98.692594
+    }
+  },
+  "4587FzHG": {
+    "name": "Sate Madura Riyan ga jelas",
+    "rating": 3.9,
+    "rating_amount": 11,
+    "price_range": null,
+    "address": "Jl. Setia Budi No.184C, Tj. Sari, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20132",
+    "opening_hours": {
+      "Senin": "17.00-01.00",
+      "Selasa": "17.00-01.00",
+      "Rabu": "17.00-01.00",
+      "Kamis": "17.00-01.00",
+      "Jumat": "17.00-01.00",
+      "Sabtu": "17.00-01.00",
+      "Minggu": "17.00-01.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Madura+Riyan+ga+jelas/data=!4m7!3m6!1s0x30312f916380d25b:0x4624f3e822391a51!8m2!3d3.5541198!4d98.632226!16s%2Fg%2F11f3zkm849!19sChIJW9KAY5EvMTARURo5IujzJEY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5541198,
+      "longitude": 98.632226
+    }
+  },
+  "IPX6nCco": {
+    "name": "Sate saman pasar 7",
+    "rating": 5.0,
+    "rating_amount": 5,
+    "price_range": null,
+    "address": "HPPR+M79, Gg. Salam, Hutan, Kec. Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara 20371",
+    "opening_hours": {
+      "Senin": "15.30-23.59",
+      "Selasa": "15.30-23.59",
+      "Rabu": "15.30-23.59",
+      "Kamis": "15.30-23.59",
+      "Jumat": "15.30-23.59",
+      "Sabtu": "15.30-23.59",
+      "Minggu": "15.30-23.59"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+saman+pasar+7/data=!4m7!3m6!1s0x303131568b2ec61b:0xf5c1555196595305!8m2!3d3.5866586!4d98.7407386!16s%2Fg%2F11lkxly55z!19sChIJG8Yui1YxMTARBVNZllFVwfU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5866586,
+      "longitude": 98.7407386
+    }
+  },
+  "AoCcEXlN": {
+    "name": "SATE MADURA ASLI BANG RIYAN",
+    "rating": 4.2,
+    "rating_amount": 18,
+    "price_range": null,
+    "address": "FPR6+4J6, Jl. Pertahanan, Lantasan Lama, Kec. Patumbak, Kabupaten Deli Serdang, Sumatera Utara 20361",
+    "opening_hours": {
+      "Senin": "16.00-00.00",
+      "Selasa": "16.00-00.00",
+      "Rabu": "16.00-00.00",
+      "Kamis": "16.00-00.00",
+      "Jumat": "16.00-00.00",
+      "Sabtu": "16.00-00.00",
+      "Minggu": "15.30-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+MADURA+ASLI+BANG+RIYAN/data=!4m7!3m6!1s0x30313b72185e9125:0x873bb4037fb4fccc!8m2!3d3.4902841!4d98.7115113!16s%2Fg%2F11j9hn72sd!19sChIJJZFeGHI7MTARzPy0fwO0O4c?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.4902841,
+      "longitude": 98.7115113
+    }
+  },
+  "YJ0AUFUS": {
+    "name": "Sate Padang Simpang Kebunlada",
+    "rating": 4.5,
+    "rating_amount": 12,
+    "price_range": null,
+    "address": "JF8W+6W8, simpang, Kebun Lada, Kec. Binjai Utara, Kota Binjai, Sumatera Utara 20748",
+    "opening_hours": {
+      "Senin": "19.00-00.00",
+      "Selasa": "19.00-00.00",
+      "Rabu": "19.00-00.00",
+      "Kamis": "19.00-00.00",
+      "Jumat": "19.00-00.00",
+      "Sabtu": "19.00-00.00",
+      "Minggu": "19.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Sate+Padang+Simpang+Kebunlada/data=!4m7!3m6!1s0x3031295ef9598cbd:0x4923b076f236e8dc!8m2!3d3.6155448!4d98.4973244!16s%2Fg%2F11gy2ly274!19sChIJvYxZ-V4pMTAR3Og28nawI0k?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6155448,
+      "longitude": 98.4973244
+    }
+  },
+  "40JgOhVx": {
+    "name": "SATE PADANG GOYANG LIDAH Setia Budi",
+    "rating": 4.5,
+    "rating_amount": 16,
+    "price_range": null,
+    "address": "Jl. Setia Budi No.214, Tj. Sari, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20122",
+    "opening_hours": {
+      "Senin": "16.00-02.00",
+      "Selasa": "16.00-02.00",
+      "Rabu": "16.00-02.00",
+      "Kamis": "16.00-02.00",
+      "Jumat": "16.00-02.00",
+      "Sabtu": "16.00-02.00",
+      "Minggu": "16.00-02.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/SATE+PADANG+GOYANG+LIDAH+Setia+Budi/data=!4m7!3m6!1s0x30312f91bc6f9b71:0xa52f1501c55adc70!8m2!3d3.559666!4d98.636305!16s%2Fg%2F11c55s8s1_!19sChIJcZtvvJEvMTARcNxaxQEVL6U?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.559666,
+      "longitude": 98.636305
+    }
+  },
+  "Ju6CPVjP": {
+    "name": "Al-Barokah Warung Sate Tegal",
+    "rating": 4.3,
+    "rating_amount": 951,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Asrama Pondok Kelapa No.10, Sei Sikambing C. II, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20123",
+    "opening_hours": {
+      "Senin": "11.00-23.00",
+      "Selasa": "11.00-23.00",
+      "Rabu": "11.00-23.00",
+      "Kamis": "11.00-23.00",
+      "Jumat": "11.00-23.00",
+      "Sabtu": "11.00-00.00",
+      "Minggu": "11.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Al-Barokah+Warung+Sate+Tegal/data=!4m7!3m6!1s0x30312e45315278f3:0x4302885c62f4443e!8m2!3d3.5924483!4d98.6274658!16s%2Fg%2F11bvt5w0s3!19sChIJ83hSMUUuMTARPkT0YlyIAkM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5924483,
+      "longitude": 98.6274658
+    }
+  }
+}

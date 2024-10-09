@@ -1,0 +1,881 @@
+{
+  "u1yrr2WD": {
+    "name": "Kari Ayam Talaud 17",
+    "rating": 5.0,
+    "rating_amount": 5,
+    "price_range": null,
+    "address": "",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Kari+Ayam+Talaud+17/data=!4m7!3m6!1s0x303131f02a686f65:0x3e0248d5745cd8a4!8m2!3d3.5895795!4d98.6891659!16s%2Fg%2F11h8jpgqvh!19sChIJZW9oKvAxMTARpNhcdNVIAj4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5895795,
+      "longitude": 98.6891659
+    }
+  },
+  "qkcPpuSJ": {
+    "name": "Kari Bebek",
+    "rating": 3.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "JL Kapt. Muchtar Basri, No. 8A, Glugur Darat II, Kec. Medan Tim., Kota Medan, Sumatera Utara 20238",
+    "opening_hours": {
+      "Senin": "09.00-22.00",
+      "Selasa": "09.00-22.00",
+      "Rabu": "09.00-22.00",
+      "Kamis": "09.00-22.00",
+      "Jumat": "09.00-20.00",
+      "Sabtu": "09.00-22.00",
+      "Minggu": "09.00-20.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Kari+Bebek/data=!4m7!3m6!1s0x303131f1552ad661:0x232b51f414594976!8m2!3d3.6155111!4d98.6764!16s%2Fg%2F11b6dpbkh0!19sChIJYdYqVfExMTARdklZFPRRKyM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6155111,
+      "longitude": 98.6764
+    }
+  },
+  "FOxB0hbw": {
+    "name": "Kari Bihun & Nasi Soto \"Mbak Ayu\"",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. Sei Kapuas No.25aa, Babura Sunggal, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20112",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Kari+Bihun+%26+Nasi+Soto+%22Mbak+Ayu%22/data=!4m7!3m6!1s0x30312feeff501c3b:0x76f2d02cd9ed6d23!8m2!3d3.5835633!4d98.6508757!16s%2Fg%2F11s65wzc_z!19sChIJOxxQ_-4vMTARI23t2SzQ8nY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5835633,
+      "longitude": 98.6508757
+    }
+  },
+  "mBNl9sNE": {
+    "name": "Atam Kari Ayam",
+    "rating": 5.0,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "HPQ3+GJM, Pahlawan, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20224",
+    "opening_hours": {
+      "Senin": "09.30-18.00",
+      "Selasa": "09.30-18.00",
+      "Rabu": "09.30-18.00",
+      "Kamis": "09.30-18.00",
+      "Jumat": "09.30-18.00",
+      "Sabtu": "09.30-18.00",
+      "Minggu": "09.30-18.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Atam+Kari+Ayam/data=!4m7!3m6!1s0x3031313a9b5d61ad:0xc17e321c73bd4d8e!8m2!3d3.5888325!4d98.7040605!16s%2Fg%2F11gtspq1kx!19sChIJrWFdmzoxMTARjk29cxwyfsE?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5888325,
+      "longitude": 98.7040605
+    }
+  },
+  "B5PjTmYl": {
+    "name": "Nasi Kari Mas Sukur",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "JHP3+39X, Mulyorejo, Kec. Sunggal, Kabupaten Deli Serdang, Sumatera Utara 20374",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Kari+Mas+Sukur/data=!4m7!3m6!1s0x30312b32c22afa93:0x71bd25ea8574fead!8m2!3d3.6352415!4d98.5534817!16s%2Fg%2F11g2_60k41!19sChIJk_oqwjIrMTARrf50heolvXE?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6352415,
+      "longitude": 98.5534817
+    }
+  },
+  "fgFYoJaH": {
+    "name": "Mie Kari 129",
+    "rating": 4.9,
+    "rating_amount": 187,
+    "price_range": "Rp 25-50 rb",
+    "address": "Depan Tugu, Jl S.Parman, A Jl. Guru Patimpus No.21, Kota Medan, Sumatera Utara",
+    "opening_hours": {
+      "Senin": "10.00-22.00",
+      "Selasa": "10.00-22.00",
+      "Rabu": "10.00-22.00",
+      "Kamis": "10.00-22.00",
+      "Jumat": "10.00-22.00",
+      "Sabtu": "10.00-22.00",
+      "Minggu": "10.00-22.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Mie+Kari+129/data=!4m7!3m6!1s0x303131006d617c25:0x2c060073dac7c482!8m2!3d3.5911491!4d98.6709627!16s%2Fg%2F11w7l62lj3!19sChIJJXxhbQAxMTARgsTH2nMABiw?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5911491,
+      "longitude": 98.6709627
+    }
+  },
+  "E88q7bQl": {
+    "name": "RUMAH MAKAN KARI BUNDO",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "GQ8R+QRM, Jl. Dahlan Tj., Bandar Labuhan, Kec. Tj. Morawa, Kabupaten Deli Serdang, Sumatera Utara 20362",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/RUMAH+MAKAN+KARI+BUNDO/data=!4m7!3m6!1s0x303139b52b1cbcad:0x10f1c34d62ae73b8!8m2!3d3.5169612!4d98.7920586!16s%2Fg%2F11krpc2wlf!19sChIJrbwcK7U5MTARuHOuYk3D8RA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5169612,
+      "longitude": 98.7920586
+    }
+  },
+  "TCRyRslM": {
+    "name": "Kari Bihun / Nasi / Soto Udang",
+    "rating": 4.4,
+    "rating_amount": 5,
+    "price_range": null,
+    "address": "HMR8+2VC, Jl. Rotan, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Kari+Bihun+%2F+Nasi+%2F+Soto+Udang/data=!4m7!3m6!1s0x303131d0999eab1b:0xa5edc7628ed08384!8m2!3d3.5900584!4d98.6671279!16s%2Fg%2F1hm20kfzs!19sChIJG6uemdAxMTARhIPQjmLH7aU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5900584,
+      "longitude": 98.6671279
+    }
+  },
+  "DkSWRZZ6": {
+    "name": "Lontong kari dan Nasi Uduk Kak Rani",
+    "rating": 5.0,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "Jl. HM. Said No.60/61, Sidorame Bar. I, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20233",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+kari+dan+Nasi+Uduk+Kak+Rani/data=!4m7!3m6!1s0x303131370c3b1d25:0x8a67c1aa9797fa30!8m2!3d3.6040136!4d98.6825785!16s%2Fg%2F11rv1rf009!19sChIJJR07DDcxMTARMPqXl6rBZ4o?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6040136,
+      "longitude": 98.6825785
+    }
+  },
+  "4pdylybn": {
+    "name": "Mie Kari Seafood",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "HH6W+WM2, Jl. Setia Karya, Tj. Selamat, Kec. Sunggal, Sunggal, Sumatera Utara 20351",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Mie+Kari+Seafood/data=!4m7!3m6!1s0x30312f1520fe2989:0x7fe7db6a1117b4cc!8m2!3d3.5622633!4d98.5966313!16s%2Fg%2F11c55rndm9!19sChIJiSn-IBUvMTARzLQXEWrb538?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5622633,
+      "longitude": 98.5966313
+    }
+  },
+  "7GKZD51J": {
+    "name": "Kari Kambing Polonia Cilinggung",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Jl. Pelita I No.78, Sidorame Bar. II, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20233",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Kari+Kambing+Polonia+Cilinggung/data=!4m7!3m6!1s0x30313196a20b1a43:0x7b9bed6ea90a6474!8m2!3d3.6041252!4d98.6879881!16s%2Fg%2F11fsmncr0v!19sChIJQxoLopYxMTARdGQKqW7tm3s?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6041252,
+      "longitude": 98.6879881
+    }
+  },
+  "tRkfA8Zp": {
+    "name": "Rumah kare",
+    "rating": 4.8,
+    "rating_amount": 52,
+    "price_range": null,
+    "address": "Jl. Sei Deli No.43A, Silalas, Kec. Medan Bar., Kota Medan, Sumatera Utara 20231",
+    "opening_hours": {
+      "Senin": "07.00-20.00",
+      "Selasa": "07.00-20.00",
+      "Rabu": "07.00-20.00",
+      "Kamis": "07.00-20.00",
+      "Jumat": "07.00-20.00",
+      "Sabtu": "07.00-20.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Rumah+kare/data=!4m7!3m6!1s0x3031318373e251b5:0xd49d51d0b08a5c4d!8m2!3d3.593093!4d98.6721209!16s%2Fg%2F11h4g8_rq3!19sChIJtVHic4MxMTARTVyKsNBRndQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.593093,
+      "longitude": 98.6721209
+    }
+  },
+  "Jbb2kQqa": {
+    "name": "Nasi Uduk dan Lontong Kari Kak Rani",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. Inspeksi No.20, Sei Sikambing C. II, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20118",
+    "opening_hours": {
+      "Senin": "06.00-01.00",
+      "Selasa": "06.00-01.00",
+      "Rabu": "06.00-01.00",
+      "Kamis": "06.00-01.00",
+      "Jumat": "06.00-01.00",
+      "Sabtu": "06.00-01.00",
+      "Minggu": "06.00-01.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Uduk+dan+Lontong+Kari+Kak+Rani/data=!4m7!3m6!1s0x30312f6227e4617f:0x7333b2a6165b2c6b!8m2!3d3.593052!4d98.6462057!16s%2Fg%2F11snl3dvfv!19sChIJf2HkJ2IvMTARayxbFqayM3M?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.593052,
+      "longitude": 98.6462057
+    }
+  },
+  "zeGvOWcQ": {
+    "name": "LONTONG MEDAN | KARI ATJEH SPECIAL",
+    "rating": 4.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "WARKOP BANG AGAM, Jl. Batang Kuis Pasar VI, Kualanamo, Kec. Beringin, Kabupaten Deli Serdang, Sumatera Utara 20552",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/LONTONG+MEDAN+%7C+KARI+ATJEH+SPECIAL/data=!4m7!3m6!1s0x303149438f82c8c3:0xf4dbb95e11a32e15!8m2!3d3.6015828!4d98.858369!16s%2Fg%2F11vpp1sqwt!19sChIJw8iCj0NJMTARFS6jEV652_Q?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6015828,
+      "longitude": 98.858369
+    }
+  },
+  "hH9j3nPp": {
+    "name": "Nasi Kari Helmi",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Jl. Wiroto No.8, Perintis, Kec. Medan Tim., Kota Medan, Sumatera Utara 20233",
+    "opening_hours": {
+      "Senin": "07.00-09.30",
+      "Selasa": "07.00-09.30",
+      "Rabu": "07.00-09.30",
+      "Kamis": "07.00-09.30",
+      "Jumat": "07.00-09.30",
+      "Sabtu": "07.00-09.30",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Kari+Helmi/data=!4m7!3m6!1s0x303131bd72053c21:0x88e29f49a70c2901!8m2!3d3.5993311!4d98.6909866!16s%2Fg%2F11gd20q2jx!19sChIJITwFcr0xMTARASkMp0mf4og?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5993311,
+      "longitude": 98.6909866
+    }
+  },
+  "cdEEL3gm": {
+    "name": "Kari Bebek Cirasa",
+    "rating": 5.0,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "Jl. Gatot Subroto No.92 timur .2, Seputih, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111",
+    "opening_hours": {
+      "Senin": "18.00-00.00",
+      "Selasa": "18.00-00.00",
+      "Rabu": "18.00-00.00",
+      "Kamis": "18.00-00.00",
+      "Jumat": "18.00-00.00",
+      "Sabtu": "18.00-00.00",
+      "Minggu": "18.00-00.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Kari+Bebek+Cirasa/data=!4m7!3m6!1s0x30312e2806b73471:0xe24ea77d08173f3d!8m2!3d3.5905282!4d98.6597001!16s%2Fg%2F11hcw7_6yp!19sChIJcTS3BiguMTARPT8XCH2nTuI?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5905282,
+      "longitude": 98.6597001
+    }
+  },
+  "JEnXgdLf": {
+    "name": "Toko Nasi Kari Bebek Dan Sop Buntut Acong",
+    "rating": 5.0,
+    "rating_amount": 6,
+    "price_range": null,
+    "address": "jl.metal raya no.13-16(ruko hijau 5pt)/sebelah komp.residence krakatau ujung kel.medan timur kec.pulo, Pulo Brayan Bengkel, Kec. Medan Tim., Kota Medan, Sumatera Utara 20241",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "06.00-12.00",
+      "Rabu": "06.00-12.00",
+      "Kamis": "06.00-12.00",
+      "Jumat": "06.00-12.00",
+      "Sabtu": "06.00-12.00",
+      "Minggu": "06.00-20.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Toko+Nasi+Kari+Bebek+Dan+Sop+Buntut+Acong/data=!4m7!3m6!1s0x30313238149c9969:0x8d466a5a43ab864a!8m2!3d3.6393956!4d98.6920557!16s%2Fg%2F11f39pchcz!19sChIJaZmcFDgyMTARSoarQ1pqRo0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6393956,
+      "longitude": 98.6920557
+    }
+  },
+  "Y9Z7VMEJ": {
+    "name": "Rm Kari Kambing 188 Marelan",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Helvetia, Kec. Labuhan Deli, Kabupaten Deli Serdang, Sumatera Utara",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Rm+Kari+Kambing+188+Marelan/data=!4m7!3m6!1s0x30312d7f16a58981:0xe296e3cfd8d25124!8m2!3d3.6624298!4d98.6562335!16s%2Fg%2F11vdp2cp89!19sChIJgYmlFn8tMTARJFHS2M_jluI?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6624298,
+      "longitude": 98.6562335
+    }
+  },
+  "UdcHmT6Y": {
+    "name": "Kari Kambing \" IBU \"",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Jl. Jend. Sudirman, Perdamaian, Kec. Stabat, Kabupaten Langkat, Sumatera Utara",
+    "opening_hours": {
+      "Senin": "09.30-20.30",
+      "Selasa": "09.30-20.30",
+      "Rabu": "09.30-20.30",
+      "Kamis": "09.30-20.30",
+      "Jumat": "09.30-20.30",
+      "Sabtu": "09.30-20.30",
+      "Minggu": "09.30-20.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Kari+Kambing+%22+IBU+%22/data=!4m7!3m6!1s0x30372b163535df9f:0x985146827b89a89d!8m2!3d3.7502654!4d98.4721224!16s%2Fg%2F11y4_xr09m!19sChIJn981NRYrNzARnaiJe4JGUZg?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.7502654,
+      "longitude": 98.4721224
+    }
+  },
+  "mv093JuN": {
+    "name": "Nasi Kari Bebek Bu Eka",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Jl. Rahayu, Bandar Klippa, Kec. Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara 20371",
+    "opening_hours": {
+      "Senin": "16.00-22.00",
+      "Selasa": "16.00-22.00",
+      "Rabu": "16.00-22.00",
+      "Kamis": "Tutup",
+      "Jumat": "16.00-22.00",
+      "Sabtu": "16.00-22.00",
+      "Minggu": "09.00-14.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Kari+Bebek+Bu+Eka/data=!4m7!3m6!1s0x3031354f65e4e2dd:0xdbe896351847760b!8m2!3d3.6203391!4d98.7570126!16s%2Fg%2F11l2k47zd6!19sChIJ3eLkZU81MTARC3ZHGDWW6Ns?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6203391,
+      "longitude": 98.7570126
+    }
+  },
+  "vQ8LIbTL": {
+    "name": "Pondok sop soto kari",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "Jl. Perintis Kemerdekaan No.24, Medan Krio, Kec. Sunggal, Kabupaten Deli Serdang, Sumatera Utara 20351",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Pondok+sop+soto+kari/data=!4m7!3m6!1s0x303129f79a91ec19:0x2d3482b563f56b47!8m2!3d3.5964684!4d98.5631933!16s%2Fg%2F11ft9x388h!19sChIJGeyRmvcpMTARR2v1Y7WCNC0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5964684,
+      "longitude": 98.5631933
+    }
+  },
+  "xBsqrSik": {
+    "name": "Warmindo Kari Paten",
+    "rating": 4.8,
+    "rating_amount": 5,
+    "price_range": null,
+    "address": "HPP4+Q49, Jl. Asia Indah, Sukaramai II, Kec. Medan Area, Kota Medan, Sumatera Utara 20224",
+    "opening_hours": {
+      "Senin": "08.00-20.00",
+      "Selasa": "08.00-20.00",
+      "Rabu": "08.00-20.00",
+      "Kamis": "08.00-20.00",
+      "Jumat": "08.00-20.00",
+      "Sabtu": "08.00-20.00",
+      "Minggu": "08.00-20.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warmindo+Kari+Paten/data=!4m7!3m6!1s0x303131617f4425e5:0x70ff5ee055e32f3d!8m2!3d3.5869046!4d98.7053737!16s%2Fg%2F11kkm88mx7!19sChIJ5SVEf2ExMTARPS_jVeBe_3A?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5869046,
+      "longitude": 98.7053737
+    }
+  },
+  "rabfjzc6": {
+    "name": "Soto Padang Linda Bihun Kari",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Glugur Darat I, Kec. Medan Tim., Kota Medan, Sumatera Utara",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Soto+Padang+Linda+Bihun+Kari/data=!4m7!3m6!1s0x303131f44479097d:0x7b06e348bd58028a!8m2!3d3.6170728!4d98.6784216!16s%2Fg%2F11r_vnr879!19sChIJfQl5RPQxMTARigJYvUjjBns?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6170728,
+      "longitude": 98.6784216
+    }
+  },
+  "POooUTY4": {
+    "name": "Warung Kari Kambing Dan Sop Bu Ani",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Jl. Suasa Tengah Pasar IV Kel No.24, Mabar Hilir, Kec. Medan Deli, Kota Medan, Sumatera Utara 20242",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Kari+Kambing+Dan+Sop+Bu+Ani/data=!4m7!3m6!1s0x3031339113dcb4f5:0xbbbc135b5622cda8!8m2!3d3.65108!4d98.6922602!16s%2Fg%2F11jhrzbj53!19sChIJ9bTcE5EzMTARqM0iVlsTvLs?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.65108,
+      "longitude": 98.6922602
+    }
+  },
+  "n0bmmKAj": {
+    "name": "Warung Nasi, Sop dan Kari Pak Sanusi",
+    "rating": 3.5,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "Jl. Krakatau Ujung No.100, Tj. Mulia, Kec. Medan Deli, Kota Medan, Sumatera Utara 20241",
+    "opening_hours": {
+      "Senin": "09.00-17.00",
+      "Selasa": "09.00-17.00",
+      "Rabu": "09.00-17.00",
+      "Kamis": "09.00-17.00",
+      "Jumat": "09.00-17.00",
+      "Sabtu": "09.00-17.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Nasi,+Sop+dan+Kari+Pak+Sanusi/data=!4m7!3m6!1s0x303133bf0b07e7c1:0x999f1a2e9ac05102!8m2!3d3.6400047!4d98.6811129!16s%2Fg%2F11t0lzhc5g!19sChIJwecHC78zMTARAlHAmi4an5k?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6400047,
+      "longitude": 98.6811129
+    }
+  },
+  "8tknn4aQ": {
+    "name": "Feng Huang Kari & Soto",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "JPM2+HH5, Jl. Boulevard Timur, Medan Estate, Kec. Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara 20371",
+    "opening_hours": {
+      "Senin": "06.15-23.15",
+      "Selasa": "06.15-23.15",
+      "Rabu": "06.15-23.15",
+      "Kamis": "06.15-23.15",
+      "Jumat": "06.15-23.15",
+      "Sabtu": "06.15-23.15",
+      "Minggu": "06.15-23.15"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Feng+Huang+Kari+%26+Soto/data=!4m7!3m6!1s0x3031336b5384dbf7:0x2b15fe4696115672!8m2!3d3.6338853!4d98.7014724!16s%2Fg%2F11j4rw20_b!19sChIJ99uEU2szMTARclYRlkb-FSs?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6338853,
+      "longitude": 98.7014724
+    }
+  },
+  "PfI89rtm": {
+    "name": "RM KARSOT ( KARI SOTO )",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Jl. Negara No.9, Pahlawan, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20224",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "07.30-14.00",
+      "Rabu": "07.30-14.00",
+      "Kamis": "07.30-14.00",
+      "Jumat": "07.30-14.00",
+      "Sabtu": "07.30-14.00",
+      "Minggu": "07.30-14.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/RM+KARSOT+%28+KARI+SOTO+%29/data=!4m7!3m6!1s0x303131cd2460c327:0x1974e78a395d442f!8m2!3d3.5899243!4d98.7047353!16s%2Fg%2F11h7k6ty6y!19sChIJJ8NgJM0xMTARL0RdOYrndBk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5899243,
+      "longitude": 98.7047353
+    }
+  },
+  "y4hlHhFc": {
+    "name": "Akuang Kari Bihun",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. Selam IV No.98, Tegal Sari I, Kec. Medan Area, Kota Medan, Sumatera Utara 20224",
+    "opening_hours": {
+      "Senin": "11.00-23.00",
+      "Selasa": "11.00-23.00",
+      "Rabu": "11.00-23.00",
+      "Kamis": "11.00-23.00",
+      "Jumat": "11.00-23.00",
+      "Sabtu": "11.00-23.00",
+      "Minggu": "11.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Akuang+Kari+Bihun/data=!4m7!3m6!1s0x303131d7be576f7d:0x3b1471bf4dd57125!8m2!3d3.5849548!4d98.7072554!16s%2Fg%2F11fcqldlrc!19sChIJfW9XvtcxMTARJXHVTb9xFDs?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5849548,
+      "longitude": 98.7072554
+    }
+  },
+  "3Bd42GE1": {
+    "name": "Soto Sop Kari Bireuen Aceh",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "Jl. Amal No.13-17, Sunggal, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20127",
+    "opening_hours": {
+      "Senin": "09.00-18.00",
+      "Selasa": "09.00-18.00",
+      "Rabu": "09.00-18.00",
+      "Kamis": "09.00-18.00",
+      "Jumat": "09.00-18.00",
+      "Sabtu": "09.00-18.00",
+      "Minggu": "09.00-18.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Soto+Sop+Kari+Bireuen+Aceh/data=!4m7!3m6!1s0x30312ffce08c4d1f:0xfc5bfb4dabe7c159!8m2!3d3.5854947!4d98.6158234!16s%2Fg%2F11gh7csnh_!19sChIJH02M4PwvMTARWcHnq037W_w?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5854947,
+      "longitude": 98.6158234
+    }
+  },
+  "ftwf24K8": {
+    "name": "Mi Rebus Hok Lai (mlm kari bihun)",
+    "rating": 4.6,
+    "rating_amount": 189,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Bambu I No.52, Durian, Kec. Medan Tim., Kota Medan, Sumatera Utara 20236",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "08.00-19.00",
+      "Rabu": "08.00-19.00",
+      "Kamis": "08.00-19.00",
+      "Jumat": "08.00-19.00",
+      "Sabtu": "08.00-19.00",
+      "Minggu": "08.00-19.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Mi+Rebus+Hok+Lai+%28mlm+kari+bihun%29/data=!4m7!3m6!1s0x303131ec97b1331d:0x738045e376a59d4d!8m2!3d3.606226!4d98.6805814!16s%2Fg%2F11dx93fl4b!19sChIJHTOxl-wxMTARTZ2lduNFgHM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.606226,
+      "longitude": 98.6805814
+    }
+  },
+  "9UhID6z9": {
+    "name": "RM Khas Aceh Rayeuk",
+    "rating": 4.6,
+    "rating_amount": 21,
+    "price_range": "Rp 25-50 rb",
+    "address": "Alfamart, Jl. Sunggal depan No.239, Tj. Rejo, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20122",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Drive-through",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/RM+Khas+Aceh+Rayeuk/data=!4m7!3m6!1s0x30312fcd063cd03d:0xbe8417ff309cfc87!8m2!3d3.5787681!4d98.6292411!16s%2Fg%2F11q23fxnwk!19sChIJPdA8Bs0vMTARh_ycMP8XhL4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5787681,
+      "longitude": 98.6292411
+    }
+  },
+  "nZzuTzq4": {
+    "name": "Spesial Sop & Kari Rumah Makan",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": "Jl. Gatot Subroto No.23, Sei Sikambing D, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20112",
+    "opening_hours": {
+      "Senin": "10.00-21.30",
+      "Selasa": "10.00-21.30",
+      "Rabu": "10.00-21.30",
+      "Kamis": "10.00-21.30",
+      "Jumat": "10.00-21.30",
+      "Sabtu": "10.00-21.30",
+      "Minggu": "10.00-21.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Spesial+Sop+%26+Kari+Rumah+Makan/data=!4m7!3m6!1s0x30312e2f48bbd279:0x698830f44b05a51f!8m2!3d3.5896843!4d98.6539326!16s%2Fg%2F1pzsd59vn!19sChIJedK7SC8uMTARH6UFS_QwiGk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5896843,
+      "longitude": 98.6539326
+    }
+  },
+  "mJlmX0wD": {
+    "name": "Lemui Bagan",
+    "rating": 4.0,
+    "rating_amount": 30,
+    "price_range": "Rp 50-75 rb",
+    "address": "Jl. Gajah No.7, Pandau Hulu II, Kec. Medan Area, Kota Medan, Sumatera Utara 20241",
+    "opening_hours": {
+      "Senin": "06.00-12.30",
+      "Selasa": "06.00-12.30",
+      "Rabu": "06.00-12.30",
+      "Kamis": "06.00-12.30",
+      "Jumat": "06.00-12.30",
+      "Sabtu": "06.00-12.30",
+      "Minggu": "06.00-12.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Lemui+Bagan/data=!4m7!3m6!1s0x3031310edad3ed9f:0x2d3ba0ad3079b423!8m2!3d3.5929951!4d98.6960995!16s%2Fg%2F11fkr47fl7!19sChIJn-3T2g4xMTARI7R5MK2gOy0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5929951,
+      "longitude": 98.6960995
+    }
+  },
+  "oM9A8W3w": {
+    "name": "Soto Betawi dan Kari Medan Mamake",
+    "rating": 5.0,
+    "rating_amount": 6,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Cut Mutia No.22, Madras Hulu, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20212",
+    "opening_hours": {
+      "Senin": "11.00-21.00",
+      "Selasa": "11.00-21.00",
+      "Rabu": "11.00-21.00",
+      "Kamis": "11.00-21.00",
+      "Jumat": "11.00-21.00",
+      "Sabtu": "11.00-21.00",
+      "Minggu": "11.00-21.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Soto+Betawi+dan+Kari+Medan+Mamake/data=!4m7!3m6!1s0x3031310001c8e0c9:0xc4a74abd4467e851!8m2!3d3.5800962!4d98.6759045!16s%2Fg%2F11vr1_qvxt!19sChIJyeDIAQAxMTARUehnRL1Kp8Q?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5800962,
+      "longitude": 98.6759045
+    }
+  },
+  "474J3JXf": {
+    "name": "Martabak Mesir Barokah Kuah Kari Bang Harun",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "Jl. Kasuari No.12, Sei Sikambing B, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20119",
+    "opening_hours": {
+      "Senin": "11.00-22.00",
+      "Selasa": "11.00-22.00",
+      "Rabu": "11.00-22.00",
+      "Kamis": "11.00-22.00",
+      "Jumat": "11.00-22.00",
+      "Sabtu": "11.00-22.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Martabak+Mesir+Barokah+Kuah+Kari+Bang+Harun/data=!4m7!3m6!1s0x30312f0009dde0f9:0x6afe2d17a53fd0cf!8m2!3d3.584301!4d98.639815!16s%2Fg%2F11y4nscyb2!19sChIJ-eDdCQAvMTARz9A_pRct_mo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.584301,
+      "longitude": 98.639815
+    }
+  },
+  "GeA4HZ2I": {
+    "name": "Ojisan curry",
+    "rating": 4.5,
+    "rating_amount": 17,
+    "price_range": null,
+    "address": "Jl. Yose Rizal No.48, Sei Rengas I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": {
+      "Senin": "10.00-21.30",
+      "Selasa": "10.00-21.30",
+      "Rabu": "10.00-21.30",
+      "Kamis": "10.00-21.30",
+      "Jumat": "10.00-21.30",
+      "Sabtu": "10.00-21.30",
+      "Minggu": "10.00-21.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Ojisan+curry/data=!4m7!3m6!1s0x30313035d722915d:0x6b274d559272663f!8m2!3d3.5817726!4d98.6896971!16s%2Fg%2F11cjhznmdt!19sChIJXZEi1zUwMTARP2ZyklVNJ2s?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5817726,
+      "longitude": 98.6896971
+    }
+  },
+  "W1enDejr": {
+    "name": "Warung Humairoh S.S.K. (Sop, Soto, Kari)",
+    "rating": 4.7,
+    "rating_amount": 311,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Kantil, Hamdan, Kec. Medan Maimun, Kota Medan, Sumatera Utara 20212",
+    "opening_hours": {
+      "Senin": "11.45-15.45",
+      "Selasa": "11.45-15.45",
+      "Rabu": "11.45-15.45",
+      "Kamis": "11.45-15.45",
+      "Jumat": "11.45-15.45",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Humairoh+S.S.K.+%28Sop,+Soto,+Kari%29/data=!4m7!3m6!1s0x303130359c4c67f5:0x9e595237110fbe55!8m2!3d3.5777154!4d98.681223!16s%2Fg%2F11csb24jln!19sChIJ9WdMnDUwMTARVb4PETdSWZ4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5777154,
+      "longitude": 98.681223
+    }
+  },
+  "lfxcGne0": {
+    "name": "Sop Soto Kari Darussalam",
+    "rating": null,
+    "rating_amount": null,
+    "price_range": null,
+    "address": null,
+    "opening_hours": null,
+    "services": [],
+    "links": "https://www.google.com/maps/place/Sop+Soto+Kari+Darussalam/data=!4m7!3m6!1s0x30312f00474dc107:0xd08d97ce314651bd!8m2!3d3.5847746!4d98.6513531!16s%2Fg%2F11y4mzg_0l!19sChIJB8FNRwAvMTARvVFGMc6XjdA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5847746,
+      "longitude": 98.6513531
+    }
+  },
+  "Mn4Wko0F": {
+    "name": "Kabi Bebek Mie Aceh Nasi Goreng Martabak Telor",
+    "rating": 4.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Sei Sikambing B, Kec. Medan Sunggal, Kota Medan, Sumatera Utara",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Kabi+Bebek+Mie+Aceh+Nasi+Goreng+Martabak+Telor/data=!4m7!3m6!1s0x30312e4e1e07f311:0x49223616cb1ccebe!8m2!3d3.5868592!4d98.6271008!16s%2Fg%2F11fnnn2ft1!19sChIJEfMHHk4uMTARvs4cyxY2Ikk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5868592,
+      "longitude": 98.6271008
+    }
+  },
+  "652zx5v6": {
+    "name": "Kari 168",
+    "rating": 4.4,
+    "rating_amount": 21,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Yose Rizal No.110, Sei Rengas I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": {
+      "Senin": "08.00-16.00",
+      "Selasa": "08.00-16.00",
+      "Rabu": "08.00-16.00",
+      "Kamis": "08.00-16.00",
+      "Jumat": "08.00-16.00",
+      "Sabtu": "08.00-16.00",
+      "Minggu": "08.00-16.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Kari+168/data=!4m7!3m6!1s0x3031313fd3437d31:0xa22742648c49602!8m2!3d3.5829666!4d98.6921929!16s%2Fg%2F11fksmwgbj!19sChIJMX1D0z8xMTARApbESCZ0Igo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5829666,
+      "longitude": 98.6921929
+    }
+  }
+}

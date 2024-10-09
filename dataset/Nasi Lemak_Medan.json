@@ -1,0 +1,457 @@
+{
+  "AwEtE3YW": {
+    "name": "Nasi Lemak beruang apok",
+    "rating": 4.5,
+    "rating_amount": 21,
+    "price_range": null,
+    "address": "",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+beruang+apok/data=!4m7!3m6!1s0x30313238f4f7b1c7:0xceb8ff483a03169d!8m2!3d3.6392136!4d98.6900717!16s%2Fg%2F11c7vtmx3l!19sChIJx7H39DgyMTARnRYDOkj_uM4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6392136,
+      "longitude": 98.6900717
+    }
+  },
+  "3TUORm9d": {
+    "name": "Non halal (mengandung babi)",
+    "rating": 4.4,
+    "rating_amount": 117,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Beruang Dalam, Pandau Hulu I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20233",
+    "opening_hours": {
+      "Senin": "05.30-11.30",
+      "Selasa": "05.30-11.30",
+      "Rabu": "05.30-11.30",
+      "Kamis": "05.30-11.30",
+      "Jumat": "05.30-11.30",
+      "Sabtu": "05.30-11.30",
+      "Minggu": "05.30-11.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Non+halal+%28mengandung+babi%29/data=!4m7!3m6!1s0x303131a90380df43:0x3089a0b111965fdd!8m2!3d3.591818!4d98.6952424!16s%2Fg%2F11g7y9xy5v!19sChIJQ9-AA6kxMTAR3V-WEbGgiTA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.591818,
+      "longitude": 98.6952424
+    }
+  },
+  "T6SEDw3N": {
+    "name": "Nasi Lemak Aceh AYUNG - Pasar Rame",
+    "rating": 4.6,
+    "rating_amount": 10,
+    "price_range": null,
+    "address": "Jl. Asia Baru No.36, Sei Rengas II, Kec. Medan Area, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": {
+      "Senin": "05.30-12.30",
+      "Selasa": "05.30-12.30",
+      "Rabu": "05.30-12.30",
+      "Kamis": "05.30-12.30",
+      "Jumat": "05.30-12.30",
+      "Sabtu": "05.30-12.30",
+      "Minggu": "05.30-12.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Aceh+AYUNG+-+Pasar+Rame/data=!4m7!3m6!1s0x30313175067381e5:0xa3c0dac9789ff9c9!8m2!3d3.5856554!4d98.6927428!16s%2Fg%2F11hyjdc_v0!19sChIJ5YFzBnUxMTARyfmfeMnawKM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5856554,
+      "longitude": 98.6927428
+    }
+  },
+  "HMYS3Whz": {
+    "name": "Nasi Lemak Beruang Apok",
+    "rating": 4.6,
+    "rating_amount": 18,
+    "price_range": "Rp 25-50 rb",
+    "address": "restorant good luck, Komplek cemara asri, Medan Estate, Kec. Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara 20221",
+    "opening_hours": {
+      "Senin": "06.15-11.00",
+      "Selasa": "06.15-11.00",
+      "Rabu": "06.15-11.00",
+      "Kamis": "06.15-11.00",
+      "Jumat": "06.15-11.00",
+      "Sabtu": "06.15-11.00",
+      "Minggu": "06.15-12.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Beruang+Apok/data=!4m7!3m6!1s0x3031332ed34730e5:0x875a29e903d8dd3d!8m2!3d3.634168!4d98.7010022!16s%2Fg%2F11gy84mbvg!19sChIJ5TBH0y4zMTARPd3YA-kpWoc?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.634168,
+      "longitude": 98.7010022
+    }
+  },
+  "elvRvm4y": {
+    "name": "Nasi Lemak & Lontong Sayur Ai Apau",
+    "rating": 4.6,
+    "rating_amount": 21,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Danau Melintang Ujung No.168-170, Sei Agul, Kec. Medan Bar., Kota Medan, Sumatera Utara 20114",
+    "opening_hours": {
+      "Senin": "06.30-11.00",
+      "Selasa": "06.30-11.00",
+      "Rabu": "06.30-11.00",
+      "Kamis": "06.30-11.00",
+      "Jumat": "06.30-11.00",
+      "Sabtu": "06.30-11.00",
+      "Minggu": "06.30-11.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+%26+Lontong+Sayur+Ai+Apau/data=!4m7!3m6!1s0x30312e1e7c8f0c09:0xf664ba7fd5949265!8m2!3d3.6051714!4d98.6575908!16s%2Fg%2F11gdm6knnx!19sChIJCQyPfB4uMTARZZKU1X-6ZPY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6051714,
+      "longitude": 98.6575908
+    }
+  },
+  "AtnnfJ6H": {
+    "name": "Nasi Lemak Sambu Baru",
+    "rating": 4.7,
+    "rating_amount": 7,
+    "price_range": null,
+    "address": "Jl. Danau Jempang No.20, Sei Agul, Kec. Medan Bar., Kota Medan, Sumatera Utara 20117",
+    "opening_hours": {
+      "Senin": "06.00-12.00",
+      "Selasa": "06.00-12.00",
+      "Rabu": "06.00-12.00",
+      "Kamis": "06.00-12.00",
+      "Jumat": "06.00-12.00",
+      "Sabtu": "06.00-12.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Sambu+Baru/data=!4m7!3m6!1s0x30312f36c3c1a125:0x76c8a3eb340e77b8!8m2!3d3.6054636!4d98.6588496!16s%2Fg%2F11sgn6mt4x!19sChIJJaHBwzYvMTARuHcONOujyHY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6054636,
+      "longitude": 98.6588496
+    }
+  },
+  "PpwUphZ8": {
+    "name": "Nasi lemak Aling Tilak",
+    "rating": 4.8,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "HMJQ+9J5, Jl. Wushu, Sei Rengas I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": {
+      "Senin": "06.00-10.00",
+      "Selasa": "06.00-10.00",
+      "Rabu": "06.00-10.00",
+      "Kamis": "06.00-10.00",
+      "Jumat": "06.00-10.00",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+lemak+Aling+Tilak/data=!4m7!3m6!1s0x30313117e83a8b05:0x9a99e51afe2c453f!8m2!3d3.5808823!4d98.6891191!16s%2Fg%2F11fwgv8sy6!19sChIJBYs66BcxMTARP0Us_hrlmZo?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5808823,
+      "longitude": 98.6891191
+    }
+  },
+  "4oZ2gHs7": {
+    "name": "Nasi Lemak Buk AS",
+    "rating": 4.7,
+    "rating_amount": 7,
+    "price_range": null,
+    "address": "PMQG+XC2, Jl. Swadaya, Pekan Labuhan, Kec. Medan Labuhan, Kota Medan, Sumatera Utara 20253",
+    "opening_hours": {
+      "Senin": "07.00-10.00",
+      "Selasa": "07.00-10.00",
+      "Rabu": "07.00-10.00",
+      "Kamis": "07.00-10.00",
+      "Jumat": "07.00-10.00",
+      "Sabtu": "07.00-10.00",
+      "Minggu": "07.00-10.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Buk+AS/data=!4m7!3m6!1s0x3036cd760da654b5:0xbffc141cd973d541!8m2!3d3.7398763!4d98.6760264!16s%2Fg%2F11gbxzz92y!19sChIJtVSmDXbNNjARQdVz2RwU_L8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.7398763,
+      "longitude": 98.6760264
+    }
+  },
+  "BebZIGWQ": {
+    "name": "Nasi Lemak Sunggal",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "HJG8+Q3X, Sunggal, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20127",
+    "opening_hours": {
+      "Senin": "07.00-17.00",
+      "Selasa": "07.00-17.00",
+      "Rabu": "07.00-17.00",
+      "Kamis": "07.00-17.00",
+      "Jumat": "07.00-17.00",
+      "Sabtu": "07.00-17.00",
+      "Minggu": "07.00-17.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Sunggal/data=!4m7!3m6!1s0x30312f0afd48a4c9:0x13894e753bf3e035!8m2!3d3.5769998!4d98.6152433!16s%2Fg%2F11fhqnwr11!19sChIJyaRI_QovMTARNeDzO3VOiRM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5769998,
+      "longitude": 98.6152433
+    }
+  },
+  "TV7toknn": {
+    "name": "Nasi Lemak Pandan 88",
+    "rating": 4.7,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "Jl. Sutomo No.31 M, RW.02, Pusat Ps., Kec. Medan Kota, Kota Medan, Sumatera Utara 20212",
+    "opening_hours": {
+      "Senin": "07.00-20.30",
+      "Selasa": "Tutup",
+      "Rabu": "07.00-20.30",
+      "Kamis": "07.00-20.30",
+      "Jumat": "07.00-20.30",
+      "Sabtu": "07.00-20.30",
+      "Minggu": "07.00-20.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Ambil di tepi jalan",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Pandan+88/data=!4m7!3m6!1s0x3031319e65f90c55:0x2681038144b76502!8m2!3d3.5861615!4d98.6864125!16s%2Fg%2F11kx2vtdqk!19sChIJVQz5ZZ4xMTARAmW3RIEDgSY?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5861615,
+      "longitude": 98.6864125
+    }
+  },
+  "mO9WgUR5": {
+    "name": "Nasi Lemak Upin Ipin",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. Air Bersih No.89, Sudirejo I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20226",
+    "opening_hours": {
+      "Senin": "06.00-02.00",
+      "Selasa": "06.00-02.00",
+      "Rabu": "06.00-02.00",
+      "Kamis": "06.00-02.00",
+      "Jumat": "06.00-02.00",
+      "Sabtu": "06.00-02.00",
+      "Minggu": "06.00-02.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Upin+Ipin/data=!4m7!3m6!1s0x303131be6b08a6e5:0x192224d8566d1ed4!8m2!3d3.5592765!4d98.7019375!16s%2Fg%2F11v0x7q110!19sChIJ5aYIa74xMTAR1B5tVtgkIhk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5592765,
+      "longitude": 98.7019375
+    }
+  },
+  "6axI2YcZ": {
+    "name": "Buk pida nasi lemak",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. Masjid, Pekan Labuhan, Kec. Medan Labuhan, Kota Medan, Sumatera Utara 20253",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Buk+pida+nasi+lemak/data=!4m7!3m6!1s0x3036cd284477d3c7:0xf30990a21dd0ef5c!8m2!3d3.7442721!4d98.6735414!16s%2Fg%2F11fnynxphy!19sChIJx9N3RCjNNjARXO_QHaKQCfM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.7442721,
+      "longitude": 98.6735414
+    }
+  },
+  "JuM5QIaN": {
+    "name": "Agu Nasi Lemak Pagi",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. Selam IV No.40c, RW.02, Tegal Sari Mandala I, Kec. Medan Denai, Kota Medan, Sumatera Utara 20226",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Agu+Nasi+Lemak+Pagi/data=!4m7!3m6!1s0x303131b045346ff9:0xba537ad1ea8e5bb0!8m2!3d3.5850984!4d98.7076655!16s%2Fg%2F11g4fr9q4l!19sChIJ-W80RbAxMTARsFuO6tF6U7o?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5850984,
+      "longitude": 98.7076655
+    }
+  },
+  "7oEoA5Nf": {
+    "name": "Nasi Lemak Aling",
+    "rating": 4.5,
+    "rating_amount": 4,
+    "price_range": null,
+    "address": "Jl. Brig Jend. Zein Hamid Gg. Chandra No.57, Titi Kuning, Kec. Medan Johor, Kota Medan, Sumatera Utara 20147",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Aling/data=!4m7!3m6!1s0x30313b112b82b8cd:0x626b781518ca1f70!8m2!3d3.5295231!4d98.6877655!16s%2Fg%2F11sfqgl18b!19sChIJzbiCKxE7MTARcB_KGBV4a2I?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5295231,
+      "longitude": 98.6877655
+    }
+  },
+  "RmCtPoet": {
+    "name": "Nasi Lemak Singapore Warung Metta",
+    "rating": 5.0,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "Jl. Bukit Barisan II No.45C, Glugur Darat I, Kec. Medan Tim., Kota Medan, Sumatera Utara 20238",
+    "opening_hours": {
+      "Senin": "06.30-14.00",
+      "Selasa": "06.30-14.00",
+      "Rabu": "06.30-14.00",
+      "Kamis": "06.30-14.00",
+      "Jumat": "06.30-14.00",
+      "Sabtu": "06.30-14.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Singapore+Warung+Metta/data=!4m7!3m6!1s0x303131034e5b7777:0xf1e79f404d74c325!8m2!3d3.6139332!4d98.6813175!16s%2Fg%2F11g23686fj!19sChIJd3dbTgMxMTARJcN0TUCf5_E?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6139332,
+      "longitude": 98.6813175
+    }
+  },
+  "sGnGDtaw": {
+    "name": "Nasi Lemak Cun Cun",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "GMPM+VMP, Jl. Brigjend Zein Hamid, Titi Kuning, Kec. Medan Johor, Kota Medan, Sumatera Utara",
+    "opening_hours": null,
+    "services": [
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+Lemak+Cun+Cun/data=!4m7!3m6!1s0x30313b000e970155:0x24d6eb6e345867f9!8m2!3d3.5372193!4d98.6841997!16s%2Fg%2F11vz212lm1!19sChIJVQGXDgA7MTAR-WdYNG7r1iQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5372193,
+      "longitude": 98.6841997
+    }
+  },
+  "9nmw2KKH": {
+    "name": "Jefri nasi lemak",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "Jl. Waringin No.56, Sekip, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20234",
+    "opening_hours": {
+      "Senin": "09.00-17.00",
+      "Selasa": "09.00-17.00",
+      "Rabu": "09.00-17.00",
+      "Kamis": "09.00-17.00",
+      "Jumat": "09.00-17.00",
+      "Sabtu": "09.00-17.00",
+      "Minggu": "09.00-17.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Jefri+nasi+lemak/data=!4m7!3m6!1s0x3031315d8982cdd1:0xdcdd5b76b67ae65f!8m2!3d3.5993341!4d98.6679418!16s%2Fg%2F11h2g6cd1c!19sChIJ0c2CiV0xMTARX-Z6tnZb3dw?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5993341,
+      "longitude": 98.6679418
+    }
+  },
+  "UyTUTbnS": {
+    "name": "Nasi lemak",
+    "rating": 5.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. Jemadi No.21, Pulo Brayan Darat II, Kec. Medan Tim., Kota Medan, Sumatera Utara 20239",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+lemak/data=!4m7!3m6!1s0x3031330036c671af:0xc118d1e07a7354a!8m2!3d3.626058!4d98.6744708!16s%2Fg%2F11vwstb6gt!19sChIJr3HGNgAzMTARSjWnBx6NEQw?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.626058,
+      "longitude": 98.6744708
+    }
+  },
+  "R6qmexlB": {
+    "name": "Nasi lemak,lontong hj hajrah",
+    "rating": 5.0,
+    "rating_amount": 2,
+    "price_range": null,
+    "address": "Komplek Cemara Asri, Jl. Boulevard Raya No.71, Medan Estate, Kec. Percut Sei Tuan, Kabupaten Deli Serdang, Sumatera Utara 20731",
+    "opening_hours": {
+      "Senin": "06.30-10.30",
+      "Selasa": "06.30-10.30",
+      "Rabu": "06.30-10.30",
+      "Kamis": "06.30-10.30",
+      "Jumat": "06.30-10.30",
+      "Sabtu": "06.30-10.30",
+      "Minggu": "04.30-21.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Nasi+lemak,lontong+hj+hajrah/data=!4m7!3m6!1s0x303133fdc384a2b1:0x1203d9e7da9b64b4!8m2!3d3.6316589!4d98.7055523!16s%2Fg%2F11y2ddl98h!19sChIJsaKEw_0zMTARtGSb2ufZAxI?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6316589,
+      "longitude": 98.7055523
+    }
+  },
+  "6mv9mSAw": {
+    "name": "RASA LELUHUR By Nasi Lemak AYUNG & RM.SAMUDRA",
+    "rating": 4.6,
+    "rating_amount": 412,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Bintang, Pandau Hilir, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20232",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/RASA+LELUHUR+By+Nasi+Lemak+AYUNG+%26+RM.SAMUDRA/data=!4m7!3m6!1s0x303131b945bd478b:0x920ceba4d5a81f5!8m2!3d3.5946436!4d98.6865808!16s%2Fg%2F11gbkqg4qj!19sChIJi0e9RbkxMTAR9YFaTbrOIAk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5946436,
+      "longitude": 98.6865808
+    }
+  }
+}

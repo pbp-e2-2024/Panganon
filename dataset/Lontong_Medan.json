@@ -1,0 +1,702 @@
+{
+  "s8uqnKQp": {
+    "name": "Nenek Lontong",
+    "rating": 4.5,
+    "rating_amount": 240,
+    "price_range": "Rp 1-25.000",
+    "address": "",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Nenek+Lontong/data=!4m7!3m6!1s0x30312f91a8e11511:0x3f1508a0c9da86a!8m2!3d3.5548254!4d98.6324182!16s%2Fg%2F11c562y9fz!19sChIJERXhqJEvMTARaqidDIpQ8QM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5548254,
+      "longitude": 98.6324182
+    }
+  },
+  "Mqt0qOxH": {
+    "name": "Lontong Bang Iwan",
+    "rating": 4.4,
+    "rating_amount": 200,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Teuku Cik Ditiro No.9B, Madras Hulu, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20152",
+    "opening_hours": {
+      "Senin": "06.00-11.00",
+      "Selasa": "06.00-11.00",
+      "Rabu": "06.00-11.00",
+      "Kamis": "06.00-11.00",
+      "Jumat": "06.00-11.00",
+      "Sabtu": "06.00-11.00",
+      "Minggu": "06.00-11.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Bang+Iwan/data=!4m7!3m6!1s0x303131d2e80b93df:0x95bbf13fa31a10a5!8m2!3d3.5819013!4d98.6690752!16s%2Fg%2F11c0rr0kbl!19sChIJ35ML6NIxMTARpRAaoz_xu5U?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5819013,
+      "longitude": 98.6690752
+    }
+  },
+  "aTuhAWYa": {
+    "name": "Lontong Bu' Endang (Setia Budi No.99)",
+    "rating": 4.6,
+    "rating_amount": 73,
+    "price_range": null,
+    "address": "Jl. Setia Budi No.99, Tj. Sari, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20132",
+    "opening_hours": {
+      "Senin": "06.00-11.30",
+      "Selasa": "06.00-11.30",
+      "Rabu": "06.00-11.30",
+      "Kamis": "Tutup",
+      "Jumat": "06.00-11.30",
+      "Sabtu": "06.00-11.30",
+      "Minggu": "06.00-11.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Bu%27+Endang+%28Setia+Budi+No.99%29/data=!4m7!3m6!1s0x30312f9f9050ab71:0xd26cb7e54bbc27bf!8m2!3d3.5600297!4d98.6362812!16s%2Fg%2F11j33czf51!19sChIJcatQkJ8vMTARvye8S-W3bNI?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5600297,
+      "longitude": 98.6362812
+    }
+  },
+  "E3TzSdwu": {
+    "name": "Warung lontong bu anik",
+    "rating": 4.6,
+    "rating_amount": 14,
+    "price_range": null,
+    "address": "Jl. Padang No.4-2, Bandar Selamat, Kec. Medan Tembung, Kota Medan, Sumatera Utara 20371",
+    "opening_hours": {
+      "Senin": "06.00-09.30",
+      "Selasa": "06.00-09.30",
+      "Rabu": "06.00-09.30",
+      "Kamis": "06.00-09.30",
+      "Jumat": "06.00-09.30",
+      "Sabtu": "06.00-09.30",
+      "Minggu": "06.00-09.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+lontong+bu+anik/data=!4m7!3m6!1s0x303131856739f707:0x19dde40ad2da5fa5!8m2!3d3.5967876!4d98.7277196!16s%2Fg%2F11gy8jn0pm!19sChIJB_c5Z4UxMTARpV_a0grk3Rk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5967876,
+      "longitude": 98.7277196
+    }
+  },
+  "rqov7UWR": {
+    "name": "Lontong bu butet",
+    "rating": 4.9,
+    "rating_amount": 13,
+    "price_range": null,
+    "address": "JJ4V+HXC, Jl. Gaperta IV, Helvetia Tengah, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20117",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+bu+butet/data=!4m7!3m6!1s0x30312f4034981875:0xce2c2adfef7c0d58!8m2!3d3.6064359!4d98.6448991!16s%2Fg%2F11j960vj7v!19sChIJdRiYNEAvMTARWA18798qLM4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6064359,
+      "longitude": 98.6448991
+    }
+  },
+  "oIRB9ZYD": {
+    "name": "Lontong terenak didunia setia budi",
+    "rating": 4.7,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "komplek, Jl. Taman Setia Budi Indah, Tj. Sari, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20154",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Ambil di tepi jalan",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+terenak+didunia+setia+budi/data=!4m7!3m6!1s0x30312f2e441a3639:0x38883acab295cc5b!8m2!3d3.5672262!4d98.6376746!16s%2Fg%2F11rfl0llvy!19sChIJOTYaRC4vMTARW8yVsso6iDg?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5672262,
+      "longitude": 98.6376746
+    }
+  },
+  "bLKVfJWb": {
+    "name": "Lontong Malam Tosca",
+    "rating": 4.4,
+    "rating_amount": 130,
+    "price_range": "Murah",
+    "address": "",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Tidak menyediakan layanan pengiriman"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Malam+Tosca/data=!4m7!3m6!1s0x30312fd336ecba6d:0x7771ae53250059d5!8m2!3d3.5840215!4d98.6529734!16s%2Fg%2F11csqh8xcx!19sChIJbbrsNtMvMTAR1VkAJVOucXc?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5840215,
+      "longitude": 98.6529734
+    }
+  },
+  "P2Lp15d8": {
+    "name": "Lontong Gang Bu Kasmini",
+    "rating": 4.4,
+    "rating_amount": 130,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Dr. Mansyur No.128, Padang Bulan Selayang I, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20154",
+    "opening_hours": {
+      "Senin": "07.00-23.00",
+      "Selasa": "07.00-23.00",
+      "Rabu": "07.00-23.00",
+      "Kamis": "07.00-23.00",
+      "Jumat": "07.00-23.00",
+      "Sabtu": "07.00-23.00",
+      "Minggu": "07.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Gang+Bu+Kasmini/data=!4m7!3m6!1s0x30312fee090025f5:0x239a0b91f75b917e!8m2!3d3.5676632!4d98.64748!16s%2Fg%2F11fn4m74tq!19sChIJ9SUACe4vMTARfpFb95ELmiM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5676632,
+      "longitude": 98.64748
+    }
+  },
+  "KCFnqDto": {
+    "name": "Lontong Malam Mbak Atik",
+    "rating": 4.4,
+    "rating_amount": 351,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Kenanga Raya No.5, Tj. Sari, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20154",
+    "opening_hours": {
+      "Senin": "03.00-01.00",
+      "Selasa": "03.00-01.00",
+      "Rabu": "03.00-01.00",
+      "Kamis": "03.00-01.00",
+      "Jumat": "03.00-01.00",
+      "Sabtu": "03.00-01.00",
+      "Minggu": "03.00-01.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Malam+Mbak+Atik/data=!4m7!3m6!1s0x30312fbfdd2dfbb3:0x3842e664672af841!8m2!3d3.561396!4d98.6365544!16s%2Fg%2F11c31wb191!19sChIJs_st3b8vMTARQfgqZ2TmQjg?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.561396,
+      "longitude": 98.6365544
+    }
+  },
+  "cJVfplmV": {
+    "name": "LONTONG MEDAN BU RANI (nocabang)",
+    "rating": 4.1,
+    "rating_amount": 299,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jalan Raya Lintas Timur Sumatera No.11 Tanjung Sari, Asam Kumbang, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20133",
+    "opening_hours": {
+      "Senin": "06.30-12.30",
+      "Selasa": "06.30-12.30",
+      "Rabu": "06.30-12.30",
+      "Kamis": "06.30-12.30",
+      "Jumat": "06.30-12.30",
+      "Sabtu": "06.30-12.30",
+      "Minggu": "06.30-12.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/LONTONG+MEDAN+BU+RANI+%28nocabang%29/data=!4m7!3m6!1s0x30312fa3222982ad:0xa0683d29fbc35c1a!8m2!3d3.5636608!4d98.6259182!16s%2Fg%2F11bvcvsfqb!19sChIJrYIpIqMvMTARGlzD-yk9aKA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5636608,
+      "longitude": 98.6259182
+    }
+  },
+  "QfJVjx6T": {
+    "name": "Warung Lontong Mbak Mis",
+    "rating": 4.3,
+    "rating_amount": 37,
+    "price_range": null,
+    "address": "Gg. Mulyo No.49, Pulo Brayan Darat II, Kec. Medan Tim., Kota Medan, Sumatera Utara 20236",
+    "opening_hours": {
+      "Senin": "06.45-12.00",
+      "Selasa": "06.45-12.00",
+      "Rabu": "06.45-12.00",
+      "Kamis": "06.45-12.00",
+      "Jumat": "06.45-12.00",
+      "Sabtu": "06.45-12.00",
+      "Minggu": "06.45-12.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Lontong+Mbak+Mis/data=!4m7!3m6!1s0x30313222091886a3:0x346a6ca6aec729f9!8m2!3d3.6262559!4d98.6823543!16s%2Fg%2F11byl56517!19sChIJo4YYCSIyMTAR-SnHrqZsajQ?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6262559,
+      "longitude": 98.6823543
+    }
+  },
+  "xsyZiLsS": {
+    "name": "Lontong Bu Ana",
+    "rating": 4.8,
+    "rating_amount": 59,
+    "price_range": null,
+    "address": "Tegal Rejo, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20236",
+    "opening_hours": {
+      "Senin": "06.00-23.00",
+      "Selasa": "06.00-23.00",
+      "Rabu": "06.00-23.00",
+      "Kamis": "06.00-23.00",
+      "Jumat": "06.00-23.00",
+      "Sabtu": "06.00-23.00",
+      "Minggu": "06.00-23.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Drive-through",
+      "Antar tanpa bertemu"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Bu+Ana/data=!4m7!3m6!1s0x303131d04864e4ad:0x6566b9361284e12f!8m2!3d3.6174359!4d98.6912064!16s%2Fg%2F11fl9wbk14!19sChIJreRkSNAxMTARL-GEEja5ZmU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6174359,
+      "longitude": 98.6912064
+    }
+  },
+  "Yc3Al9zD": {
+    "name": "WARUNG LONTONG IBU MINARTI",
+    "rating": 4.7,
+    "rating_amount": 6,
+    "price_range": null,
+    "address": "JJ75+89J, Tj. Gusta, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20125",
+    "opening_hours": {
+      "Senin": "06.00-11.00",
+      "Selasa": "06.00-11.00",
+      "Rabu": "06.00-11.00",
+      "Kamis": "06.00-11.00",
+      "Jumat": "06.00-11.00",
+      "Sabtu": "06.00-11.00",
+      "Minggu": "06.00-11.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/WARUNG+LONTONG+IBU+MINARTI/data=!4m7!3m6!1s0x30312e85ae712f35:0x3dabd0d5ac0370c1!8m2!3d3.613339!4d98.6083787!16s%2Fg%2F11f57kglr2!19sChIJNS9xroUuMTARwXADrNXQqz0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.613339,
+      "longitude": 98.6083787
+    }
+  },
+  "gF0ZhO7p": {
+    "name": "Warung Lontong Kak Endang",
+    "rating": 4.3,
+    "rating_amount": 158,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Banteng Ujung No.2, Deli Tua, Kec. Deli Tua, Kabupaten Deli Serdang, Sumatera Utara 20355",
+    "opening_hours": {
+      "Senin": "07.00-21.30",
+      "Selasa": "07.00-21.30",
+      "Rabu": "07.00-21.30",
+      "Kamis": "07.00-21.30",
+      "Jumat": "07.00-21.30",
+      "Sabtu": "07.00-21.30",
+      "Minggu": "07.00-21.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Lontong+Kak+Endang/data=!4m7!3m6!1s0x30313ae085d91b93:0xe529048ddeaf7051!8m2!3d3.5030881!4d98.6826344!16s%2Fg%2F11hcdr__s6!19sChIJkxvZheA6MTARUXCv3o0EKeU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5030881,
+      "longitude": 98.6826344
+    }
+  },
+  "lxRHxati": {
+    "name": "Lontong Malam Bu Sari",
+    "rating": 4.2,
+    "rating_amount": 193,
+    "price_range": "Rp 1-25.000",
+    "address": "HPG2+QPW, Jalan Medan Area Selatan, Sukaramai I, Medan Area, Medan City, North Sumatra 20227",
+    "opening_hours": {
+      "Senin": "18.00-00.00",
+      "Selasa": "18.00-00.00",
+      "Rabu": "18.00-00.00",
+      "Kamis": "18.00-00.00",
+      "Jumat": "18.00-00.00",
+      "Sabtu": "18.00-00.00",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Malam+Bu+Sari/data=!4m7!3m6!1s0x3031305505b93575:0x20491e1f9109b2fc!8m2!3d3.5769955!4d98.7018205!16s%2Fg%2F11c328_q26!19sChIJdTW5BVUwMTAR_LIJkR8eSSA?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5769955,
+      "longitude": 98.7018205
+    }
+  },
+  "pCrFeW1r": {
+    "name": "Lontong Bu Nuri",
+    "rating": 4.2,
+    "rating_amount": 21,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. STM No.3, Sitirejo II, Kec. Medan Amplas, Kota Medan, Sumatera Utara 20217",
+    "opening_hours": {
+      "Senin": "06.00-12.00",
+      "Selasa": "06.00-12.00",
+      "Rabu": "06.00-12.00",
+      "Kamis": "06.00-12.00",
+      "Jumat": "06.00-12.00",
+      "Sabtu": "06.00-12.00",
+      "Minggu": "06.00-12.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Bu+Nuri/data=!4m7!3m6!1s0x3031315cad1fe5cb:0x880b599bfd9d731c!8m2!3d3.5525812!4d98.6917851!16s%2Fg%2F11n5cw6dzn!19sChIJy-UfrVwxMTARHHOd_ZtZC4g?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5525812,
+      "longitude": 98.6917851
+    }
+  },
+  "AoMhWakG": {
+    "name": "LONTONG WITA",
+    "rating": 4.4,
+    "rating_amount": 625,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Gurilla No.131, Sei Kera Hilir I, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20222",
+    "opening_hours": {
+      "Senin": "07.00-21.00",
+      "Selasa": "07.00-21.00",
+      "Rabu": "07.00-21.00",
+      "Kamis": "07.00-21.00",
+      "Jumat": "07.00-21.00",
+      "Sabtu": "06.00-20.00",
+      "Minggu": "06.00-20.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/LONTONG+WITA/data=!4m7!3m6!1s0x3031319ff1c860fd:0xcdf58caea35a0e4e!8m2!3d3.6007923!4d98.7033176!16s%2Fg%2F11dz5n0170!19sChIJ_WDI8Z8xMTARTg5ao66M9c0?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6007923,
+      "longitude": 98.7033176
+    }
+  },
+  "IqWOr7Kb": {
+    "name": "Lontong sayur novita",
+    "rating": 4.0,
+    "rating_amount": 1,
+    "price_range": null,
+    "address": "Jl. Al-Badar No.46, Tj. Gusta, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20125",
+    "opening_hours": {
+      "Senin": "06.00-12.00",
+      "Selasa": "06.00-12.00",
+      "Rabu": "06.00-12.00",
+      "Kamis": "06.00-12.00",
+      "Jumat": "06.00-12.00",
+      "Sabtu": "06.00-12.00",
+      "Minggu": "06.00-12.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+sayur+novita/data=!4m7!3m6!1s0x30312fccd8aac1e1:0xce05a1f93becb0f1!8m2!3d3.613909!4d98.60308!16s%2Fg%2F11q1pj1h2n!19sChIJ4cGq2MwvMTAR8bDsO_mhBc4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.613909,
+      "longitude": 98.60308
+    }
+  },
+  "fquWi216": {
+    "name": "Lontong Malam Mbak Siti",
+    "rating": 4.7,
+    "rating_amount": 16,
+    "price_range": null,
+    "address": "Jl. Garu 1 No.119, Sitirejo III, Kec. Medan Amplas, Kota Medan, Sumatera Utara 20226",
+    "opening_hours": {
+      "Senin": "17.30-00.00",
+      "Selasa": "17.30-00.00",
+      "Rabu": "17.30-00.00",
+      "Kamis": "17.30-00.00",
+      "Jumat": "17.30-00.00",
+      "Sabtu": "17.30-00.00",
+      "Minggu": "00.00-17.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Malam+Mbak+Siti/data=!4m7!3m6!1s0x3031311ec8896db9:0xf35de876c005d9f9!8m2!3d3.5476911!4d98.7086973!16s%2Fg%2F11g0sqk40f!19sChIJuW2JyB4xMTAR-dkFwHboXfM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5476911,
+      "longitude": 98.7086973
+    }
+  },
+  "oIWY1XbA": {
+    "name": "LONTONG AMEERA",
+    "rating": 4.6,
+    "rating_amount": 262,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Karya Wisata No.89D, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20144",
+    "opening_hours": {
+      "Senin": "06.00-11.00",
+      "Selasa": "06.00-11.00",
+      "Rabu": "06.00-11.00",
+      "Kamis": "Tutup",
+      "Jumat": "06.00-11.00",
+      "Sabtu": "06.00-11.00",
+      "Minggu": "06.00-11.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/LONTONG+AMEERA/data=!4m7!3m6!1s0x30313ab24d631753:0x19dacdbe3559554d!8m2!3d3.5271103!4d98.6631066!16s%2Fg%2F1pzq3l8zd!19sChIJUxdjTbI6MTARTVVZNb7N2hk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5271103,
+      "longitude": 98.6631066
+    }
+  },
+  "HNc29Bru": {
+    "name": "Lontong Bang Ginda Since1994",
+    "rating": 4.7,
+    "rating_amount": 20,
+    "price_range": null,
+    "address": "Jl. M. Basir No.80A, Pangkalan Masyhur, Kec. Medan Johor, Kota Medan, Sumatera Utara 20219",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Bang+Ginda+Since1994/data=!4m7!3m6!1s0x30313b7da5c04831:0x3b1c6a56c309810a!8m2!3d3.5402288!4d98.6792599!16s%2Fg%2F11f776f_3q!19sChIJMUjApX07MTARCoEJw1ZqHDs?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5402288,
+      "longitude": 98.6792599
+    }
+  },
+  "Fw8vGPSZ": {
+    "name": "Lontong Stasiun Medan",
+    "rating": 4.4,
+    "rating_amount": 96,
+    "price_range": "Rp 1-25.000",
+    "address": "Jl. Stasiun Kereta Api No.3c, Kesawan, Kec. Medan Bar., Kota Medan, Sumatera Utara 20231",
+    "opening_hours": {
+      "Senin": "17.00-23.30",
+      "Selasa": "17.00-23.30",
+      "Rabu": "17.00-23.30",
+      "Kamis": "17.00-23.30",
+      "Jumat": "17.00-23.30",
+      "Sabtu": "17.00-23.30",
+      "Minggu": "17.00-23.30"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Stasiun+Medan/data=!4m7!3m6!1s0x30313174c10ae9c5:0x6fe1cff9efe65642!8m2!3d3.5928304!4d98.6786136!16s%2Fg%2F11jjv8slk4!19sChIJxekKwXQxMTARQlbm7_nP4W8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5928304,
+      "longitude": 98.6786136
+    }
+  },
+  "BfLEdqX2": {
+    "name": "Lontong Kak Jur",
+    "rating": 4.2,
+    "rating_amount": 40,
+    "price_range": "Rp 1-25.000",
+    "address": "Kota Matsum IV, Kec. Medan Area, Kota Medan, Sumatera Utara 20211",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Kak+Jur/data=!4m7!3m6!1s0x303130520a0dddc3:0x17d2065a8e0c8f53!8m2!3d3.5762735!4d98.6931058!16s%2Fg%2F11bx71lzcs!19sChIJw90NClIwMTARU48MjloG0hc?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5762735,
+      "longitude": 98.6931058
+    }
+  },
+  "og5FwmEf": {
+    "name": "Lontong Bu de Yani",
+    "rating": 5.0,
+    "rating_amount": 12,
+    "price_range": null,
+    "address": "Gedung Johor, Kec. Medan Johor, Kota Medan, Sumatera Utara 20147",
+    "opening_hours": {
+      "Senin": "06.00-10.00",
+      "Selasa": "06.00-10.00",
+      "Rabu": "06.00-10.00",
+      "Kamis": "06.00-10.00",
+      "Jumat": "06.00-10.00",
+      "Sabtu": "06.00-10.00",
+      "Minggu": "06.00-10.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang",
+      "Pesan antar"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Bu+de+Yani/data=!4m7!3m6!1s0x30313b5eb24db371:0x1ced17c971889c0c!8m2!3d3.5176459!4d98.6678966!16s%2Fg%2F11qyc56q83!19sChIJcbNNsl47MTARDJyIcckX7Rw?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5176459,
+      "longitude": 98.6678966
+    }
+  },
+  "w76JDsbE": {
+    "name": "Lontong Bu Tetty",
+    "rating": 4.4,
+    "rating_amount": 27,
+    "price_range": null,
+    "address": "GM9J+P7Q, Kedai Durian, Kec. Medan Johor, Kota Medan, Sumatera Utara",
+    "opening_hours": {
+      "Senin": "06.00-03.00",
+      "Selasa": "06.00-03.00",
+      "Rabu": "06.00-03.00",
+      "Kamis": "06.00-03.00",
+      "Jumat": "06.00-03.00",
+      "Sabtu": "06.00-03.00",
+      "Minggu": "06.00-03.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Bu+Tetty/data=!4m7!3m6!1s0x30313ac014f1bf1b:0x53295ed9898d724e!8m2!3d3.5193273!4d98.6807317!16s%2Fg%2F11hc_dwzfk!19sChIJG7_xFMA6MTARTnKNidleKVM?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5193273,
+      "longitude": 98.6807317
+    }
+  },
+  "w0Ii6Ttg": {
+    "name": "Lontong terenak didunia CBD Polonia",
+    "rating": 4.7,
+    "rating_amount": 11,
+    "price_range": "Rp 25-50 rb",
+    "address": "CBD Polonia Blok DD/ No.23, Jl. Padang Golf No.23",
+    "opening_hours": null,
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+terenak+didunia+CBD+Polonia/data=!4m7!3m6!1s0x303131ce4e0f471d:0xf57277631cd5db92!8m2!3d3.5597509!4d98.6767847!16s%2Fg%2F11jydzcjsx!19sChIJHUcPTs4xMTARktvVHGN3cvU?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5597509,
+      "longitude": 98.6767847
+    }
+  },
+  "ZC4NelP1": {
+    "name": "Lontong Sayur dan Nasi Gurih Bu' Dani",
+    "rating": 5.0,
+    "rating_amount": 3,
+    "price_range": null,
+    "address": "Jl. Selamat No.79, Sitirejo III, Kec. Medan Amplas, Kota Medan, Sumatera Utara",
+    "opening_hours": {
+      "Senin": "06.15-11.00",
+      "Selasa": "06.15-11.00",
+      "Rabu": "06.15-11.00",
+      "Kamis": "06.15-11.00",
+      "Jumat": "06.15-11.00",
+      "Sabtu": "06.15-11.00",
+      "Minggu": "06.15-11.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Sayur+dan+Nasi+Gurih+Bu%27+Dani/data=!4m7!3m6!1s0x30313105cbc3e26d:0x59a60620d8ba54eb!8m2!3d3.5497937!4d98.7033441!16s%2Fg%2F11tnk9508q!19sChIJbeLDywUxMTAR61S62CAGplk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5497937,
+      "longitude": 98.7033441
+    }
+  },
+  "azZYM2ex": {
+    "name": "Warung Lontong Pagi dan Malam Buk Muji",
+    "rating": 4.7,
+    "rating_amount": 16,
+    "price_range": null,
+    "address": "Jl. Dwikora No.23-27, Sidorame Bar. II, Kec. Medan Perjuangan, Kota Medan, Sumatera Utara 20236",
+    "opening_hours": {
+      "Senin": "Tutup",
+      "Selasa": "Tutup",
+      "Rabu": "Tutup",
+      "Kamis": "Tutup",
+      "Jumat": "Tutup",
+      "Sabtu": "Tutup",
+      "Minggu": "Tutup"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Warung+Lontong+Pagi+dan+Malam+Buk+Muji/data=!4m7!3m6!1s0x303131268ad60043:0x2e3701184d937951!8m2!3d3.6106575!4d98.6886612!16s%2Fg%2F11kybbzfys!19sChIJQwDWiiYxMTARUXmTTRgBNy4?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.6106575,
+      "longitude": 98.6886612
+    }
+  },
+  "ulkDEDpE": {
+    "name": "LONTONG PADANG KETUPAT GULAI",
+    "rating": 4.6,
+    "rating_amount": 9,
+    "price_range": null,
+    "address": "jalan karang sari, SMAN 2, Sari Rejo, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20147",
+    "opening_hours": {
+      "Senin": "07.00-15.00",
+      "Selasa": "07.00-15.00",
+      "Rabu": "07.00-15.00",
+      "Kamis": "07.00-15.00",
+      "Jumat": "07.00-15.00",
+      "Sabtu": "07.00-15.00",
+      "Minggu": "07.00-15.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/LONTONG+PADANG+KETUPAT+GULAI/data=!4m7!3m6!1s0x30313003618428a3:0x2f951dc77f473fe2!8m2!3d3.5489172!4d98.6653763!16s%2Fg%2F11c5ssygy9!19sChIJoyiEYQMwMTAR4j9Hf8cdlS8?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5489172,
+      "longitude": 98.6653763
+    }
+  },
+  "GZzDsNEr": {
+    "name": "Lontong Kak Lin",
+    "rating": 4.1,
+    "rating_amount": null,
+    "price_range": "Rp 25-50 rb",
+    "address": "Jl. Teuku Cik Ditiro No.8m, Madras Hulu, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20151",
+    "opening_hours": {
+      "Senin": "07.00-16.00",
+      "Selasa": "07.00-16.00",
+      "Rabu": "07.00-16.00",
+      "Kamis": "07.00-16.00",
+      "Jumat": "07.00-16.00",
+      "Sabtu": "07.00-14.00",
+      "Minggu": "07.00-12.00"
+    },
+    "services": [
+      "Makan di tempat",
+      "Bawa pulang"
+    ],
+    "links": "https://www.google.com/maps/place/Lontong+Kak+Lin/data=!4m7!3m6!1s0x303131d2c54c289d:0x97082ddb22b4c46!8m2!3d3.5811998!4d98.6690682!16s%2Fg%2F1hm1sb269!19sChIJnShMxdIxMTARRkwrst2CcAk?authuser=0&hl=id&rclk=1",
+    "coordinates": {
+      "latitude": 3.5811998,
+      "longitude": 98.6690682
+    }
+  }
+}

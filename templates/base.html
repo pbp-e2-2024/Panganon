@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block meta %} {% endblock meta %}
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-Montserrat">
+    <header class="flex items-center justify-between lg:px-15 xl:px-20 max-lg:py-2 mx-10 py-5 max-w-[80%] mx-auto">
+      {% block navbar %}
+      <div class="flex">
+        <a href="/"class="text-2xl font-bold">
+          Pangonan
+        </a>
+      </div>
+      <div>
+          <nav class="flex space-x-4">
+              <a href="/daftar_toko" class="text-gray-700">Daftar Makanan</a>
+              <a href="/" class="text-gray-700">Forum</a>
+              <a href="/" class="text-gray-700">Favorites</a>
+              <a href="/" class="text-gray-700">About Me</a>
+              <a href="/" class="text-gray-700">Event</a>
+          </nav>
+      </div>
+      <div >
+          <a href="/login" class="text-gray-700">Sign-in</a>
+      </div>
+      {% endblock %}
+  </header>
+    <main>
+      {% block content %} 
+      {% endblock content %}
+      
+    </main>
+    <footer class="bg-black py-2">
+      <div class="container mx-auto px-6 py-3">
+        <div class="mt-6 border-t pt-6 text-center text-gray-200">
+          &copy; 2024 Pangonan. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

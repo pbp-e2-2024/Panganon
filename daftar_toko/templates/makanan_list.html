@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="flex flex-col mx-auto mt-10 p-4">
+        <h1 class="text-3xl font-bold mb-6 text-center text-black">Filter</h1>
+
+        <form method="get" class="bg-gray-100 p-4 rounded-3xl shadow-md mb-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="mb-4">
+                    <label for="name" class="block text-black mb-2">Nama Toko:</label>
+                    <input type="text" id="name" name="name" value="{{ request.GET.name }}" class="w-full p-2 rounded-md bg-gray-200 text-black border-none focus:outline-none focus:ring-2 focus:ring-white">
+                </div>
+
+                <div class="mb-4">
+                    <label for="address" class="block text-black mb-2">Alamat:</label>
+                    <input type="text" id="address" name="address" value="{{ request.GET.address }}" class="w-full p-2 rounded-md bg-gray-200 text-black border-none focus:outline-none focus:ring-2 focus:ring-white">
+                </div>
+
+                
+                <div class="mb-4">
+                    <label for="min_rating" class="block text-black mb-2">Minimum Rating:</label>
+                    <input type="number" step="0.1" id="min_rating" name="min_rating" value="{{ request.GET.min_rating }}" class="w-full p-2 rounded-md bg-gray-200 text-black border-none focus:outline-none focus:ring-2 focus:ring-white">
+                </div>
+
+                <div class="mb-4">
+                    <label for="max_rating" class="block text-black mb-2">Maximum Rating:</label>
+                    <input type="number" step="0.1" id="max_rating" name="max_rating" value="{{ request.GET.max_rating }}" class="w-full p-2 rounded-md bg-gray-200 text-black border-none focus:outline-none focus:ring-2 focus:ring-white">
+                </div>
+
+                <div class="mb-4">
+                    <label for="rating_count" class="block text-black mb-2">Jumlah Rating:</label>
+                    <select id="rating_count" name="rating_count" class="w-full p-2 rounded-md bg-gray-200 text-black border-none focus:outline-none focus:ring-2 focus:ring-white">
+                        <option value="">Pilih jumlah rating...</option>
+                        <option value="25" {% if request.GET.rating_count == '25' %}selected{% endif %}> 1-25</option>
+                        <option value="50" {% if request.GET.rating_count == '50' %}selected{% endif %}> 26-50</option>
+                        <option value="100" {% if request.GET.rating_count == '100' %}selected{% endif %}> 51-100</option>
+                        <option value="200" {% if request.GET.rating_count == '10000' %}selected{% endif %}> 100+</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label for="ordering" class="block text-black mb-2">Urutkan Berdasarkan:</label>
+                    <select id="ordering" name="ordering" class="w-full p-2 rounded-md bg-gray-200 text-black border-none focus:outline-none focus:ring-2 focus:ring-white">
+                        <option value="">Pilih...</option>
+                        <option value="name_asc" {% if request.GET.ordering == 'name_asc' %}selected{% endif %}>Nama A-Z</option>
+                        <option value="name_desc" {% if request.GET.ordering == 'name_desc' %}selected{% endif %}>Nama Z-A</option>
+                        <option value="rating_high" {% if request.GET.ordering == 'rating_high' %}selected{% endif %}>Rating Tertinggi</option>
+                        <option value="rating_low" {% if request.GET.ordering == 'rating_low' %}selected{% endif %}>Rating Terendah</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-black text-white font-bold py-2 rounded-2xl hover:bg-gray-900 transition duration-200">Filter</button>
+        </form>
+
+        <h1 class="text-3xl font-bold mb-6 text-center text-black">Daftar Makanan</h1>
+
+        <ul class="bg-gray-200 rounded-3xl shadow-md p-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-white">
+                {% for item in makanan %}
+                    <li class="mb-4 p-4 bg-gray-800 rounded-2xl">
+                        <p class="text-xl font-semibold">{{ item.name }}</p>
+                        <p class="text-sm">Rating: {{ item.rating }}</p>
+                        <p class="text-sm">Address: {{ item.address }}</p>
+                    </li>
+                {% empty %}
+                    <li class="text-center text-gray-400">No items found.</li>
+                {% endfor %}
+            </div>
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Pangonan</title>
+{% endblock meta %}
+
+{% block content %}
+<div class="relative bg-gray-100 ">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[2%]" style="background-image: url('{% static 'images/pola.jpg' %}');"></div>
+
+    <section class="py-16 relative">
+        <div class="container max-w-[60%] mx-auto flex items-center justify-between text-center pr-0 ">
+            <div class="w-full lg:w-1/2 text-left ml-10 lg:px-12 ">
+                <h1 class="text-5xl font-bold mb-4">170+ Batak Meals to choose from</h1>
+                <p class="text-gray-600 mb-6">Wuenak</p>
+                <button type="button" onclick="window.location.href='/daftar_toko'" class="bg-black text-white py-2 px-6 rounded-md">Lihat Makanan</button>
+            </div>
+            <div class="hidden lg:block w-1/2 flex justify-center">
+                <img src="{% static 'images/makanan_homepage.jpg' %}" alt="img" class="rounded-full w-3/4 mx-auto">
+            </div>
+        </div>
+        <div class="absolute inset-x-0 top-[90%] h-[300px] lg:h-[400px] overflow-hidden">
+            <div class="w-full h-full bg-cover bg-center"
+                style="background-image: url('{% static 'images/marmer.jpg' %}'); border-top-left-radius: 50%; border-top-right-radius: 50%;">
+        </div>
+    </div>
+
+    </section>
+    <section class="relative py-12 mt-[-100px] z-10">
+        <div class="container grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[50%] mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center md:col-span-2">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="{% static 'images/mukakau.jpg' %}" class="rounded-full w-32 h-32" alt="gtg">
+                </div>
+                <h2 class="text-lg font-semibold">Gab.</h2>
+                <p class="text-sm text-gray-500">Food Enthusiast</p>
+                <p class="mt-4 text-gray-700">Pangonan is a platform that enables you to get the best food in Sumatra Utara period.</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center bg-black text-white p-8 rounded-lg shadow-lg"  style="background-image: url('{% static 'images/spice.jpg' %}');">
+                <h2 class="text-2xl text-center font-bold mb-4">Only the Best</h2>
+                <p>Lihat Apa yang mereka katakan</p>
+                <button class="mt-4 bg-white text-black py-2 px-4 rounded-md">Forum</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}

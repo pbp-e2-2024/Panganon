@@ -1,0 +1,13 @@
+<!-- templates/authentication/main.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Welcome to the Main Page</h1>
+    <p>This is a protected page that requires user authentication.</p>
+    <a href="{% url 'logout_user' %}">Logout</a>
+</body>
+</html>

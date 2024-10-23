@@ -33,15 +33,15 @@ def login_user(request):
 
 def register(request):
     if request.method == 'POST':
+        name = request.POST.get('name')
         username = request.POST.get('username')
         password = request.POST.get('password')
         repeat_password = request.POST.get('repeat_password')
-        role = request.POST.get('role')
         image = request.FILES.get('image') if 'image' in request.FILES else None
 
         error_messages = []
         
-        if not username or not password or not repeat_password or not role:
+        if not name or not username or not password or not repeat_password:
             error_messages.append("Semua field harus diisi.")
 
         if len(password) < 8 or not re.search(r"\d", password):
@@ -59,7 +59,8 @@ def register(request):
             return redirect('register')
 
         hashed_password = make_password(password)
-        User.objects.create(username=username, password=hashed_password, role=role, image=image)
+        user_role = 'userABC987$%^'  # Assumed role for simplicity
+        User.objects.create(name=name, username=username, password=hashed_password, role=user_role, image=image)
         messages.success(request, "Registrasi berhasil! Silakan login.")
         return redirect('login_user')
 

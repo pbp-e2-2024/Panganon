@@ -16,9 +16,8 @@
     <form method="POST" action="{% url 'register' %}" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="mt-4">
-            <label>Role</label>
-            <input required name="role" value="admin" type="radio" class="mr-2"{% if request.POST.role == 'admin' %} checked{% endif %}>Admin
-            <input required name="role" value="user" type="radio" class="mr-2"{% if request.POST.role == 'user' %} checked{% endif %}>User
+            <label>Nama</label>
+            <input required name="name" type="text" value="{{ request.POST.name|default_if_none:'' }}" class="w-full px-2 py-2 border border-black rounded">
         </div>
         <div class="mt-4">
             <label>Username</label>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ thread.title }}</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .forum-container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-to-forum {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .back-to-forum:hover {
+            background-color: #005f99;
+        }
+
+        h1 {
+            color: #007acc;
+            margin-bottom: 20px;
+        }
+
+        .add-post-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            height: 35px;
+            text: 30px;
+        }
+
+        .add-post-button:hover {
+            background-color: #005f99;
+        }
+
+        .post-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .post-item {
+            background-color: #e6f2ff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .username {
+            color: #ff4444;
+            font-weight: bold;
+        }
+
+        .post-content, .edit-post-form {
+            color: #333333;
+            margin: 0;
+        }
+
+        .comment-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .comment-item {
+            background-color: #d9eaf7;
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .comment-form, .post-form, .edit-post-form, .edit-comment-form {
+            margin-top: 10px;
+            display: none;
+        }
+
+        .comment-form textarea, .post-form textarea, .edit-post-form textarea, .edit-comment-form textarea {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            padding: 5px;
+        }
+
+        .comment-form button, .post-form button, .edit-post-form button, .edit-comment-form button {
+            background-color: #007acc;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comment-form button:hover, .post-form button:hover, .edit-post-form button:hover, .edit-comment-form button:hover {
+            background-color: #005f99;
+        }
+
+        .toggle-comment-form, .toggle-post-form, .edit-post-button, .edit-comment-button {
+            background-color: #007acc;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .toggle-comment-form:hover, .toggle-post-form:hover, .edit-post-button:hover, .edit-comment-button:hover {
+            background-color: #005f99;
+        }
+
+        .created-at {
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        .delete-post-button {
+            background-color: #ff4444;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        .delete-post-button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="forum-container">
+        <a href="/forum" class="back-to-forum">Back to Forum</a>
+        <h1>{{ thread.title }}</h1>
+        <button class="add-post-button toggle-post-form">Add Post</button>
+
+        <form method="post" action="{% url 'add_post' thread.id %}" class="post-form">
+            {% csrf_token %}
+            <textarea name="content" placeholder="Write your post here" required></textarea>
+            <button type="submit">Post</button>
+        </form>
+
+        <ul class="post-list">
+            {% for post in posts %}
+                <li class="post-item">
+                    <div class="post-header">
+                        <div style="display: flex; align-items: center;">
+                            {% if post.created_by.image %}
+                                <img src="{% url 'display_image' user_id=post.created_by.id %}" alt="Profile Picture" class="profile-pic">
+                            {% else %}
+                                <p>No profile picture</p>
+                            {% endif %}
+                            <strong class="username">{{ post.created_by.username }}</strong>
+                        </div>
+                        <div>
+                            <span class="created-at">{{ post.created_at }}</span>
+                            {% if request.session.user_id == post.created_by.id %}
+                            <form method="post" action="{% url 'delete_post' post.id %}" style="display: inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="delete-post-button">Delete Post</button>
+                            </form>
+                            <button class="edit-post-button" data-post-id="{{ post.id }}">Edit Post</button>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <p class="post-content" id="post-content-{{ post.id }}">{{ post.content }}</p>
+
+                    <form method="post" action="{% url 'edit_post' post.id %}" class="edit-post-form" id="edit-post-form-{{ post.id }}">
+                        {% csrf_token %}
+                        <textarea name="content" required>{{ post.content }}</textarea>
+                        <button type="submit">Save</button>
+                    </form>
+
+                    <button class="toggle-comment-form">Add Comment</button>
+                    <form method="post" action="{% url 'add_comment' post.id %}" class="comment-form">
+                        {% csrf_token %}
+                        <textarea name="content" placeholder="Add a comment" required></textarea>
+                        <button type="submit">Comment</button>
+                    </form>
+
+                    <ul class="comment-list">
+                        {% for comment in post.get_top_level_comments %}
+                            {% include 'forum/comment.html' with comment=comment post=post %}
+                        {% empty %}
+                            <li>No comments yet.</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <script>
+        document.querySelectorAll('.toggle-comment-form').forEach(button => {
+            button.addEventListener('click', function() {
+                const form = this.nextElementSibling;
+                form.style.display = form.style.display === 'block' ? 'none' : 'block';
+                this.style.display = form.style.display === 'block' ? 'none' : 'inline-block';
+            });
+        });
+
+        document.querySelector('.toggle-post-form').addEventListener('click', function() {
+            const form = document.querySelector('.post-form');
+            form.style.display = form.style.display === 'block' ? 'none' : 'block';
+            this.style.display = form.style.display === 'block' ? 'none' : 'inline-block';
+        });
+
+        document.querySelectorAll('.edit-post-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const postId = this.getAttribute('data-post-id');
+                const content = document.getElementById(`post-content-${postId}`);
+                const form = document.getElementById(`edit-post-form-${postId}`);
+                content.style.display = 'none';
+                form.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

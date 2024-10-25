@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+</head>
+<body>
+    {% if messages %}
+    <div>
+        {% for message in messages %}
+        <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <form method="POST" action="{% url 'register' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="hidden" name="role" value="user">
+        <div class="mt-4">
+            <label>Username</label>
+            <input required name="username" type="text" value="{{ request.POST.username|default_if_none:'' }}" class="w-full px-2 py-2 border border-black rounded">
+        </div>
+        <div class="mt-4">
+            <label>Password</label>
+            <input required name="password" type="password" class="w-full px-2 py-2 border border-black rounded">
+        </div>
+        <div class="mt-4">
+            <label>Repeat Password</label>
+            <input required name="repeat_password" type="password" class="w-full px-2 py-2 border border-black rounded">
+        </div>
+        <div class="mt-4">
+            <label>Foto Profil</label>
+            <input type="file" name="image" accept=".jpg, .jpeg" class="w-full px-2 py-2 border border-black rounded">
+        </div>
+        <div class="mt-4">
+            <button class="px-4 py-1.5 bg-blue-600 text-white rounded">Register</button>
+        </div>
+        <div class="mt-4">
+            <p>Sudah punya akun? <a href="{% url 'login_user' %}" class="text-blue-600 hover:text-blue-800">Login di sini</a></p>
+        </div>
+    </form>
+</body>
+</html>

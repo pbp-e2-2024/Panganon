@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Post</title>
+</head>
+<body>
+    <h1>Add a Post to Thread</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="content" placeholder="Your post" required></textarea>
+        <button type="submit">Add Post</button>
+    </form>
+</body>
+</html>

@@ -5,7 +5,6 @@ from django.contrib.auth.decorators import login_required
 from .models import Event
 from .forms import EventForm
 
-# List all events (no AJAX needed for this view)
 def event_list(request):
     events = Event.objects.all()
     if request.headers.get('X-Requested-With') == 'XMLHttpRequest':  # Check if request is AJAX
@@ -13,12 +12,11 @@ def event_list(request):
         return JsonResponse(event_data, safe=False)
     return render(request, 'event/event_list.html', {'events': events})
 
-# Event detail (no AJAX needed for this view)
+
 def event_detail(request, pk):
     event = get_object_or_404(Event, pk=pk)
     return render(request, 'event/event_detail.html', {'event': event})
 
-# Create a new event with AJAX
 @login_required
 def event_create(request):
     if request.method == 'POST':
@@ -34,7 +32,7 @@ def event_create(request):
         form = EventForm()
     return render(request, 'event/event_form.html', {'form': form, 'form_title': 'Create', 'form_button_text': 'Create'})
 
-# Edit an existing event with AJAX
+
 @login_required
 def event_edit(request, pk):
     event = get_object_or_404(Event, pk=pk)
@@ -49,7 +47,7 @@ def event_edit(request, pk):
         form = EventForm(instance=event)
     return render(request, 'event/event_form.html', {'form': form, 'form_title': 'Edit', 'form_button_text': 'Update'})
 
-# Delete an event with AJAX
+
 @login_required
 def event_delete(request, pk):
     event = get_object_or_404(Event, pk=pk)

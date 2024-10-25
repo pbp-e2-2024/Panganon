@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from about_me.models import UserProfile
 from authentication.models import User
 from django.contrib.auth.hashers import make_password, check_password
 import re
@@ -73,7 +74,8 @@ def register(request):
 
         image_data = image_file.read() if image_file else None
 
-        User.objects.create(username=username, password=hashed_password, role=role, image=image_data)
+        new_user = User.objects.create(username=username, password=hashed_password, role=role, image=image_data)
+        UserProfile.objects.create(user=new_user)
         messages.success(request, "Registrasi berhasil! Silakan login.")
         return redirect('login_user')
 

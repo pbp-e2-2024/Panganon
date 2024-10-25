@@ -122,3 +122,20 @@ def edit_comment(request, comment_id):
         'form': form,
         'comment': comment
     })
+
+from django.http import JsonResponse
+from django.urls import reverse
+
+def threads_by_user(request, user_id):
+    user = get_object_or_404(User, id=user_id)
+    
+    # Query for threads created by this user
+    threads = Thread.objects.filter(created_by=user)
+    
+    # Construct the JSON response
+    thread_data = {
+        request.build_absolute_uri(reverse('thread_detail', args=[thread.id])): thread.title
+        for thread in threads
+    }
+    
+    return JsonResponse({'user': user.username, 'threads': thread_data})

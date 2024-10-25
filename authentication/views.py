@@ -38,7 +38,7 @@ def login_user(request):
 
         request.session['user_id'] = user.id
 
-        return redirect('show_main')
+        return redirect('../')
     else:
         return render(request, "authentication/login.html")
 

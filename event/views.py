@@ -8,6 +8,9 @@ from .forms import EventForm
 # List all events (no AJAX needed for this view)
 def event_list(request):
     events = Event.objects.all()
+    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':  # Check if request is AJAX
+        event_data = list(events.values())  # Convert to list of dictionaries for JSON response
+        return JsonResponse(event_data, safe=False)
     return render(request, 'event/event_list.html', {'events': events})
 
 # Event detail (no AJAX needed for this view)

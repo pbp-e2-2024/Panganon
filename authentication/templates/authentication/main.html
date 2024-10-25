@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Welcome to the Main Page</h1>
+    <p>This is a protected page that requires user authentication.</p>
+    
+    <h2>Hello, {{ user.username }}!</h2>
+    <a href="{% url 'about_me:profile_detail' user_id=user.id %}">
+    {% if user.image %}
+        <img src="{% url 'display_image' user_id=user.id %}" alt="Profile Picture" style="width:100px;height:100px;">
+    {% else %}
+        <p>No profile picture</p>
+    {% endif %}
+    </a>
+    <br>
+    <a href="{% url 'logout_user' %}">Logout</a>
+</body>
+</html>

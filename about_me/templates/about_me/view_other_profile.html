@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+<div class="container mx-auto my-10 p-5">
+    <!-- Profile Header -->
+    <div class="bg-white shadow rounded-lg p-5">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <!-- Profile Photo -->
+            <div class="flex justify-center md:justify-start">
+                <img src="{% url 'display_image' user_id=user.id %}" alt="{{ user.name }}'s Profile Picture" class="rounded-full w-40 h-40 border-2 border-black-500 object-cover">
+            </div>
+            <!-- Name and Preferences Summary -->
+            <div class="md:col-span-2 flex flex-col justify-center items-center md:items-start">
+                <h1 class="text-3xl font-bold">{{ user.name|default:user.username }}</h1>
+                <p class="text-sm text-gray-500">@{{ user.username }}</p>
+
+                <!-- Conditional for Food Preferences -->
+                {% if profile.food_preferences %}
+                    <p class="text-gray-600">{{ profile.food_preferences }}</p>
+                {% else %}
+                    <p class="text-gray-600">Food Preferences: Not set</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="mt-5 bg-white shadow rounded-lg p-5">
+        <h2 class="text-xl font-semibold border-b pb-2 mb-4">About</h2>
+        <p>{{ profile.bio | default:"No bio available" }}</p>
+    </div>
+
+    <!-- Forum History Section -->
+    <div class="mt-5 bg-white shadow rounded-lg p-5">
+        <h2 class="text-xl font-semibold border-b pb-2 mb-4">Forum History</h2>
+        <ul>
+            {% for post in forum_posts %}
+            <li class="mt-4">
+                <p class="font-semibold">{{ post.title }}</p>
+                <p class="text-gray-700">{{ post.content }}</p>
+                <p class="text-sm text-gray-500">Posted on {{ post.created_at }}</p>
+            </li>
+            {% empty %}
+            <p>No forum history available</p>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Rating History Section -->
+    <div class="mt-5 bg-white shadow rounded-lg p-5">
+        <h2 class="text-xl font-semibold border-b pb-2 mb-4">Rating History</h2>
+        <ul>
+            {% for rating in ratings %}
+            <li class="mt-4">
+                <p class="font-semibold">Rating: {{ rating.score }} stars</p>
+                <p class="text-gray-700">{{ rating.comment }}</p>
+                <p class="text-sm text-gray-500">Rated on {{ rating.created_at }}</p>
+            </li>
+            {% empty %}
+            <p>No ratings history available</p>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

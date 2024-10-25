@@ -1,0 +1,29 @@
+<!-- templates/events/event_list.html -->
+{% extends 'base.html' %}
+
+{% block title %}Event List{% endblock %}
+
+{% block content %}
+<div class="container mx-auto">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-4xl font-bold">Upcoming Culinary Events</h1>
+        <a href="{% url 'event_create' %}" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Create New Event</a>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {% for event in events %}
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">{{ event.name }}</h2>
+                <p class="text-gray-700 mb-4">{{ event.description|truncatewords:15 }}</p>
+                <p class="text-gray-500">{{ event.location }} - {{ event.date }}</p>
+                <a href="{% url 'event_detail' event.id %}" class="text-blue-500 hover:underline mt-4 block">View Details</a>
+            </div>
+        </div>
+        {% empty %}
+        <p>No events available at the moment.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+    

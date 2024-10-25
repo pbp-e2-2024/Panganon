@@ -39,8 +39,8 @@
           <a href="/login" class="text-gray-700">Sign-in</a>
       </div>
       {% endblock %}
-  </header>
-    <main>
+    </header>
+    <main class=>
       {% block content %} 
       {% endblock content %}
       
@@ -52,6 +52,9 @@
         </div>
       </div>
     </footer>
+    {% block script %} 
+
+    {% endblock script %}
     
   </body>
 </html>

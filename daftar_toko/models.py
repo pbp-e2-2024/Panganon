@@ -1,6 +1,6 @@
 from django.db import models
 
-class Makanan(models.Model):
+class Restaurant(models.Model):
     name = models.CharField(max_length=255)
     rating = models.FloatField(null=True, blank=True)
     rating_amount = models.IntegerField(null=True, blank=True)

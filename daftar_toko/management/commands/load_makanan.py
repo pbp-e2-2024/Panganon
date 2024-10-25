@@ -1,7 +1,7 @@
 import json
 import os
 from django.core.management.base import BaseCommand
-from daftar_toko.models import Makanan
+from daftar_toko.models import Restaurant
 
 # python manage.py load_makanan dataset\Bika_Ambon_Medan dataset\Durian_Medan dataset\Kari_Medan dataset\Lontong_Medan dataser\Nasi_Lemak_Medan dataset\Sate_Medan dataset\Soto_Medan.json
 
@@ -23,7 +23,7 @@ class Command(BaseCommand):
                 with open(file_path, 'r') as file:
                     data = json.load(file)
                     for key, value in data.items():
-                        Makanan.objects.create(
+                        Restaurant.objects.create(
                             name=value['name'],
                             rating=value['rating'],
                             rating_amount=value['rating_amount'],

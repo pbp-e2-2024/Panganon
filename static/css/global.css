@@ -3,3 +3,16 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+#mobile-menu {
+    transform: translateX(100%);
+    z-index: 50;
+  }
+  
+  #mobile-menu.translate-x-0 {
+    transform: translateX(0);
+  }
+  
+  #mobile-menu.translate-x-full {
+    transform: translateX(100%);
+  }

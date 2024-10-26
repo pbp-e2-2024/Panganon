@@ -9,8 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com">
-    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <style>
       body {
@@ -23,7 +22,6 @@
     <header class="flex items-center justify-between lg:px-15 xl:px-20 max-lg:py-2 mx-10 py-5 max-w-[80%] mx-auto">
       {% block navbar %}
       <div class="flex">
-        
         <a href="/" class="text-2xl font-bold">
           Pangonan
         </a>
@@ -37,18 +35,12 @@
           <a href="/event" class="text-gray-700">Event</a>
         </nav>
       </div>
-      <div>
-        {% if request.session.user_id %}
-          <a href="{% url 'about_me:profile_detail' user_id=request.user.id %}">
-            {% if request.user.image %}
-              <img src="{% url 'display_image' user_id=request.user.id %}" alt="Profile Picture" class="rounded-full w-10 h-10 object-cover">
-            {% else %}
-              <p>No profile picture</p>
-            {% endif %}
-          </a>
-        {% else %}
-          <a href="/auth" class="text-gray-700">Sign-in</a>
-        {% endif %}
+      <div class="flex items-center space-x-4">
+        <div id="user-info" class="hidden flex items-center space-x-4">
+          <img id="profile-picture" src="" alt="Profile Picture" style="width:50px;height:50px;" class="rounded-full">
+          <span id="username" class="text-gray-700"></span>
+        </div>
+        <a id="sign-in-link" href="/auth" class="text-gray-700">Sign-in</a>
       </div>
       {% endblock %}
     </header>
@@ -59,14 +51,38 @@
     <footer class="bg-black py-2">
       <div class="container mx-auto px-6 py-3">
         <div class="mt-6 border-t pt-6 text-center text-gray-200 text-sm">
-
           &copy; 2024 Pangonan. All rights reserved.
         </div>
       </div>
     </footer>
 
     {% block script %} 
-    {% endblock script %}
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('/auth/user_info')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('User not logged in');
+            }
+            return response.json();
+          })
+          .then(data => {
+            document.getElementById('sign-in-link').classList.add('hidden');
 
+            const userInfoDiv = document.getElementById('user-info');
+            userInfoDiv.classList.remove('hidden');
+
+            document.getElementById('username').textContent = data.username;
+
+            const profilePicture = document.getElementById('profile-picture');
+            profilePicture.src = `{% url 'display_image' user_id=0 %}`.replace('0', data.userID);
+          })
+          
+          .catch(error => {
+            console.error('Error fetching user info:', error);
+          });
+      });
+    </script>
+    {% endblock script %}
   </body>
 </html>

@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'main',
     'authentication',
     'forum',
-    'about_me'
+    'about_me',
+    'event',
+
 ]
 
 MIDDLEWARE = [

@@ -31,32 +31,80 @@
         font-style: oblique;
     }
 </style>
-
 <body>
-    <div class="container">
-        <div>
-            <h1>Add Favorites</h1>
-        </div>
-        <div class="grid gap-5 py-5">
-            {% for restaurant in restaurants %}
-                <div class="border rounded-3xl border-gray-900 bg-blue-100 transition duration-300 hover:bg-blue-300 py-0 m-0">
-                    <div class="m-3">
-                        <h3>{{ restaurant.name }}</h3>
-                        <p>Deskripsi: {{ restaurant.description }}</p>
-                        <p>Address: {{ restaurant.address }}</p>
-                        <p>Status: {{ restaurant.halal_status }}</p>
-                        <p>Jam Operasi: {{ restaurant.operating_hours }}</p>
-                    </div>
-                    <div class="pl-10 m-1 flex justify-end">
-                        <a href="{% url 'add_favorite' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Add to Favorite</a>
-                        <a href="{% url 'remove_favorite' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Remove Favorite</a>
-                        <a href="{% url 'add_review' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Add Review</a>
-                        <a href="{% url 'remove_review' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Remove Review</a>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
+    <h1>Restaurants</h1>
+
+    <!-- Display the list of restaurants -->
+    <ul>
+        {% for restaurant in restaurants %}
+            <li>
+                <h2>{{ restaurant.name }}</h2>
+                <p>{{ restaurant.address }}</p>
+                <p>Halal Status: {{ restaurant.halal_status|yesno:"Yes,No" }}</p>
+                <p>Operating Hours: {{ restaurant.operating_hours }}</p>
+
+                <!-- Favorite button -->
+                {% if user.is_authenticated %}
+                    <form method="post" action="{% url 'add_favorite' restaurant.id %}">
+                        {% csrf_token %}
+                        <button type="submit">Add to Favorites</button>
+                    </form>
+                {% endif %}
+
+                <!-- Display reviews for each restaurant -->
+                <h3>Reviews:</h3>
+                <ul>
+                    {% for review in restaurant.restaurantreview_set.all %}
+                        <li>
+                            <strong>{{ review.user.username }}:</strong>
+                            <span>Rating: {{ review.rating }}</span>
+                            <p>{{ review.review }}</p>
+                            {% if review.user == user %}
+                                <form method="post" action="{% url 'remove_review' review.id %}">
+                                    {% csrf_token %}
+                                    <button type="submit">Remove Review</button>
+                                </form>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+
+                <!-- Form to add a new review -->
+                {% if user.is_authenticated %}
+                    <form method="post" action="{% url 'add_review' restaurant.id %}">
+                        {% csrf_token %}
+                        <label for="rating">Rating:</label>
+                        <select name="rating" id="rating" required>
+                            <option value="" disabled selected>Select Rating</option>
+                            {% for i in "12345" %}
+                                <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
+                        </select>
+                        <label for="review">Review:</label>
+                        <textarea name="review" id="review" required></textarea>
+                        <button type="submit">Submit Review</button>
+                    </form>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h1>Your Favorite Restaurants</h1>
+    <ul>
+        {% for favorite in favorite_restaurants %}
+            <li>
+                <h2>{{ favorite.restaurant.name }}</h2>
+                <form method="post" action="{% url 'remove_favorite' favorite.restaurant.id %}">
+                    {% csrf_token %}
+                    <button type="submit">Remove from Favorites</button>
+                </form>
+            </li>
+        {% empty %}
+            <li>No favorite restaurants found.</li>
+        {% endfor %}
+    </ul>
+
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 
 {% endblock %}

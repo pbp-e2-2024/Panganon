@@ -107,15 +107,15 @@ def all_forum_posts(request, user_id):
     return render(request, 'about_me/all_forum_posts.html', context)
 
 
-@login_required(login_url='login_user')  # Redirect to login page if not authenticated
+@login_required(login_url='login_user')
 def add_recipe(request):
     if request.method == 'POST':
-        form = RecipeForm(request.POST, request.FILES)
+        form = RecipeForm(request.POST, request.FILES)  # Sertakan request.FILES untuk gambar
         if form.is_valid():
             recipe = form.save(commit=False)
-            recipe.user = request.user  # Assign the current user to the recipe
+            recipe.user = request.user  # Menyimpan user yang menambahkan resep
             recipe.save()
-            return redirect('about_me:profile_detail', user_id=request.user.id)
+            return redirect('about_me:profile_detail', user_id=request.user.id)  # Kembali ke halaman profil setelah disimpan
     else:
         form = RecipeForm()
 
@@ -124,16 +124,22 @@ def add_recipe(request):
 # View to display full recipe details
 def view_recipe(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
-    return render(request, 'about_me/recipe_detail.html', {'recipe': recipe})
+    is_own_recipe = recipe.user == request.user  # Memeriksa apakah pengguna sedang melihat resep milik mereka sendiri
+    return render(request, 'about_me/recipe_detail.html', {'recipe': recipe, 'is_own_recipe': is_own_recipe})
 
 # View to edit a recipe
+@login_required(login_url='login_user')
 def edit_recipe(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
+    if recipe.user != request.user:
+        return redirect('about_me:profile_detail', user_id=request.user.id)  # Mengarahkan kembali jika pengguna mencoba mengedit resep yang bukan milik mereka
+
     if request.method == 'POST':
         form = RecipeForm(request.POST, request.FILES, instance=recipe)
         if form.is_valid():
             form.save()
-            return redirect('about_me:view_recipe', recipe_id=recipe.id)
+            return redirect('about_me:view_recipe', recipe_id=recipe.id)  # Kembali ke halaman detail resep setelah disimpan
     else:
-        form = RecipeForm(instance=recipe)
+        form = RecipeForm(instance=recipe)  # Mengisi form dengan data yang ada
+
     return render(request, 'about_me/edit_recipe.html', {'form': form, 'recipe': recipe})

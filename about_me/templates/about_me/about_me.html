@@ -79,7 +79,7 @@
 
     <!-- Recipes Section -->
     <div class="bg-white shadow rounded-lg p-6">
-        <h2 class="text-2xl font-bold text-gray-800">Your Recipes</h2>
+        <h2 class="text-2xl font-semibold border-b pb-3 mb-4 text-gray-800">Recipes</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
             {% for recipe in recipes %}
             <div class="bg-gray-100 shadow rounded-lg p-4">
@@ -91,7 +91,7 @@
             <p>No recipes yet.</p>
             {% endfor %}
         </div>
-        <a href="{% url 'about_me:add_recipe' %}" class="mt-5 block text-blue-500">Add New Recipe</a>
+        <button id="add-recipe-btn" class="mt-5 bg-black text-white px-4 py-2 rounded">Add New Recipe</button>
     </div>
 </div>
 
@@ -111,7 +111,7 @@
                     <label><input type="checkbox" name="preferences" value="Bitter Enthusiast"> Bitter Enthusiast</label><br>
                 </div>
                 <div class="flex justify-end space-x-4">
-                    <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" id="save-preferences">Save</button>
+                    <button type="button" class="bg-gray-800 text-white px-4 py-2 rounded" id="save-preferences">Save</button>
                     <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded" id="close-modal">Close</button>
                 </div>
             </form>
@@ -127,7 +127,7 @@
             <form id="bio-form">
                 <textarea id="bio-input" class="border border-gray-300 p-3 w-full h-32 rounded-md">{{ profile.bio }}</textarea>
                 <div class="flex justify-end space-x-4 mt-4">
-                    <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" id="save-bio">Save</button>
+                    <button type="button" class="bg-gray-800 text-white px-4 py-2 rounded" id="save-bio">Save</button>
                     <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded" id="close-bio-modal">Close</button>
                 </div>
             </form>
@@ -143,11 +143,51 @@
             <form id="name-form">
                 <input type="text" id="name-input" class="border border-gray-300 p-3 w-full rounded-md" value="{{ user.name }}">
                 <div class="flex justify-end space-x-4 mt-4">
-                    <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" id="save-name">Save</button>
+                    <button type="button" class="bg-gray-800 text-white px-4 py-2 rounded" id="save-name">Save</button>
                     <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded" id="close-name-modal">Close</button>
                 </div>
             </form>
         </div>
+    </div>
+</div>
+
+<!-- Modal for Adding Recipe -->
+<div id="add-recipe-modal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center overflow-y-auto">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/2 max-h-screen overflow-y-auto">
+        <h2 class="text-2xl font-semibold mb-4">Add New Recipe</h2>
+        <form id="recipe-form" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-4">
+                <label for="recipe-name" class="block text-sm font-medium text-gray-700">Recipe Name</label>
+                <input type="text" id="recipe-name" name="name" class="border p-2 w-full rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="recipe-description" class="block text-sm font-medium text-gray-700">Description (max 100 words)</label>
+                <textarea id="recipe-description" name="description" class="border p-2 w-full rounded" maxlength="100" required></textarea>
+            </div>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Ingredients</label>
+                <div id="ingredients-list">
+                    <input type="text" name="ingredients[]" class="border p-2 w-full rounded mb-2" placeholder="Ingredient" required>
+                </div>
+                <button type="button" id="add-ingredient" class="text-sm text-gray-600 mt-2">+ Add Ingredient</button>
+            </div>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Steps</label>
+                <div id="steps-list">
+                    <input type="text" name="steps[]" class="border p-2 w-full rounded mb-2" placeholder="Step" required>
+                </div>
+                <button type="button" id="add-step" class="text-sm text-gray-600 mt-2">+ Add Step</button>
+            </div>
+            <div class="mb-4">
+                <label for="recipe-image" class="block text-sm font-medium text-gray-700">Image</label>
+                <input type="file" id="recipe-image" name="image" class="border p-2 w-full rounded" accept="image/*" required>
+            </div>
+            <div class="flex justify-end space-x-4">
+                <button type="button" id="close-add-recipe-modal" class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
+                <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded">Save Recipe</button>
+            </div>
+        </form>
     </div>
 </div>
 {% endif %}
@@ -256,5 +296,41 @@
         });
     });
     ('{% endif %}')
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Event listener untuk membuka modal add recipe
+        document.getElementById('add-recipe-btn').addEventListener('click', function() {
+            document.getElementById('add-recipe-modal').classList.remove('hidden');
+        });
+
+        // Event listener untuk menutup modal add recipe
+        document.getElementById('close-add-recipe-modal').addEventListener('click', function() {
+            document.getElementById('add-recipe-modal').classList.add('hidden');
+        });
+
+        // Script untuk menambah field input dinamis untuk Ingredients dan Steps
+        document.getElementById('add-ingredient').addEventListener('click', function() {
+            const ingredientsList = document.getElementById('ingredients-list');
+            const newIngredient = document.createElement('input');
+            newIngredient.type = 'text';
+            newIngredient.name = 'ingredients[]';
+            newIngredient.classList.add('border', 'p-2', 'w-full', 'rounded', 'mb-2');
+            newIngredient.placeholder = 'Ingredient';
+            newIngredient.required = true;
+            ingredientsList.appendChild(newIngredient);
+        });
+
+        document.getElementById('add-step').addEventListener('click', function() {
+            const stepsList = document.getElementById('steps-list');
+            const newStep = document.createElement('input');
+            newStep.type = 'text';
+            newStep.name = 'steps[]';
+            newStep.classList.add('border', 'p-2', 'w-full', 'rounded', 'mb-2');
+            newStep.placeholder = 'Step';
+            newStep.required = true;
+            stepsList.appendChild(newStep);
+        });
+    });
+
 </script>
 {% endblock %}

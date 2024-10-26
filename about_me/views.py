@@ -3,7 +3,9 @@
 import json
 from django.http import JsonResponse
 from django.shortcuts import redirect, render, get_object_or_404
-from .models import UserProfile
+from django.contrib.auth.decorators import login_required
+from about_me.forms import RecipeForm
+from .models import Recipe, UserProfile
 
 def profile_view(request, user_id):
     profile = get_object_or_404(UserProfile, user__id=user_id)
@@ -72,3 +74,34 @@ def edit_bio(request, user_id):
 
         return JsonResponse({'bio': new_bio})
     return JsonResponse({'error': 'Invalid request'}, status=400)
+
+# @login_required(login_url='login_user')  # Redirect to login page if not authenticated
+def add_recipe(request):
+    if request.method == 'POST':
+        form = RecipeForm(request.POST, request.FILES)
+        if form.is_valid():
+            recipe = form.save(commit=False)
+            recipe.user = request.user  # Assign the current user to the recipe
+            recipe.save()
+            return redirect('about_me:profile_detail', user_id=request.user.id)
+    else:
+        form = RecipeForm()
+
+    return render(request, 'about_me/add_recipe.html', {'form': form})
+
+# View to display full recipe details
+def view_recipe(request, recipe_id):
+    recipe = get_object_or_404(Recipe, id=recipe_id)
+    return render(request, 'about_me/recipe_detail.html', {'recipe': recipe})
+
+# View to edit a recipe
+def edit_recipe(request, recipe_id):
+    recipe = get_object_or_404(Recipe, id=recipe_id)
+    if request.method == 'POST':
+        form = RecipeForm(request.POST, request.FILES, instance=recipe)
+        if form.is_valid():
+            form.save()
+            return redirect('about_me:view_recipe', recipe_id=recipe.id)
+    else:
+        form = RecipeForm(instance=recipe)
+    return render(request, 'about_me/edit_recipe.html', {'form': form, 'recipe': recipe})

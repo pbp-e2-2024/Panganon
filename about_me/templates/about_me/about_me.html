@@ -112,6 +112,24 @@
             </div>
         </div>
     </div>
+
+    <div class="container mx-auto my-10 p-5">
+        <h2 class="text-2xl font-bold">Your Recipes</h2>
+    
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
+            {% for recipe in recipes %}
+            <div class="bg-white shadow-md rounded-lg p-4">
+                <img src="{{ recipe.image.url }}" class="rounded w-full h-40 object-cover" alt="{{ recipe.name }}">
+                <h3 class="text-lg font-bold mt-2">{{ recipe.name }}</h3>
+                <a href="{% url 'about_me:view_recipe' recipe.id %}" class="text-blue-500 mt-2 block">View Recipe</a>
+            </div>
+            {% empty %}
+            <p>No recipes yet.</p>
+            {% endfor %}
+        </div>
+        <a href="{% url 'about_me:add_recipe' %}" class="mt-5 block text-blue-500">Add New Recipe</a>
+    </div>
+
 </div>
 
 <!-- JavaScript untuk modal dan AJAX -->

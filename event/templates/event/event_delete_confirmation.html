@@ -36,7 +36,6 @@
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                // Jika penghapusan berhasil, arahkan ke event_list
                 window.location.href = "{% url 'event_list' %}";  // Ganti dengan URL untuk daftar event
             } else {
                 alert('Failed to delete event.');  // Notifikasi gagal

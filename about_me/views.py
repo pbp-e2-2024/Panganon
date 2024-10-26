@@ -75,7 +75,7 @@ def edit_bio(request, user_id):
         return JsonResponse({'bio': new_bio})
     return JsonResponse({'error': 'Invalid request'}, status=400)
 
-# @login_required(login_url='login_user')  # Redirect to login page if not authenticated
+@login_required(login_url='login_user')  # Redirect to login page if not authenticated
 def add_recipe(request):
     if request.method == 'POST':
         form = RecipeForm(request.POST, request.FILES)

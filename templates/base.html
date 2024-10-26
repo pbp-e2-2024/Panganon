@@ -38,7 +38,7 @@
         </nav>
       </div>
       <div>
-        {% if request.user.is_authenticated %}
+        {% if request.session.user_id %}
           <a href="{% url 'about_me:profile_detail' user_id=request.user.id %}">
             {% if request.user.image %}
               <img src="{% url 'display_image' user_id=request.user.id %}" alt="Profile Picture" class="rounded-full w-10 h-10 object-cover">

@@ -17,36 +17,65 @@
 
   <body class="font-Montserrat">
     <header class="flex items-center justify-between lg:px-15 xl:px-20 max-lg:py-2 mx-10 py-5 max-w-[80%] mx-auto">
-      {% block navbar %}
-      <div class="flex">
+      <div class="flex items-center justify-between w-full">
+        <!-- Logo -->
         <a href="/" class="text-2xl font-bold">
           Pangonan
         </a>
-      </div>
-      <div>
-        <nav class="flex space-x-4">
+    
+        <!-- Desktop Navigation -->
+        <nav id="menu" class="hidden lg:flex space-x-4">
           <a href="/daftar_toko" class="text-gray-700">Daftar Makanan</a>
           <a href="/forum" class="text-gray-700">Forum</a>
           <a href="/favorites" class="text-gray-700">Favorites</a>
           <a id="about-me-link" href="/profile" class="text-gray-700">About Me</a>
           <a href="/event" class="text-gray-700">Event</a>
         </nav>
-      </div>
-      <div class="flex items-center space-x-4">
-        <div id="user-info" class="hidden flex items-center space-x-4">
-          <img id="profile-picture" src="" alt="Profile Picture" style="width:50px;height:50px;" class="rounded-full">
-          <span id="username" class="text-gray-700"></span>
+    
+        <!-- User Info and Mobile Menu Button -->
+        <div class="flex items-center space-x-4">
+          <!-- User Info -->
+          <div id="user-info" class="hidden flex items-center space-x-4">
+            <img id="profile-picture" src="" alt="Profile Picture" style="width:50px;height:50px;" class="rounded-full">
+            <span id="username" class="text-gray-700"></span>
+          </div>
+          <a id="sign-in-link" href="/auth" class="text-gray-700">Sign-in</a>
+          
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <a id="sign-in-link" href="/auth" class="text-gray-700">Sign-in</a>
       </div>
-      {% endblock %}
+    
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out">
+        <div class="p-4">
+          <button id="close-menu" class="absolute top-4 right-4 text-gray-700 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+          <nav class="mt-8 flex flex-col space-y-4">
+            <a href="/daftar_toko" class="text-gray-700 hover:text-gray-900">Daftar Makanan</a>
+            <a href="/forum" class="text-gray-700 hover:text-gray-900">Forum</a>
+            <a href="/favorites" class="text-gray-700 hover:text-gray-900">Favorites</a>
+            <a href="/profile" class="text-gray-700 hover:text-gray-900">About Me</a>
+            <a href="/event" class="text-gray-700 hover:text-gray-900">Event</a>
+          </nav>
+        </div>
+      </div>
     </header>
-    <main>
+    <main class="min-h-screen">
       {% block content %} 
       {% endblock content %}
     </main>
     <footer class="bg-black py-2">
-      <div class="container mx-auto px-6 py-3">
+      <div class="container mx-auto px-6 py-4">
         <div class="mt-6 border-t pt-6 text-center text-gray-200 text-sm">
           &copy; 2024 Pangonan. All rights reserved.
         </div>
@@ -84,6 +113,41 @@
           .catch(error => {
             console.error('Error fetching user info:', error);
           });
+      });
+      document.getElementById('menu-toggle').addEventListener('click', function () {
+        var menu = document.getElementById('menu');
+        if (menu.classList.contains('hidden')) {
+          menu.classList.remove('hidden');
+        } else {
+          menu.classList.add('hidden');
+        }
+      });
+
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const closeMenu = document.getElementById('close-menu');
+
+      menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('translate-x-0');
+        mobileMenu.classList.remove('translate-x-full');
+      });
+
+      closeMenu.addEventListener('click', function() {
+        mobileMenu.classList.add('translate-x-full');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('translate-x-full');
+          setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+          }, 300);
+        }
       });
     </script>
     {% endblock script %}

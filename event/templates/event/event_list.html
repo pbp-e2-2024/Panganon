@@ -8,26 +8,26 @@
     <!-- Link ke Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container flex flex-col items-center justify-center w-full mx-auto">
-        <div class="w-full px-4 py-5 mb-2 bg-white border rounded-md shadow sm:px-6 dark:bg-gray-800">
-            <h3 class="text-lg font-medium leading-6 text-gray-900 dark:text-white">
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-3xl px-4 py-6 mx-auto">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100">
                 Informasi Festival Makanan
             </h3>
-            <p class="max-w-2xl mt-1 text-sm text-gray-500 dark:text-gray-200">
-                Details and information about the events.
+            <p class="text-gray-600 dark:text-gray-400 mt-2">
+                Berikut ini adalah informasi terkait Festival Makanan.
             </p>
-            <a href="{% url 'event_create' %}" class="mt-4 inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">
+            <a href="{% url 'event_create' %}" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-5 rounded-md shadow-md transition">
                 Create New Event
             </a>
         </div>
-        <ul class="flex flex-col w-full">
+
+        <ul class="mt-6 space-y-4">
             {% for event in event %}
-            <li class="flex flex-row mb-2 border-b border-gray-400">
-                <div class="shadow border select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
+            <li class="flex flex-row mb-2 border-gray-400">
+                <a href="{% url 'event_detail' event.id %}" class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
                     <div class="flex flex-col items-center justify-center w-10 h-10 mr-4">
-                        <a href="#" class="relative block">
-                            
+                        <img alt="profil" src="/images/person/6.jpg" class="mx-auto object-cover rounded-full h-10 w-10 "/>
                     </div>
                     <div class="flex-1 pl-1 md:mr-16">
                         <div class="font-medium dark:text-white">
@@ -36,22 +36,26 @@
                         <div class="text-sm text-gray-600 dark:text-gray-200">
                             {{ event.description|truncatewords:15 }}
                         </div>
+                        <span class="text-xs text-gray-500 dark:text-gray-400 block mt-1">
+                            Created by: {{ event.created_by.username }}  <!-- Menampilkan nama pengguna -->
+                        </span>
                     </div>
                     <div class="text-xs text-gray-600 dark:text-gray-200">
-                        {{ event.date|date:"H:i A" }}
+                        {{ event.date|date:"M d, Y H:i A" }}
                     </div>
-                    <button class="flex justify-end w-24 text-right">
-                        <a href="{% url 'event_detail' event.id %}">
-                            <svg width="12" fill="currentColor" height="12" class="text-gray-500 hover:text-gray-800 dark:hover:text-white dark:text-gray-200" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z">
-                                </path>
-                            </svg>
-                        </a>
-                    </button>
+                </a>
+                {% if request.user == event.created_by or request.user.is_superuser %}
+                <div class="ml-4 flex flex-col justify-center">
+                    <a href="{% url 'event_edit' event.id %}" class="text-yellow-500 hover:text-yellow-600 dark:text-yellow-400 dark:hover:text-yellow-300 transition">Edit</a>
+                    <form action="{% url 'event_delete' event.id %}" method="POST" class="inline">
+                        {% csrf_token %}
+                        <button type="submit" class="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 transition" onclick="return confirm('Are you sure you want to delete this event?');">Delete</button>
+                    </form>
                 </div>
+                {% endif %}
             </li>
             {% empty %}
-            <p class="text-gray-600 dark:text-gray-200">Belum ada festival makanan</p>
+            <p class="text-center text-gray-600 dark:text-gray-400 mt-6">Belum ada festival makanan</p>
             {% endfor %}
         </ul>
     </div>

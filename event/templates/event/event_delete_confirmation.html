@@ -1,6 +1,5 @@
 <!-- templates/events/event_delete_confirmation.html -->
 
-
 {% block title %}Delete Event{% endblock %}
 
 {% block content %}
@@ -10,7 +9,7 @@
         <p class="text-gray-600 mb-4">{{ event.name }}</p>
         <p class="text-gray-500 mb-4">{{ event.location }} - {{ event.date }}</p>
 
-        <form id="deleteForm" method="post">
+        <form id="deleteForm" method="post" action="{% url 'event_delete' event.id %}">
             {% csrf_token %}
             <div class="flex space-x-4 mt-6">
                 <button type="submit" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md">Delete</button>
@@ -22,7 +21,7 @@
 
 <script>
     document.getElementById('deleteForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+        e.preventDefault();  // Mencegah pengiriman form secara default
         let form = this;
         let formData = new FormData(form);
         let url = form.action;
@@ -31,14 +30,21 @@
             method: 'POST',
             body: formData,
             headers: {
-                'X-Requested-With': 'XMLHttpRequest'
+                'X-Requested-With': 'XMLHttpRequest'  // Menandai permintaan sebagai AJAX
             }
         })
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                window.location.href = '/events/';
+                // Jika penghapusan berhasil, arahkan ke event_list
+                window.location.href = "{% url 'event_list' %}";  // Ganti dengan URL untuk daftar event
+            } else {
+                alert('Failed to delete event.');  // Notifikasi gagal
             }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error with the request.');  // Notifikasi error
         });
     });
 </script>

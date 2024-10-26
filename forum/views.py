@@ -3,6 +3,8 @@ from .models import Thread, Post, Comment
 from authentication.models import User
 from .forms import CommentForm
 from django.http import HttpResponseForbidden
+from django.http import JsonResponse
+from django.urls import reverse
 
 def forum_home(request):
     if 'user_id' not in request.session:
@@ -122,3 +124,15 @@ def edit_comment(request, comment_id):
         'form': form,
         'comment': comment
     })
+
+
+def threads_by_user(request, user_id):
+    user = get_object_or_404(User, id=user_id)
+    threads = Thread.objects.filter(created_by=user)
+    
+    thread_data = {
+        request.build_absolute_uri(reverse('thread_detail', args=[thread.id])): thread.title
+        for thread in threads
+    }
+    
+    return JsonResponse({'user': user.username, 'threads': thread_data})

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum Home</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333333; /* Dark text for readability */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .forum-container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff; /* White background for container */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007acc; /* Darker blue for headings */
+            margin-bottom: 20px;
+        }
+
+        .create-thread-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007acc; /* Darker blue for button */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .create-thread-button:hover {
+            background-color: #005f99; /* Even darker blue on hover */
+        }
+
+        .thread-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .thread-item {
+            background-color: #e6f2ff; /* Very light blue for thread items */
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .thread-link {
+            color: #007acc; /* Darker blue for links */
+            text-decoration: none;
+            font-size: 18px;
+            flex-grow: 1;
+        }
+
+        .thread-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="forum-container">
+        <h1>Forum Threads</h1>
+        <a href="{% url 'create_thread' %}" class="create-thread-button">Create New Thread</a>
+        <ul class="thread-list">
+            {% for thread in threads %}
+                <li class="thread-item">
+                    <a href="{% url 'thread_detail' thread.id %}" class="thread-link">{{ thread.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

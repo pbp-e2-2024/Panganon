@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="flex flex-col mx-auto mt-20 p-10 min-h-screen">
+        <div class="flex flex-col items-center mb-10">
+            <h1 class="text-4xl font-bold text-black text-center mb-5">Daftar Restoran</h1>
+            <div class="self-center mt-2">
+                <button id="filter-toggle" class="bg-black text-white px-6 py-3 rounded-lg hover:bg-black transition-all duration-200 flex items-center space-x-2">
+                    <span>Filter</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="filter-modal" class="hidden fixed inset-0 z-50 w-full flex items-center justify-center bg-black bg-opacity-50 overflow-x-hidden overflow-y-auto transition-opacity duration-300 ease-out">
+            <div id="modal-content" class="relative bg-white rounded-lg shadow-lg w-5/6 sm:w-3/4 md:w-1/2 lg:w-1/3 mx-4 sm:mx-0 transform scale-95 opacity-0 transition-transform transition-opacity duration-300 ease-out">
+                <div class="flex items-center justify-between p-4 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-gray-900">
+                        Filter Restaurants
+                    </h3>
+                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" id="close-modal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="px-6 py-4 space-y-6">
+                    <form id="filter-form" method="get">
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nama Toko:</label>
+                                <input type="text" id="name" name="name" value="{{ request.GET.name }}" class="mt-1 block w-full border border-gray-300 rounded-md p-2 hover:border-gray-700">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="address" class="block text-sm font-medium text-gray-700">Alamat:</label>
+                                <input type="text" id="address" name="address" value="{{ request.GET.address }}" class="mt-1 block w-full border border-gray-300 rounded-md p-2 hover:border-gray-700">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="min_rating" class="block text-sm font-medium text-gray-700">Minimum Rating:</label>
+                                <input type="number" step="0.1" id="min_rating" name="min_rating" value="{{ request.GET.min_rating }}" class="mt-1 block w-full border border-gray-300 rounded-md p-2 hover:border-gray-700">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="max_rating" class="block text-sm font-medium text-gray-700">Maximum Rating:</label>
+                                <input type="number" step="0.1" id="max_rating" name="max_rating" value="{{ request.GET.max_rating }}" class="mt-1 block w-full border border-gray-300 rounded-md p-2 hover:border-gray-700">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="rating_count" class="block text-sm font-medium text-gray-700">Jumlah Rating:</label>
+                                <select id="rating_count" name="rating_count" class="mt-1 block w-full border border-gray-300 rounded-md p-2 hover:border-gray-700">
+                                    <option value="">Pilih jumlah rating...</option>
+                                    <option value="25" {% if request.GET.rating_count == '25' %}selected{% endif %}> 1-25</option>
+                                    <option value="50" {% if request.GET.rating_count == '50' %}selected{% endif %}> 26-50</option>
+                                    <option value="100" {% if request.GET.rating_count == '100' %}selected{% endif %}> 51-100</option>
+                                    <option value="200" {% if request.GET.rating_count == '200' %}selected{% endif %}> 100+</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="ordering" class="block text-sm font-medium text-gray-700">Urutkan Berdasarkan:</label>
+                                <select id="ordering" name="ordering" class="mt-1 block w-full border border-gray-300 rounded-md p-2 hover:border-gray-700">
+                                    <option value="">Pilih...</option>
+                                    <option value="name_asc" {% if request.GET.ordering == 'name_asc' %}selected{% endif %}>Nama A-Z</option>
+                                    <option value="name_desc" {% if request.GET.ordering == 'name_desc' %}selected{% endif %}>Nama Z-A</option>
+                                    <option value="rating_high" {% if request.GET.ordering == 'rating_high' %}selected{% endif %}>Rating Tertinggi</option>
+                                    <option value="rating_low" {% if request.GET.ordering == 'rating_low' %}selected{% endif %}>Rating Terendah</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2 p-6 border-t border-gray-200 rounded-b justify-center md:justify-end">
+                    <button type="button" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg" id="cancel-button">Cancel</button>
+                    <button type="button" id="apply-filters" class="bg-black hover:bg-black text-white font-bold py-2 px-4 rounded-lg">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-100 rounded-3xl shadow-md p-4">
+            <div id="restaurant-list" class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {% for item in toko %}
+                {% include "restaurant_card.html" with restaurant=item %}
+                {% empty %}
+                    <div class="col-span-2 text-center text-gray-400">No items found.</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterToggle = document.getElementById('filter-toggle');
+    const filterForm = document.getElementById('filter-form');
+    const filterModal = document.getElementById('filter-modal');
+    const modalContent = document.getElementById('modal-content');
+    const closeModal = document.getElementById('close-modal');
+    const cancelButton = document.getElementById('cancel-button');
+    const applyFilters = document.getElementById('apply-filters');
+    const restaurantList = document.getElementById('restaurant-list');
+
+    function showModal() {
+        filterModal.classList.remove('hidden');
+        setTimeout(() => {
+            modalContent.classList.remove('opacity-0', 'scale-95');
+            modalContent.classList.add('opacity-100', 'scale-100');
+        }, 50);
+        document.body.style.overflow = 'hidden';
+    }
+
+    function hideModal() {
+        modalContent.classList.remove('opacity-100', 'scale-100');
+        modalContent.classList.add('opacity-0', 'scale-95');
+        setTimeout(() => {
+            filterModal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }, 150);
+    }
+
+    filterToggle.addEventListener('click', showModal);
+    
+    closeModal.addEventListener('click', hideModal);
+    cancelButton.addEventListener('click', hideModal);
+    filterModal.addEventListener('click', (e) => {
+        if (e.target === filterModal) {
+            hideModal();
+        }
+    });
+
+    applyFilters.addEventListener('click', function() {
+        const formData = new FormData(filterForm);
+        const params = new URLSearchParams(formData).toString();
+
+        fetch(`?${params}`, {
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            restaurantList.innerHTML = '';
+            hideModal();
+            
+            if (data.length === 0) {
+                restaurantList.innerHTML = '<div class="col-span-2 text-center text-gray-400">No items found.</div>';
+            } else {
+                data.forEach(item => {
+                    const mapQuery = encodeURIComponent(`${item.name} ${item.address}`);
+                    const restaurantDiv = document.createElement('div');
+                    restaurantDiv.className = '';
+                    restaurantDiv.innerHTML = `
+                        <div class="mb-4 p-8 bg-white rounded-2xl text-black hover:bg-gray-200 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none transition duration-200">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <p class="text-xl font-semibold">${item.name}</p>
+                                    <p class="text-sm">Rating: ${item.rating}</p>
+                                    <p class="text-sm">Address: ${item.address}</p>
+                                </div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=${mapQuery}" 
+                                target="_blank" 
+                                class="p-2 bg-white rounded-full hover:bg-gray-100 transition-all duration-200 group"
+                                title="View on Google Maps">
+                                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2C7.589 2 4 5.589 4 10C4 14.411 7.589 18 12 18C16.411 18 20 14.411 20 10C20 5.589 16.411 2 12 2Z" fill="#34A853"/>
+                                        <path d="M12 2V18C16.411 18 20 14.411 20 10C20 5.589 16.411 2 12 2Z" fill="#4285F4"/>
+                                        <path d="M12 2C7.589 2 4 5.589 4 10C4 14.411 7.589 18 12 18" fill="#FBBC05"/>
+                                        <path d="M12 7C10.343 7 9 8.343 9 10C9 11.657 10.343 13 12 13C13.657 13 15 11.657 15 10C15 8.343 13.657 7 12 7Z" fill="#EA4335"/>
+                                        <path d="M12 22L5 15H19L12 22Z" fill="#EA4335"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                    restaurantList.appendChild(restaurantDiv);
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            restaurantList.innerHTML = '<div class="col-span-2 text-center text-red-500">An error occurred while fetching the data.</div>';
+        });
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            hideModal();
+        }
+    });
+});
+</script>
+{% endblock %}

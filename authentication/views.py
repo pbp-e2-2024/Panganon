@@ -15,6 +15,9 @@ def show_main(request):
     return render(request, "authentication/main.html", {'user': user})
 
 def login_user(request):
+    if 'user_id' in request.session:
+        return redirect('show_main')
+
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -35,7 +38,7 @@ def login_user(request):
 
         request.session['user_id'] = user.id
 
-        return redirect('show_main')
+        return redirect('../')
     else:
         return render(request, "authentication/login.html")
 

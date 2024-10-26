@@ -1,4 +1,4 @@
-<li class="comment-item">
+<li class="comment-item" id="comment-{{ comment.id }}">
     <div class="post-header">
         <div style="display: flex; align-items: center;">
             {% if comment.created_by.image %}
@@ -16,7 +16,7 @@
     </div>
     <p class="comment-content" id="comment-content-{{ comment.id }}">{{ comment.content }}</p>
 
-    <form method="post" action="{% url 'edit_comment' comment.id %}" class="edit-comment-form" id="edit-comment-form-{{ comment.id }}">
+    <form method="post" class="edit-comment-form" id="edit-comment-form-{{ comment.id }}" style="display: none;">
         {% csrf_token %}
         <textarea name="content" required>{{ comment.content }}</textarea>
         <button type="submit">Save</button>
@@ -31,11 +31,9 @@
     </form>
 
     {% if request.session.user_id == comment.created_by.id %}
-    <button class="edit-comment-button" data-comment-id="{{ comment.id }}">Edit Comment</button>
-    <form method="post" action="{% url 'delete_comment' comment.id %}" style="margin: 0;">
-        {% csrf_token %}
-        <button type="submit" class="delete-comment-button">Delete Comment</button>
-    </form>
+    <button class="edit-comment-button" data-comment-id="{{ comment.id }}">Edit</button>
+    <br>
+    <button class="delete-comment-button" data-comment-id="{{ comment.id }}">Delete</button>
     {% endif %}
 
     <ul class="comment-list">
@@ -55,6 +53,66 @@
             form.style.display = 'block';
         });
     });
+
+    document.querySelectorAll('.edit-comment-form').forEach(form => {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const commentId = this.id.split('-').pop();
+            const formData = new FormData(this);
+            const csrfToken = formData.get('csrfmiddlewaretoken');
+
+            fetch(`{% url 'edit_comment' 0 %}`.replace('0', commentId), {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': csrfToken,
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const content = document.getElementById(`comment-content-${commentId}`);
+                    content.textContent = data.content;
+                    content.style.display = 'block';
+                    this.style.display = 'none';
+                } else {
+                    alert('Error updating comment');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+
+    document.querySelectorAll('.delete-comment-button').forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const commentId = this.getAttribute('data-comment-id');
+            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+    
+            if (confirm('Are you sure you want to delete this comment?')) {
+                fetch(`{% url 'delete_comment' 0 %}`.replace('0', commentId), {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRFToken': csrfToken,
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const commentElement = document.getElementById(`comment-${commentId}`);
+                        if (commentElement) {
+                            commentElement.remove();
+                        }
+                    } else {
+                        alert('Error deleting comment: ' + data.error);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            }
+        });
+    });
 </script>
 
 <style>
@@ -62,12 +120,13 @@
         background-color: #ff4444;
         color: #ffffff;
         border: none;
-        padding: 5px 10px;
+
         border-radius: 5px;
         cursor: pointer;
         margin-left: 0px;
         margin-top: 10px;
         height: 30px;
+        width: 60px;
     }
     .delete-comment-button:hover {
         background-color: #cc0000;

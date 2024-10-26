@@ -2,14 +2,13 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Thread, Post, Comment
 from authentication.models import User
 from .forms import CommentForm
-from django.http import HttpResponseForbidden
 from django.http import JsonResponse
 from django.urls import reverse
+from django.views.decorators.http import require_POST
 
 def forum_home(request):
     if 'user_id' not in request.session:
         return redirect('login_user')
-    print(request.session.get('user_id'))
     
     threads = Thread.objects.all()
     return render(request, "forum/home.html", {'threads': threads})
@@ -76,49 +75,50 @@ def add_comment(request, post_id, parent_id=None):
         'parent': parent_comment
     })
 
+@require_POST
 def delete_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
     if request.session.get('user_id') != post.created_by.id:
-        return HttpResponseForbidden("You are not allowed to delete this post.")
+        return JsonResponse({'success': False, 'error': 'Permission denied'}, status=403)
     
-    thread_id = post.thread.id
     post.delete()
-    return redirect('thread_detail', thread_id=thread_id)
+    return JsonResponse({'success': True})
 
+@require_POST
 def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
     if request.session.get('user_id') != comment.created_by.id:
-        return HttpResponseForbidden("You are not allowed to delete this comment.")
+        return JsonResponse({'success': False, 'error': 'Permission denied'}, status=403)
     
-    thread_id = comment.post.thread.id
     comment.delete()
-    return redirect('thread_detail', thread_id=thread_id)
+    return JsonResponse({'success': True})
 
+@require_POST
 def edit_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
     if request.session.get('user_id') != post.created_by.id:
-        return HttpResponseForbidden("You are not allowed to edit this post.")
+        return JsonResponse({'success': False, 'error': 'Permission denied'}, status=403)
     
-    if request.method == 'POST':
-        content = request.POST.get('content')
+    content = request.POST.get('content')
+    if content:
         post.content = content
         post.save()
-        return redirect('thread_detail', thread_id=post.thread.id)
-    
-    return render(request, "forum/edit_post.html", {'post': post})
+        return JsonResponse({'success': True, 'content': post.content})
+    else:
+        return JsonResponse({'success': False, 'error': 'Content cannot be empty'}, status=400)
 
 def edit_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
     if request.session.get('user_id') != comment.created_by.id:
-        return HttpResponseForbidden("You are not allowed to edit this comment.")
-    
+        return JsonResponse({'success': False, 'error': 'Permission denied'}, status=403)
+
     if request.method == 'POST':
         form = CommentForm(request.POST, instance=comment)
         if form.is_valid():
             form.save()
-            return redirect('thread_detail', thread_id=comment.post.thread.id)
-    else:
-        form = CommentForm(instance=comment)
+            return JsonResponse({'success': True, 'content': comment.content})
+        else:
+            return JsonResponse({'success': False, 'error': 'Invalid form data'}, status=400)
     
     return render(request, "forum/edit_comment.html", {
         'form': form,
@@ -136,3 +136,12 @@ def threads_by_user(request, user_id):
     }
     
     return JsonResponse({'user': user.username, 'threads': thread_data})
+
+@require_POST
+def delete_thread(request, thread_id):
+    thread = get_object_or_404(Thread, id=thread_id)
+    if request.session.get('user_id') != thread.created_by.id:
+        return JsonResponse({'success': False, 'error': 'Permission denied'}, status=403)
+    
+    thread.delete()
+    return JsonResponse({'success': True})

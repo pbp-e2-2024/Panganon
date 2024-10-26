@@ -1,36 +1,41 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Forum Home</title>
     <style>
         body {
-            background-color: #f0f8ff; /* Light blue background */
-            color: #333333; /* Dark text for readability */
-            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
 
         .forum-container {
             width: 80%;
-            margin: 20px auto;
-            background-color: #ffffff; /* White background for container */
+            margin: 40px auto;
+            background-color: #f9f9f9;
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 500px;
         }
 
         h1 {
-            color: #007acc; /* Darker blue for headings */
+            color: #007BFF; 
             margin-bottom: 20px;
+            font-size: 28px;
         }
 
         .create-thread-button {
             display: inline-block;
             margin-bottom: 20px;
             padding: 10px 20px;
-            background-color: #007acc; /* Darker blue for button */
+            background-color: #000000;
             color: #ffffff;
             text-decoration: none;
             border-radius: 5px;
@@ -38,7 +43,7 @@
         }
 
         .create-thread-button:hover {
-            background-color: #005f99; /* Even darker blue on hover */
+            background-color: #333333;
         }
 
         .thread-list {
@@ -47,16 +52,17 @@
         }
 
         .thread-item {
-            background-color: #e6f2ff; /* Very light blue for thread items */
+            background-color: #ffffff;
             margin-bottom: 10px;
             padding: 15px;
             border-radius: 5px;
             display: flex;
             align-items: center;
+            border: 1px solid #e0e0e0;
         }
 
         .thread-link {
-            color: #007acc; /* Darker blue for links */
+            color: #007BFF;
             text-decoration: none;
             font-size: 18px;
             flex-grow: 1;
@@ -65,19 +71,52 @@
         .thread-link:hover {
             text-decoration: underline;
         }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .username {
+            color: #ff4444;
+            font-weight: bold;
+            margin-right: 20px;
+            text-decoration: none; 
+        }
+        
+        .username:hover {
+            text-decoration: underline; 
+        }
+
+        .started-by {
+            color: #666666;
+            font-size: 0.9em;
+            margin-right: 5px;
+        }
     </style>
 </head>
-<body>
-    <div class="forum-container">
-        <h1>Forum Threads</h1>
-        <a href="{% url 'create_thread' %}" class="create-thread-button">Create New Thread</a>
-        <ul class="thread-list">
-            {% for thread in threads %}
-                <li class="thread-item">
-                    <a href="{% url 'thread_detail' thread.id %}" class="thread-link">{{ thread.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-</body>
-</html>
+<div class="forum-container">
+    <h1>Panganon Forum Threads</h1>
+    <a href="{% url 'create_thread' %}" class="create-thread-button">Create New Thread</a>
+    <ul class="thread-list">
+        {% for thread in threads %}
+            <li class="thread-item">
+                <div style="display: flex; align-items: center;">
+                    {% if thread.created_by.image %}
+                        <img src="{% url 'display_image' user_id=thread.created_by.id %}" alt="Profile Picture" class="profile-pic">
+                    {% else %}
+                        <p>No profile picture</p>
+                    {% endif %}
+                    <span class="started-by">Started by</span>
+                    <a href="/profile/{{ thread.created_by.id }}/" class="username">{{ thread.created_by.username }}</a>
+                </div>
+                <span class="started-by">Title: </span>
+                <a href="{% url 'thread_detail' thread.id %}" class="thread-link">{{ thread.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

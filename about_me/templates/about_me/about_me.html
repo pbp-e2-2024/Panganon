@@ -92,6 +92,7 @@
             {% endfor %}
         </div>
         <button id="add-recipe-btn" class="mt-5 bg-black text-white px-4 py-2 rounded">Add New Recipe</button>
+        
     </div>
 </div>
 
@@ -155,7 +156,7 @@
 <div id="add-recipe-modal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center overflow-y-auto">
     <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/2 max-h-screen overflow-y-auto">
         <h2 class="text-2xl font-semibold mb-4">Add New Recipe</h2>
-        <form id="recipe-form" method="post" enctype="multipart/form-data">
+        <form id="recipe-form" method="post" action="{% url 'about_me:add_recipe' %}" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="mb-4">
                 <label for="recipe-name" class="block text-sm font-medium text-gray-700">Recipe Name</label>

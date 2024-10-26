@@ -107,15 +107,30 @@ def all_forum_posts(request, user_id):
     return render(request, 'about_me/all_forum_posts.html', context)
 
 
-@login_required(login_url='login_user')
+from django.shortcuts import render, redirect
+from .forms import RecipeForm
+from .models import User, Recipe
+
 def add_recipe(request):
+    if 'user_id' not in request.session:
+        return redirect('login_user')
+
     if request.method == 'POST':
-        form = RecipeForm(request.POST, request.FILES)  # Sertakan request.FILES untuk gambar
+        form = RecipeForm(request.POST, request.FILES)
+
+        user_id = request.session.get('user_id')
+        try:
+            user = User.objects.get(id=user_id)
+        except User.DoesNotExist:
+            return redirect('login_user')  
+
         if form.is_valid():
             recipe = form.save(commit=False)
-            recipe.user = request.user  # Menyimpan user yang menambahkan resep
+            recipe.user = user
             recipe.save()
-            return redirect('about_me:profile_detail', user_id=request.user.id)  # Kembali ke halaman profil setelah disimpan
+            return redirect('about_me:profile_detail', user_id=user.id)
+        else:
+            print("Form is not valid:", form.errors)
     else:
         form = RecipeForm()
 
@@ -128,8 +143,8 @@ def view_recipe(request, recipe_id):
     return render(request, 'about_me/recipe_detail.html', {'recipe': recipe, 'is_own_recipe': is_own_recipe})
 
 # View to edit a recipe
-@login_required(login_url='login_user')
 def edit_recipe(request, recipe_id):
+    
     recipe = get_object_or_404(Recipe, id=recipe_id)
     if recipe.user != request.user:
         return redirect('about_me:profile_detail', user_id=request.user.id)  # Mengarahkan kembali jika pengguna mencoba mengedit resep yang bukan milik mereka
@@ -143,3 +158,25 @@ def edit_recipe(request, recipe_id):
         form = RecipeForm(instance=recipe)  # Mengisi form dengan data yang ada
 
     return render(request, 'about_me/edit_recipe.html', {'form': form, 'recipe': recipe})
+
+from django.http import JsonResponse
+from .models import Recipe, UserProfile
+
+def user_recipes_json(request, user_id):
+    profile = get_object_or_404(UserProfile, user__id=user_id)
+    recipes = Recipe.objects.filter(user=profile.user)
+    
+    recipes_data = [
+        {
+            'id': recipe.id,
+            'name': recipe.name, 
+            'description': recipe.description,
+            'ingredients': recipe.ingredients,
+            'steps': recipe.steps,
+            'image': recipe.image.url if recipe.image else None,
+            'created_at': str(recipe.created_at),  
+        }
+        for recipe in recipes
+    ]
+    
+    return JsonResponse({'recipes': recipes_data})

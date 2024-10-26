@@ -15,4 +15,5 @@ urlpatterns = [
     path('recipe/edit/<int:recipe_id>/', views.edit_recipe, name='edit_recipe'),
     path('<int:user_id>/forum-history/', views.all_forum_posts, name='all_forum_posts'),
     path('<int:user_id>/edit-name/', views.edit_name, name='edit_name'),
+    path('user/<int:user_id>/recipes/json/', views.user_recipes_json, name='user_recipes_json'),
 ]

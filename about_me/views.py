@@ -5,20 +5,36 @@ from django.http import JsonResponse
 from django.shortcuts import redirect, render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from about_me.forms import RecipeForm
+from forum.models import Post
 from .models import Recipe, UserProfile
+from django.core.paginator import Paginator
 
 def profile_view(request, user_id):
     profile = get_object_or_404(UserProfile, user__id=user_id)
-    # forum_posts = profile.user.forum_posts.all()
-    # ratings = profile.user.ratings.all()
+    is_own_profile = (request.session.get('user_id') == user_id)
+    forum_posts = Post.objects.filter(created_by=profile.user).order_by('-created_at')[:3]
 
     context = {
         'profile': profile,
-        'user': profile.user,  # Menambahkan ini untuk memudahkan akses di template
-        # 'posts': forum_posts,
-        # 'ratings': ratings
+        'user': profile.user,
+        'forum_posts': forum_posts,
+        'is_own_profile': is_own_profile,
     }
     return render(request, 'about_me/about_me.html', context)
+
+def edit_name(request, user_id):
+    if request.method == 'POST':
+        profile = get_object_or_404(UserProfile, user__id=user_id)
+        data = json.loads(request.body)
+        new_name = data.get('name', '').strip()
+
+        # Simpan nama baru jika tidak kosong
+        if new_name:
+            profile.user.name = new_name
+            profile.user.save()
+
+        return JsonResponse({'name': new_name})
+    return JsonResponse({'error': 'Invalid request'}, status=400)
 
 def edit_bio(request, user_id):
     profile = get_object_or_404(UserProfile, user__id=user_id)
@@ -74,6 +90,22 @@ def edit_bio(request, user_id):
 
         return JsonResponse({'bio': new_bio})
     return JsonResponse({'error': 'Invalid request'}, status=400)
+
+def all_forum_posts(request, user_id):
+    profile = get_object_or_404(UserProfile, user__id=user_id)
+    forum_posts = Post.objects.filter(created_by=profile.user).order_by('-created_at')
+    
+    # Pagination jika diperlukan, misalnya menampilkan 10 post per halaman
+    paginator = Paginator(forum_posts, 10)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    context = {
+        'profile': profile,
+        'forum_posts': page_obj,
+    }
+    return render(request, 'about_me/all_forum_posts.html', context)
+
 
 @login_required(login_url='login_user')  # Redirect to login page if not authenticated
 def add_recipe(request):

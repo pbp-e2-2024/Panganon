@@ -3,63 +3,73 @@
 
 {% block content %}
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
-<div class="container mx-auto my-10 p-5">
+
+<div class="container mx-auto my-10 p-5 space-y-6">
     <!-- Profile Header -->
-    <div class="bg-white shadow rounded-lg p-5">
-        <div class="grid grid-cols-1 md:grid-cols-3">
+    <div class="bg-gradient-to-r from-gray-700 to-gray-900 text-white shadow rounded-lg p-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <!-- Profile Photo -->
             <div class="flex justify-center md:justify-start">
-                <img src="{% url 'display_image' user_id=user.id %}" alt="{{ user.name }}'s Profile Picture" class="rounded-full w-40 h-40 border-2 border-black-500 object-cover">
+                <img src="{% url 'display_image' user_id=user.id %}" alt="{{ user.name }}'s Profile Picture" class="rounded-full w-40 h-40 border-4 border-white object-cover shadow-lg">
             </div>
             <!-- Name and Preferences Summary -->
-            <div class="md:col-span-2 flex flex-col justify-center items-center md:items-start">
-                <h1 class="text-3xl font-bold">{{ user.name|default:user.username }}</h1>
-                <p class="text-sm text-gray-500">@{{ user.username }}</p>
+            <div class="md:col-span-2 flex flex-col justify-center items-center md:items-start space-y-2">
+                <h1 id="name-summary" class="text-4xl font-bold">{{ user.name|default:user.username }}</h1>
+                <p class="text-lg">@{{ user.username }}</p>
+                
+                <div>
+                    {% if profile.food_preferences %}
+                        <p class="text-sm" id="preference-summary">{{ profile.food_preferences }}</p>
+                    {% else %}
+                        <p class="text-sm" id="preference-summary">Food Preferences: Not set</p>
+                    {% endif %}
+                </div>
 
-                <!-- Conditional for Food Preferences -->
-                {% if profile.food_preferences %}
-                    <p class="text-gray-600" id="preference-summary">{{ profile.food_preferences }}</p>
-                {% else %}
-                    <p class="text-gray-600" id="preference-summary">Food Preferences: Not set</p>
+                {% if is_own_profile %}
+                    <div class="space-x-4">
+                        <a href="#" class="text-sm font-medium text-blue-200 hover:text-white" id="edit-name">✏️ Edit Name</a>
+                        <a href="#" class="text-sm font-medium text-blue-200 hover:text-white" id="edit-preferences">✏️ Edit Preferences</a>
+                    </div>
                 {% endif %}
-
-                <a href="#" class="mt-2 text-blue-500 hover:text-blue-700" id="edit-preferences">✏️ Edit Preferences</a>
             </div>
         </div>
     </div>
 
     <!-- About Section -->
-    <div class="mt-5 bg-white shadow rounded-lg p-5">
-        <h2 class="text-xl font-semibold border-b pb-2 mb-4">About</h2>
-        <p id="bio-summary">{{ profile.bio | default:"No bio available" }}</p>
-        <a href="#" class="mt-2 text-blue-500 hover:text-blue-700" id="edit-bio">✏️ Edit Bio</a>
+    <div class="bg-white shadow rounded-lg p-6">
+        <h2 class="text-2xl font-semibold border-b pb-3 mb-4 text-gray-800">About</h2>
+        <p id="bio-summary" class="text-gray-600">{{ profile.bio | default:"No bio available" }}</p>
+        {% if is_own_profile %}
+            <a href="#" class="mt-3 text-blue-500 hover:text-blue-700" id="edit-bio">✏️ Edit Bio</a>
+        {% endif %}
     </div>
 
     <!-- Forum History Section -->
-    <div class="mt-5 bg-white shadow rounded-lg p-5">
-        <h2 class="text-xl font-semibold border-b pb-2 mb-4">Forum History</h2>
-        <ul>
+    <div class="bg-white shadow rounded-lg p-6">
+        <h2 class="text-2xl font-semibold border-b pb-3 mb-4 text-gray-800">Forum History</h2>
+        <ul class="space-y-4">
             {% for post in forum_posts %}
-            <li class="mt-4">
-                <p class="font-semibold">{{ post.title }}</p>
-                <p class="text-gray-700">{{ post.content }}</p>
-                <p class="text-sm text-gray-500">Posted on {{ post.created_at }}</p>
+            <li class="p-4 border rounded-lg">
+                <p class="font-semibold text-indigo-700">{{ post.thread.title }}</p>
+                <p class="text-gray-600">{{ post.content|truncatewords:10 }}</p>
+                <p class="text-sm text-gray-400">Posted on {{ post.created_at }}</p>
             </li>
             {% empty %}
             <p>No forum history available</p>
             {% endfor %}
         </ul>
+        <a href="{% url 'about_me:all_forum_posts' user.id %}" class="text-blue-500 mt-4 block">See More</a>
     </div>
 
     <!-- Rating History Section -->
-    <div class="mt-5 bg-white shadow rounded-lg p-5">
-        <h2 class="text-xl font-semibold border-b pb-2 mb-4">Rating History</h2>
-        <ul>
+    <div class="bg-white shadow rounded-lg p-6">
+        <h2 class="text-2xl font-semibold border-b pb-3 mb-4 text-gray-800">Rating History</h2>
+        <ul class="space-y-4">
             {% for rating in ratings %}
-            <li class="mt-4">
-                <p class="font-semibold">Rating: {{ rating.score }} stars</p>
-                <p class="text-gray-700">{{ rating.comment }}</p>
-                <p class="text-sm text-gray-500">Rated on {{ rating.created_at }}</p>
+            <li class="p-4 border rounded-lg">
+                <p class="font-semibold text-yellow-500">Rating: {{ rating.score }} stars</p>
+                <p class="text-gray-600">{{ rating.comment }}</p>
+                <p class="text-sm text-gray-400">Rated on {{ rating.created_at }}</p>
             </li>
             {% empty %}
             <p>No ratings history available</p>
@@ -67,60 +77,14 @@
         </ul>
     </div>
 
-    <!-- Modal for Preferences -->
-    <div id="preferences-modal" class="hidden fixed z-10 inset-0 overflow-y-auto">
-        <div class="flex items-center justify-center min-h-screen">
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-xl font-semibold mb-4">Edit Preferences</h2>
-                <form id="preferences-form">
-                    <div class="mb-4">
-                        <label>
-                            <input type="checkbox" name="preferences" value="Spicy Food Lover"> Spicy Food Lover
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="preferences" value="Sweet Tooth"> Sweet Tooth
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="preferences" value="Sour Seeker"> Sour Seeker
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="preferences" value="Salt Craver"> Salt Craver
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="preferences" value="Bitter Enthusiast"> Bitter Enthusiast
-                        </label><br>
-                    </div>
-                    <button type="button" class="bg-blue-500 text-white p-2 rounded" id="save-preferences">Save Preferences</button>
-                    <button type="button" class="ml-4 bg-gray-500 text-white p-2 rounded" id="close-modal">Close</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for Bio -->
-    <div id="bio-modal" class="hidden fixed z-10 inset-0 overflow-y-auto">
-        <div class="flex items-center justify-center min-h-screen">
-            <div class="bg-white p-10 rounded-lg shadow-lg w-1/2">  
-                <h2 class="text-2xl font-semibold mb-4">Edit Bio</h2>
-                <form id="bio-form">
-                    <textarea id="bio-input" class="border p-4 w-full h-40">{{ profile.bio }}</textarea>
-                    <div class="mt-4">
-                        <button type="button" class="bg-blue-500 text-white p-3 rounded" id="save-bio">Save Bio</button>
-                        <button type="button" class="ml-4 bg-gray-500 text-white p-3 rounded" id="close-bio-modal">Close</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mx-auto my-10 p-5">
-        <h2 class="text-2xl font-bold">Your Recipes</h2>
-    
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
+    <!-- Recipes Section -->
+    <div class="bg-white shadow rounded-lg p-6">
+        <h2 class="text-2xl font-bold text-gray-800">Your Recipes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
             {% for recipe in recipes %}
-            <div class="bg-white shadow-md rounded-lg p-4">
-                <img src="{{ recipe.image.url }}" class="rounded w-full h-40 object-cover" alt="{{ recipe.name }}">
-                <h3 class="text-lg font-bold mt-2">{{ recipe.name }}</h3>
+            <div class="bg-gray-100 shadow rounded-lg p-4">
+                <img src="{{ recipe.image.url }}" class="rounded w-full h-40 object-cover mb-4" alt="{{ recipe.name }}">
+                <h3 class="text-lg font-semibold text-gray-700">{{ recipe.name }}</h3>
                 <a href="{% url 'about_me:view_recipe' recipe.id %}" class="text-blue-500 mt-2 block">View Recipe</a>
             </div>
             {% empty %}
@@ -129,94 +93,168 @@
         </div>
         <a href="{% url 'about_me:add_recipe' %}" class="mt-5 block text-blue-500">Add New Recipe</a>
     </div>
-
 </div>
+
+<!-- Modals for Editing -->
+{% if is_own_profile %}
+<!-- Modal for Preferences -->
+<div id="preferences-modal" class="hidden fixed z-10 inset-0 bg-gray-800 bg-opacity-50 overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-80">
+            <h2 class="text-xl font-semibold mb-4">Edit Preferences</h2>
+            <form id="preferences-form">
+                <div class="mb-4 space-y-2">
+                    <label><input type="checkbox" name="preferences" value="Spicy Food Lover"> Spicy Food Lover</label><br>
+                    <label><input type="checkbox" name="preferences" value="Sweet Tooth"> Sweet Tooth</label><br>
+                    <label><input type="checkbox" name="preferences" value="Sour Seeker"> Sour Seeker</label><br>
+                    <label><input type="checkbox" name="preferences" value="Salt Craver"> Salt Craver</label><br>
+                    <label><input type="checkbox" name="preferences" value="Bitter Enthusiast"> Bitter Enthusiast</label><br>
+                </div>
+                <div class="flex justify-end space-x-4">
+                    <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" id="save-preferences">Save</button>
+                    <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded" id="close-modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Bio -->
+<div id="bio-modal" class="hidden fixed z-10 inset-0 bg-gray-800 bg-opacity-50 overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+            <h2 class="text-2xl font-semibold mb-4">Edit Bio</h2>
+            <form id="bio-form">
+                <textarea id="bio-input" class="border border-gray-300 p-3 w-full h-32 rounded-md">{{ profile.bio }}</textarea>
+                <div class="flex justify-end space-x-4 mt-4">
+                    <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" id="save-bio">Save</button>
+                    <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded" id="close-bio-modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Name -->
+<div id="name-modal" class="hidden fixed z-10 inset-0 bg-gray-800 bg-opacity-50 overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+            <h2 class="text-2xl font-semibold mb-4">Edit Name</h2>
+            <form id="name-form">
+                <input type="text" id="name-input" class="border border-gray-300 p-3 w-full rounded-md" value="{{ user.name }}">
+                <div class="flex justify-end space-x-4 mt-4">
+                    <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" id="save-name">Save</button>
+                    <button type="button" class="bg-gray-500 text-white px-4 py-2 rounded" id="close-name-modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 <!-- JavaScript untuk modal dan AJAX -->
 <script>
-    document.getElementById('edit-preferences').addEventListener('click', function(event) {
-        event.preventDefault();
-        // Buka modal dan set ulang preferensi yang sudah disimpan
-        document.getElementById('preferences-modal').classList.remove('hidden');
-        
-        // Fetch the current preferences to pre-check checkboxes
-        fetch("{% url 'about_me:get_preferences' user_id=user.id %}")
-        .then(response => response.json())
-        .then(data => {
-            // Loop through all checkboxes and mark the ones that match the saved preferences
-            const preferences = data.preferences || [];
-            document.querySelectorAll('input[name="preferences"]').forEach(function(checkbox) {
-                checkbox.checked = preferences.includes(checkbox.value);
-            });
-        })
-        .catch(error => console.error('Error fetching preferences:', error));
-    });
-
-    document.getElementById('close-modal').addEventListener('click', function() {
-        document.getElementById('preferences-modal').classList.add('hidden');
-    });
-
-    document.getElementById('save-preferences').addEventListener('click', function() {
-        let selectedPreferences = [];
-        document.querySelectorAll('input[name="preferences"]:checked').forEach(function(checkbox) {
-            selectedPreferences.push(checkbox.value);
+    ('{% if is_own_profile %}')
+    document.addEventListener("DOMContentLoaded", function() {
+        // Event listener untuk membuka modal edit nama
+        document.getElementById('edit-name').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('name-modal').classList.remove('hidden');
         });
 
-        // Kirim data preferensi ke server dengan AJAX
-        fetch("{% url 'about_me:edit_preferences' user_id=user.id %}", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': '{{ csrf_token }}',
-            },
-            body: JSON.stringify({preferences: selectedPreferences})
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Perbarui tampilan preferensi setelah berhasil disimpan
-            document.getElementById('preference-summary').textContent = data.preferences.length ? data.preferences.join(", ") : "Not set";
+        document.getElementById('close-name-modal').addEventListener('click', function() {
+            document.getElementById('name-modal').classList.add('hidden');
+        });
+
+        document.getElementById('save-name').addEventListener('click', function() {
+            let newName = document.getElementById('name-input').value.trim();
+
+            fetch("{% url 'about_me:edit_name' user_id=user.id %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}',
+                },
+                body: JSON.stringify({name: newName})
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('name-summary').textContent = data.name || "{{ user.name|default:user.username }}";
+                document.getElementById('name-modal').classList.add('hidden');
+            })
+            .catch(error => console.error('Error:', error));
+        });
+
+        // Event listener untuk Preferences Modal
+        document.getElementById('edit-preferences').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('preferences-modal').classList.remove('hidden');
+            
+            fetch("{% url 'about_me:get_preferences' user_id=user.id %}")
+            .then(response => response.json())
+            .then(data => {
+                const preferences = data.preferences || [];
+                document.querySelectorAll('input[name="preferences"]').forEach(function(checkbox) {
+                    checkbox.checked = preferences.includes(checkbox.value);
+                });
+            })
+            .catch(error => console.error('Error fetching preferences:', error));
+        });
+
+        document.getElementById('close-modal').addEventListener('click', function() {
             document.getElementById('preferences-modal').classList.add('hidden');
-        })
-        .catch(error => console.error('Error:', error));
-    });
+        });
 
-    // Event listener untuk membuka modal edit bio
-    document.getElementById('edit-bio').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('bio-modal').classList.remove('hidden');
-    });
+        document.getElementById('save-preferences').addEventListener('click', function() {
+            let selectedPreferences = [];
+            document.querySelectorAll('input[name="preferences"]:checked').forEach(function(checkbox) {
+                selectedPreferences.push(checkbox.value);
+            });
 
-    // Event listener untuk menutup modal bio
-    document.getElementById('close-bio-modal').addEventListener('click', function() {
-        document.getElementById('bio-modal').classList.add('hidden');
-    });
+            fetch("{% url 'about_me:edit_preferences' user_id=user.id %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}',
+                },
+                body: JSON.stringify({preferences: selectedPreferences})
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('preference-summary').textContent = data.preferences.length ? data.preferences.join(", ") : "Not set";
+                document.getElementById('preferences-modal').classList.add('hidden');
+            })
+            .catch(error => console.error('Error:', error));
+        });
 
-    // Event listener untuk menyimpan bio melalui AJAX
-    document.getElementById('save-bio').addEventListener('click', function() {
-        let newBio = document.getElementById('bio-input').value.trim();  // Menghapus spasi di depan dan belakang
+        document.getElementById('edit-bio').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('bio-modal').classList.remove('hidden');
+        });
 
-        fetch("{% url 'about_me:edit_bio' user_id=user.id %}", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': '{{ csrf_token }}',
-            },
-            body: JSON.stringify({bio: newBio})
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.bio === "") {
-                // Jika bio kosong, tampilkan pesan "No bio available"
-                document.getElementById('bio-summary').textContent = "No bio available";
-            } else {
-                // Jika bio terisi, tampilkan bio yang baru disimpan
-                document.getElementById('bio-summary').textContent = data.bio;
-            }
-            // Tutup modal setelah bio berhasil disimpan
+        document.getElementById('close-bio-modal').addEventListener('click', function() {
             document.getElementById('bio-modal').classList.add('hidden');
-        })
-        .catch(error => console.error('Error:', error));
-    });
+        });
 
+        document.getElementById('save-bio').addEventListener('click', function() {
+            let newBio = document.getElementById('bio-input').value.trim();
+
+            fetch("{% url 'about_me:edit_bio' user_id=user.id %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}',
+                },
+                body: JSON.stringify({bio: newBio})
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('bio-summary').textContent = data.bio || "No bio available";
+                document.getElementById('bio-modal').classList.add('hidden');
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+    ('{% endif %}')
 </script>
 {% endblock %}

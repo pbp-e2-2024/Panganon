@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mx-auto my-10 p-5">
+    <h2 class="text-3xl font-bold">{{ recipe.name }}</h2>
+    <img src="{{ recipe.image.url }}" class="rounded w-full h-64 object-cover mt-5" alt="{{ recipe.name }}">
+
+    <h3 class="text-xl font-semibold mt-5">Description</h3>
+    <p>{{ recipe.description }}</p>
+
+    <h3 class="text-xl font-semibold mt-5">Ingredients</h3>
+    <ul class="list-disc list-inside">
+        {% for ingredient in recipe.ingredients.splitlines %}
+        <li>{{ ingredient }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-5">Steps</h3>
+    <ol class="list-decimal list-inside">
+        {% for step in recipe.steps.splitlines %}
+        <li>{{ step }}</li>
+        {% endfor %}
+    </ol>
+
+    <a href="{% url 'about_me:edit_recipe' recipe.id %}" class="mt-5 block text-blue-500">Edit Recipe</a>
+</div>
+{% endblock %}

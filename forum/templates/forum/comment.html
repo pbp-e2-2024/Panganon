@@ -10,7 +10,7 @@
         <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
             <div style="display: flex; align-items: center;">
                 <strong class="username">{{ comment.created_by.username }}</strong>
-                <span class="created-at" style="margin-left: 10px;">{{ comment.created_at }}</span>
+                <span class="created-at" style="margin-left: 10px;">{{ comment.created_at_plus_7_hours|date:"M. d, Y, g:i a"  }}</span>
             </div>
         </div>
     </div>

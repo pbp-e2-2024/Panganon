@@ -1,22 +1,16 @@
 # favorites/models.py
+from authentication.models import User
+import uuid
+from daftar_toko.models import Restaurant  # Import Restaurant from daftar_toko
 from django.db import models
 
-class Restaurant(models.Model):
-    name = models.CharField(max_length=255)
-    description = models.TextField(null=True, blank=True)
-    address = models.TextField(null=True, blank=True)
-    halal_status = models.CharField(max_length=50, null=True, blank=True)
-    operating_hours = models.JSONField(null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-
 class FavoriteRestaurant(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True) 
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     added_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        unique_together = ('restaurant',)
+        unique_together = ['user','restaurant']
 
 class RestaurantReview(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)

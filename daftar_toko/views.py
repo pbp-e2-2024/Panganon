@@ -1,5 +1,5 @@
 from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.core import serializers
 from .models import Restaurant
 
@@ -8,7 +8,11 @@ from django.shortcuts import render
 from django.core import serializers
 from .models import Restaurant
 
+
 def restaurant_list(request):
+    if 'user_id' not in request.session:
+        return redirect('login_user')
+    
     queryset = Restaurant.objects.all()
 
     # Apply filters

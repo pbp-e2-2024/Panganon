@@ -2,35 +2,6 @@
 {% load static %}
 {% block content %}
 
-<style>
-    body {
-        margin: 10px;
-        padding: auto;
-    }
-    a {
-        text-decoration: none;
-        display: inline-block;
-        padding: 10px 20px;
-        margin-bottom: 10px;
-    }
-    h1 {
-        text-align: center;
-        font-family: Montserrat, sans-serif;
-        font-size: 30px;
-        background-color: rgb(41, 54, 79);
-        color: white;
-        border-radius: 20px;
-        padding: 10px;
-    }
-    h3 {
-        font-size: medium;
-        font-weight: 400;
-    }
-    p {
-        font-size: 12px;
-        font-style: oblique;
-    }
-</style>
 
 <body>
     <div class="container">
@@ -48,10 +19,14 @@
                         <p>Jam Operasi: {{ restaurant.operating_hours }}</p>
                     </div>
                     <div class="pl-10 m-1 flex justify-end">
-                        <a href="{% url 'add_favorite' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Add to Favorite</a>
-                        <a href="{% url 'remove_favorite' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Remove Favorite</a>
-                        <a href="{% url 'add_review' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Add Review</a>
-                        <a href="{% url 'remove_review' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Remove Review</a>
+                        <form action="{% url 'favorites:add_favorite' restaurant.id %}" method="POST" class="favorite-form">
+                            {% csrf_token %}
+                            <button type="submit" class="favorite-button">
+                                Add to Favorites
+                            </button>
+                        </form>                        <a href="" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Remove Favorite</a>
+                        <a href="" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Add Review</a>
+                        <a href="" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Remove Review</a>
                     </div>
                 </div>
             {% endfor %}

@@ -1,175 +1,176 @@
-from django.shortcuts import render, redirect, reverse
-from django.shortcuts import render, get_object_or_404, redirect
-from favorites.models import Restaurant, FavoriteRestaurant, RestaurantReview
-from django.http import HttpResponse,  HttpResponseRedirect
-from django.core import serializers
+from datetime import timezone
+from urllib.parse import unquote
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 from django.utils.html import strip_tags
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from django.core import serializers
+
+from .models import FavoriteRestaurant, RestaurantReview
+from authentication.models import User
 
 
-
-# Create your views here.
-
-#@login_required(login_url='/login')
-
-def show_restaurant(request):
-
-    return render(request, "add_fav.html")
+from daftar_toko.models import Restaurant 
 
 def show_fav_restaurant(request):
-    favorite_restaurants = FavoriteRestaurant.objects.filter(user=request.user)
+    if 'user_id' not in request.session:
+        return redirect('login_user')
     
+    restaurants = Restaurant.objects.all()
     context = {
-        'favorite_restaurants': favorite_restaurants,
+        'restaurants': restaurants,
     }
     return render(request, "add_fav.html", context)
+    
 
-def show_restaurant_review(request):
-    ...
-
-def add_favorite(request,restaurant_id):
-    #add code
-    restaurant = get_object_or_404(Restaurant, id= restaurant_id)
-    favorite, created = FavoriteRestaurant.objects.get_or_create(user=request.user, restaurant=restaurant)
-
-    if created:
-        messages.success(request, f'{Restaurant.name} telah ditambahkan ke favorti anda')
-    else:
-        messages.success(request, f'{Restaurant.name} sudah ditambahkan kedalam favorit anda')
-
-    return redirect('restaurant_detail', restaurant_id=restaurant.id)
-
-def remove_favorite(request,restaurant_id):
-    #add code
-    restaurant = get_object_or_404(Restaurant, id= restaurant_id)
-    favorite= FavoriteRestaurant.objects.get_or_create(user=request.user, restaurant=restaurant)
-
-    if favorite.exist():
-        favorite.delete()
-        messages.success(request, f'{Restaurant.name} telah dihapus dari favorti anda')
-    else:
-        messages.success(request, f'{Restaurant.name} tidak ditemukan di favorit anda')
-
-    return redirect('restaurant_detail', restaurant_id=restaurant.id)
-
-def add_review(request, review_id):
-    #add code
-    restaurant = get_object_or_404(Restaurant, id=review_id)
-
-    if request.method == "POST":
-        review_content = request.POST.get("review")
-        rating = request.POST.get("rating")
-
-        if review_content and rating:
-            # Create and save the review
-            review = RestaurantReview.objects.create(
-                user=request.user, 
-                restaurant=restaurant, 
-                review_text=review_content, 
-                rating=rating
-            )
-            review.save()
-            messages.success(request, f'Review for {restaurant.name} has been added.')
-        else:
-            messages.error(request, 'Review content and rating are required.')
-
-    return redirect('restaurant_detail', restaurant_id=restaurant.id)
-
-
-@csrf_exempt
 @require_POST
-def add_review_by_AJAX(request, review_id):
-    #add code
-    restaurant = get_object_or_404(Restaurant, id=review_id)
-
-    review_content = strip_tags(request.POST.get("review"))
-    rating = strip_tags(request.POST.get("rating"))
-
-
+def add_favorite(request, restaurant_id):
+    
+    if 'user_id' not in request.session:
+        return redirect('login_user')
+    
     try:
-        rating = float(rating)
-    except(ValueError, TypeError):
-        messages.error(request, 'Rating harus bilangan.')
-        return redirect('restaurant_detail', restaurant_id=restaurant.id)
-
-       
-            
-    if review_content and 1 <= rating <=5:
-        review = RestaurantReview.objects.create(
-            user=request.user, 
-            restaurant=restaurant, 
-            review_text=review_content, 
-            rating=rating
+        # Get the restaurant by name
+        restaurant = get_object_or_404(Restaurant, id=restaurant_id)
+        user_id = request.session.get('user_id')
+        user = User.objects.get(id=user_id)
+        
+        # Check if already favorited
+        favorite, created = FavoriteRestaurant.objects.get_or_create(
+            user=user,
+            restaurant=restaurant
         )
-        review.save()
-
-    return redirect(b'review was added', restaurant_id=restaurant.id)
-
-
+        
+        if created:
+            messages.success(request, f'{restaurant.name} has been added to your favorites!')
+        else:
+            messages.info(request, f'{restaurant.name} is already in your favorites!')
+            
+        # If it's an AJAX request, return JSON response
+        if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+            return JsonResponse({
+                'status': 'success',
+                'created': created,
+                'message': 'Added to favorites' if created else 'Already in favorites'
+            })
+            
+        # Redirect back to the previous page
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER', reverse('show_fav_restaurant')))
+        
+    except Restaurant.DoesNotExist:
+        messages.error(request, 'Restaurant not found!')
+        return redirect('show_fav_restaurant')
+    except User.DoesNotExist:
+        messages.error(request, 'User not found!')
+        return redirect('login_user')
+    except Exception as e:
+        messages.error(request, f'An error occurred: {str(e)}')
+        return redirect('show_fav_restaurant')
     
-def remove_review(request, review_id):
-    #add code
-    review = get_object_or_404(RestaurantReview, id=review_id, user=request.user)
-    
-    if request.method == "POST":
-        review.delete()
-        messages.success(request, f'Review for {review.restaurant.name} has been removed.')
-    else:
-        messages.error(request, 'Failed to remove review.')
 
-    return redirect('restaurant_detail', restaurant_id=review.restaurant.id)
-def list_favorites(request):
-    #add code
-    favorites = FavoriteRestaurant.objects.filter(user=request.user)
+# def remove_favorite(request, restaurant_id):
+#     if 'user_id' not in request.session:
+#         return redirect('login_user')
+
+#     restaurant = get_object_or_404(Restaurant, id=restaurant_id)
+#     favorite = FavoriteRestaurant.objects.filter(user=request.user, restaurant=restaurant)
+
+#     if favorite.exists():
+#         favorite.delete()
+#         messages.success(request, f'{restaurant.name} telah dihapus dari favorit anda')
+#     else:
+#         messages.success(request, f'{restaurant.name} tidak ditemukan di favorit anda')
+
+#     return redirect('restaurant_detail', restaurant_id=restaurant.id)
+
+# def add_review(request, review_id):
+#     if 'user_id' not in request.session:
+#         return redirect('login_user')
     
-    return render(request, 'add_fav.html', {'favorites': favorites})
+#     restaurant = get_object_or_404(Restaurant, id=review_id)
+
+#     if request.method == "POST":
+#         review_content = request.POST.get("review")
+#         rating = request.POST.get("rating")
+
+#         if review_content and rating:
+#             review = RestaurantReview.objects.create(
+#                 user=request.user, 
+#                 restaurant=restaurant, 
+#                 review_text=review_content, 
+#                 rating=rating
+#             )
+#             review.save()
+#             messages.success(request, f'Review for {restaurant.name} has been added.')
+#         else:
+#             messages.error(request, 'Review content and rating are required.')
+
+#     return redirect('restaurant_detail', restaurant_id=restaurant.id)
+
+# @csrf_exempt
+# @require_POST
+# def add_review_by_AJAX(request, review_id):
+#     restaurant = get_object_or_404(Restaurant, id=review_id)
+
+#     review_content = strip_tags(request.POST.get("review"))
+#     rating = strip_tags(request.POST.get("rating"))
+
+#     try:
+#         rating = float(rating)
+#     except (ValueError, TypeError):
+#         messages.error(request, 'Rating harus bilangan.')
+#         return redirect('restaurant_detail', restaurant_id=restaurant.id)
+            
+#     if review_content and 1 <= rating <= 5:
+#         review = RestaurantReview.objects.create(
+#             user=request.user, 
+#             restaurant=restaurant, 
+#             review_text=review_content, 
+#             rating=rating
+#         )
+#         review.save()
+
+#     return HttpResponseRedirect('review was added')
+
+# def remove_review(request, review_id):
+#     review = get_object_or_404(RestaurantReview, id=review_id, user=request.user)
+    
+#     if request.method == "POST":
+#         restaurant_id = review.restaurant.id
+#         review.delete()
+#         messages.success(request, f'Review for {review.restaurant.name} has been removed.')
+#     else:
+#         messages.error(request, 'Failed to remove review.')
+
+#     return redirect('restaurant_detail', restaurant_id=restaurant_id)
+
+# def list_favorites(request):
+#     favorites = FavoriteRestaurant.objects.filter(user=request.user)
+#     return render(request, 'add_fav.html', {'favorites': favorites})
 
 def show_xml(request):
-    dataRestaurant = Restaurant.objects.filter(user=request.user)
-    dataReview = RestaurantReview.objects.filter(user=request.user)
-
-    serializer_Restaurant = serializers.serialize("xml", dataRestaurant)
-    serializer_Review = serializers.serialize("xml", dataReview)
-
-    combined_seliarizers = serializer_Restaurant + serializer_Review
-
-    return HttpResponse(combined_seliarizers, content_type="application/xml")
-
-
+    user_id = request.session.get('user_id')
+    user = User.objects.get(id=user_id)
+    data_review = RestaurantReview.objects.filter(user=user)
+    return HttpResponse(serializers.serialize("xml", data_review), content_type="application/xml")
 
 def show_json(request):
-    dataRestaurant = Restaurant.objects.filter(user=request.user)
-    dataReview = RestaurantReview.objects.filter(user=request.user)
-
-    serializer_Restaurant = serializers.serialize("json", dataRestaurant)
-    serializer_Review = serializers.serialize("json", dataReview)
-
-    combined_seliarizers = serializer_Restaurant + serializer_Review
-
-    return HttpResponse(combined_seliarizers, content_type="application/json")
+    user_id = request.session.get('user_id')
+    user = User.objects.get(id=user_id)
+    data_review = RestaurantReview.objects.filter(user=user)
+    return HttpResponse(serializers.serialize("json", data_review), content_type="application/json")
 
 def show_xml_by_id(request, id):
-    dataRestaurant = Restaurant.objects.filter(pk=id)
-    dataReview = RestaurantReview.objects.filter(pk=id)
-
-    serializer_Restaurant = serializers.serialize("xml", dataRestaurant)
-    serializer_Review = serializers.serialize("xml", dataReview)
-
-    combined_seliarizers = serializer_Restaurant + serializer_Review
-
-    return HttpResponse(combined_seliarizers, content_type="application/xml")
+    user_id = request.session.get('user_id')
+    user = User.objects.get(id=user_id)
+    data_review = RestaurantReview.objects.filter(user=user)
+    return HttpResponse(serializers.serialize("xml", data_review), content_type="application/xml")
 
 def show_json_by_id(request, id):
-    dataRestaurant = Restaurant.objects.filter(pk=id)
-    dataReview = RestaurantReview.objects.filter(pk=id)
-
-    serializer_Restaurant = serializers.serialize("json", dataRestaurant)
-    serializer_Review = serializers.serialize("json", dataReview)
-
-    combined_seliarizers = serializer_Restaurant + serializer_Review
-
-    return HttpResponse(combined_seliarizers, content_type="application/json")
+    user_id = request.session.get('user_id')
+    user = User.objects.get(id=user_id)
+    data_review = RestaurantReview.objects.filter(user=user)
+    return HttpResponse(serializers.serialize("json", data_review), content_type="application/json")

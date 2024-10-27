@@ -1,6 +1,7 @@
 from django.db import models
 
 class Restaurant(models.Model):
+    id = models.CharField(primary_key=True, unique=True, max_length=255, null=False)
     name = models.CharField(max_length=255)
     rating = models.FloatField(null=True, blank=True)
     rating_amount = models.IntegerField(null=True, blank=True)

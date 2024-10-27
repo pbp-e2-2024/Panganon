@@ -1,21 +1,15 @@
 from django.db import models
 from django.contrib.auth.models import User
 import uuid
-
-class Restaurant(models.Model):
-    name = models.CharField(max_length=255)
-    address = models.TextField()
-    halal_ststaus = models.BooleanField(default=False)
-    operating_hours = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True) 
-
-    def __str__(self):
-        return self.name
+from daftar_toko.models import Restaurant  # Import Restaurant from daftar_toko
     
 class FavoriteRestaurant(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)  # This now references daftar_toko's Restaurant
     added_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ['user', 'restaurant']
 
 class RestaurantReview(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

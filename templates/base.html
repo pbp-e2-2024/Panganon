@@ -22,12 +22,10 @@
   <body class="font-Montserrat">
     <header class="flex items-center justify-between lg:px-15 xl:px-20 max-lg:py-2 mx-10 py-5 max-w-[80%] mx-auto">
       <div class="flex items-center justify-between w-full">
-        <!-- Logo -->
         <a href="/" class="text-2xl font-bold">
           Pangonan
         </a>
     
-        <!-- Desktop Navigation -->
         <nav id="menu" class="hidden lg:flex space-x-4">
           <a href="/daftar_toko" class="text-gray-700">Daftar Makanan</a>
           <a href="/forum" class="text-gray-700">Forum</a>
@@ -36,14 +34,11 @@
           <a href="/event" class="text-gray-700">Event</a>
         </nav>
     
-        <!-- User Info and Mobile Menu Button -->
         <div class="flex items-center space-x-4">
-          <!-- User Info -->
           <div id="user-info" class="relative hidden lg:flex items-center space-x-4 group">
             <img id="profile-picture" src="" alt="Profile Picture" style="width:50px;height:50px;" class="rounded-full cursor-pointer shadow-md">
             <span id="username" class="text-gray-700"></span>
 
-            <!-- Dropdown Menu for Logout -->
             <div id="logout-dropdown" class="absolute right-0 mt-12 w-40 bg-white rounded-lg shadow-lg opacity-0 transform scale-90 group-hover:opacity-100 group-hover:scale-100 transition duration-200 ease-in-out">
               <a href="/auth/logout" class="flex items-center px-4 py-2 text-red-600 hover:bg-red-50 rounded transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -55,7 +50,6 @@
           </div>
           <a id="sign-in-link" href="/auth" class="text-gray-700">Sign-in</a>
           
-          <!-- Mobile Menu Button -->
           <div class="lg:hidden">
             <button id="menu-toggle" class="text-gray-700 focus:outline-none">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +60,6 @@
         </div>
       </div>
     
-      <!-- Mobile Navigation Menu -->
       <div id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out">
         <div class="p-4">
           <button id="close-menu" class="absolute top-4 right-4 text-gray-700 focus:outline-none">
@@ -140,7 +133,6 @@
         }, 300);
       });
 
-      // Close menu when clicking outside
       document.addEventListener('click', function(event) {
         if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
           mobileMenu.classList.add('translate-x-full');
@@ -150,12 +142,10 @@
         }
       });
 
-      // Close the logout dropdown when clicking outside the user-info div
       document.addEventListener('click', function(event) {
         const userInfoDiv = document.getElementById('user-info');
         const logoutDropdown = document.getElementById('logout-dropdown');
 
-        // Jika klik di luar user info, sembunyikan dropdown
         if (!userInfoDiv.contains(event.target)) {
           logoutDropdown.classList.add('hidden');
         } else {

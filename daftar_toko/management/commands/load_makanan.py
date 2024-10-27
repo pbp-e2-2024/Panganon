@@ -24,6 +24,7 @@ class Command(BaseCommand):
                     data = json.load(file)
                     for key, value in data.items():
                         Restaurant.objects.create(
+                            id=key,
                             name=value['name'],
                             rating=value['rating'],
                             rating_amount=value['rating_amount'],

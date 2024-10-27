@@ -4,7 +4,7 @@ import uuid
 from daftar_toko.models import Restaurant  # Import Restaurant from daftar_toko
     
 class FavoriteRestaurant(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)  # This now references daftar_toko's Restaurant
     added_at = models.DateTimeField(auto_now_add=True)
 

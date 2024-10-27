@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -106,8 +107,24 @@
             const userInfoDiv = document.getElementById('user-info');
             userInfoDiv.classList.remove('hidden');
             document.getElementById('username').textContent = data.username;
+      
             const profilePicture = document.getElementById('profile-picture');
-            profilePicture.src = `{% url 'display_image' user_id=0 %}`.replace('0', data.userID);
+            const profilePictureUrl = `{% url 'display_image' user_id=0 %}`.replace('0', data.userID);
+      
+            // Check if profile picture URL is valid
+            fetch(profilePictureUrl, { method: 'HEAD' })
+              .then(res => {
+                if (res.ok) {
+                  profilePicture.src = profilePictureUrl; // Set profile picture
+                  profilePicture.style.display = 'block'; // Show profile picture
+                } else {
+                  profilePicture.style.display = 'none'; // Hide profile picture if not valid
+                }
+              })
+              .catch(() => {
+                profilePicture.style.display = 'none'; // Hide on error
+              });
+      
             const aboutMeLink = document.getElementById('about-me-link');
             aboutMeLink.href = `/profile/${data.userID}`;
           })
@@ -116,7 +133,8 @@
             document.getElementById('user-info').remove();
           });
       });
-    
+      
+        
       const menuToggle = document.getElementById('menu-toggle');
       const mobileMenu = document.getElementById('mobile-menu');
       const closeMenu = document.getElementById('close-menu');

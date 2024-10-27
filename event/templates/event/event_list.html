@@ -1,12 +1,11 @@
 {% extends "base.html" %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event List</title>
-    <!-- Link ke Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
-</head>
+{% load static %}
+
+{% block meta %}
+<title>Pangonan</title>
+{% endblock meta %}
+
+{% block content %}
 <body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex items-center justify-center">
     <div class="w-full max-w-3xl px-4 py-6 mx-auto">
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center">

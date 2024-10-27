@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'forum',
     'about_me',
     'event',
+    'favorites',
 
 ]
 

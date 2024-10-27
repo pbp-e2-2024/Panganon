@@ -3,32 +3,96 @@
 {% block content %}
 <body>
     <div class="container">
-        <div>
-            <h1>Favorites</h1>
-        </div>
-        {% if restaurants %}
-            <div class="grid gap-5 py-5">
-                {% for restaurant in restaurants %}
-                    <div class="border rounded-3xl border-gray-900 bg-blue-100 transition duration-300 hover:bg-blue-300 py-0 m-0">
-                        <div class="m-3">
-                            <h3>{{ restaurant.name }}</h3>
-                            <p>Deskripsi: {{ restaurant.description }}</p>
-                            <p>Address: {{ restaurant.address }}</p>
-                            <p>Status: {{ restaurant.halal_status }}</p>
-                            <p>Jam Operasi: {{ restaurant.operating_hours }}</p>
-                        </div>
-                        <div class="pl-10 m-1 flex justify-end">
-                            <a href="{% url 'add_favorite' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Add to Favorite</a>
-                            <a href="{% url 'remove_favorite' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Remove Favorite</a>
-                            <a href="{% url 'add_review' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Add Review</a>
-                            <a href="{% url 'remove_review' restaurant.id %}" class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300">Remove Review</a>
-                        </div>
+        <div id="messages"></div>
+
+        
+
+        {% if user_favorites %}
+            <div>
+                <h1 class="justify-center text-center" style="margin-top: 20px;">Your Favorites</h1>
+            </div>
+            <div class="bg-gray-100 rounded-3xl shadow-md p-4">
+                {% for favorite in user_favorites %}
+                    <div class="px-6 py-4 space-y-6">
+                        <div class="mb-4 p-8 bg-white rounded-2xl text-black hover:bg-gray-200 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none transition duration-200"">
+                            <div class="m-3">
+                                <label for="name" class="text-xl font-semibold">{{ favorite.restaurant.name }}</label>
+                                <p class="block text-sm font-medium text-gray-700">Deskripsi: {{ favorite.restaurant.description }}</p>
+                                <p class="block text-sm font-medium text-gray-700">Address: {{ favorite.restaurant.address }}</p>
+                                <p class="block text-sm font-medium text-gray-700">Status: {{ favorite.restaurant.halal_status }}</p>
+                                <p class="block text-sm font-medium text-gray-700">Jam Operasi: {{ favorite.restaurant.operating_hours }}</p>
+                            </div>
+                            <div class="pl-10 m-1 flex justify-end">
+                                <button class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300" 
+                                        onclick="removeFavorite({{ restaurant.id }})">Remove Favorite</button>
+                                <button class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300" 
+                                        onclick="showReviewForm({{ restaurant.id }})">Add Review</button>
+                                <button class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300" 
+                                        onclick="removeReview({{ restaurant.review.id }})">Remove Review</button>
+                            </div>
                     </div>
+                
                 {% endfor %}
             </div>
         {% else %}
-            <p>No favorite restaurants found. Please add some to your favorites list.</p>
+        <div class="bg-gray-100 rounded-3xl shadow-md p-4"><p class="justify-center text-center" style="margin-top: 20px;">No favorite restaurants found. Please add some to your favorites list.</p></div>
         {% endif %}
     </div>
+
+    <script>
+        function showReviewForm(restaurantId) {
+            const reviewForm = document.getElementById(`review-form-${restaurantId}`);
+            reviewForm.style.display = reviewForm.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function addReview(restaurantId) {
+            const reviewText = document.getElementById(`review-text-${restaurantId}`).value;
+            const reviewRating = document.getElementById(`review-rating-${restaurantId}`).value;
+
+            fetch(`/favorites/add_review/${restaurantId}/`, {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ review: reviewText, rating: reviewRating }),
+                credentials: 'same-origin'
+            })
+            .then(response => response.json())
+            .then(data => {
+                showMessage(data.message, data.success);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function removeFavorite(favoriteId) {
+            fetch(`/favorites/remove_favorite/${favoriteId}/`, {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}',
+                    'Content-Type': 'application/json',
+                },
+                credentials: 'same-origin'
+            })
+            .then(response => response.json())
+            .then(data => {
+                showMessage(data.message, data.success);
+                location.reload(); // Reload the page to reflect changes
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function showMessage(message, success) {
+            const messageContainer = document.getElementById('messages');
+            messageContainer.innerHTML = `<p class="${success ? 'text-green-600' : 'text-red-600'}">${message}</p>`;
+            setTimeout(() => {
+                messageContainer.innerHTML = '';
+            }, 3000);
+        }
+    </script>
 </body>
 {% endblock %}

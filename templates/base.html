@@ -17,6 +17,26 @@
       #user-info:hover #logout-dropdown {
         display: block;
       }
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      .overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .mobile-menu {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .mobile-menu.active {
+        transform: translateY(0);
+      }
     </style>
   </head>
 
@@ -39,7 +59,7 @@
           <div id="user-info" class="relative hidden lg:flex items-center space-x-4 group">
             <img id="profile-picture" src="" alt="Profile Picture" style="width:50px;height:50px;" class="rounded-full cursor-pointer shadow-md">
             <span id="username" class="text-gray-700"></span>
-
+            
             <div id="logout-dropdown" class="absolute right-0 mt-12 w-40 bg-white rounded-lg shadow-lg opacity-0 transform scale-90 group-hover:opacity-100 group-hover:scale-100 transition duration-200 ease-in-out">
               <a href="/auth/logout" class="flex items-center px-4 py-2 text-red-600 hover:bg-red-50 rounded transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -61,20 +81,26 @@
         </div>
       </div>
     
-      <div id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out">
-        <div class="p-4">
-          <button id="close-menu" class="absolute top-4 right-4 text-gray-700 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-          <nav class="mt-8 flex flex-col space-y-4">
-            <a href="/daftar_toko" class="text-gray-700 hover:text-gray-900">Daftar Makanan</a>
-            <a href="/forum" class="text-gray-700 hover:text-gray-900">Forum</a>
-            <a href="/favorites" class="text-gray-700 hover:text-gray-900">Favorites</a>
-            <a href="/profile" class="text-gray-700 hover:text-gray-900">About Me</a>
-            <a href="/event" class="text-gray-700 hover:text-gray-900">Event</a>
-          </nav>
+      <!-- Overlay Background -->
+      <div id="menu-overlay" class="overlay fixed inset-0 z-40 hidden bg-black bg-opacity-50">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full bg-white shadow-lg z-50">
+          <div class="p-4">
+            <div class="flex justify-end">
+              <button id="close-menu" class="text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <nav class="mt-8 flex flex-col items-center space-y-4">
+              <a href="/daftar_toko" class="text-gray-700 hover:text-gray-900 text-xl">Daftar Makanan</a>
+              <a href="/forum" class="text-gray-700 hover:text-gray-900 text-xl">Forum</a>
+              <a href="/favorites" class="text-gray-700 hover:text-gray-900 text-xl">Favorites</a>
+              <a href="/profile" class="text-gray-700 hover:text-gray-900 text-xl">About Me</a>
+              <a href="/event" class="text-gray-700 hover:text-gray-900 text-xl">Event</a>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -135,30 +161,37 @@
       });
       
         
-      const menuToggle = document.getElementById('menu-toggle');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const closeMenu = document.getElementById('close-menu');
-    
-      menuToggle.addEventListener('click', function() {
-        mobileMenu.classList.remove('hidden');
-        mobileMenu.classList.add('translate-x-0');
-        mobileMenu.classList.remove('translate-x-full');
-      });
-    
-      closeMenu.addEventListener('click', function() {
-        mobileMenu.classList.add('translate-x-full');
-        setTimeout(() => {
-          mobileMenu.classList.add('hidden');
-        }, 300);
-      });
-    
-      document.addEventListener('click', function(event) {
-        if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
-          mobileMenu.classList.add('translate-x-full');
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+        const closeMenu = document.getElementById('close-menu');
+  
+        function openMenu() {
+          menuOverlay.classList.remove('hidden');
           setTimeout(() => {
-            mobileMenu.classList.add('hidden');
+            menuOverlay.classList.add('active');
+            mobileMenu.classList.add('active');
+          }, 10);
+        }
+  
+        function closeMenuHandler() {
+          mobileMenu.classList.remove('active');
+          menuOverlay.classList.remove('active');
+          setTimeout(() => {
+            menuOverlay.classList.add('hidden');
           }, 300);
         }
+  
+        menuToggle.addEventListener('click', openMenu);
+        closeMenu.addEventListener('click', closeMenuHandler);
+        
+        // Close menu when clicking outside
+        menuOverlay.addEventListener('click', function(event) {
+          if (event.target === menuOverlay) {
+            closeMenuHandler();
+          }
+        });
       });
     
       document.addEventListener('click', function(event) {

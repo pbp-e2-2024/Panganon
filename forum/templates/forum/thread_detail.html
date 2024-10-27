@@ -220,7 +220,7 @@
                             <strong class="username">{{ post.created_by.username }}</strong>
                         </div>
                         <div>
-                            <span class="created-at">{{ post.created_at }}</span>
+                            <span class="created-at">{{ post.created_at_plus_7_hours|date:"M. d, Y, g:i a" }}</span>
                             {% if request.session.user_id == post.created_by.id %}
                             <button type="button" class="delete-post-button">Delete Post</button>
                             <button class="edit-post-button" data-post-id="{{ post.id }}">Edit Post</button>

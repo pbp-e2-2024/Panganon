@@ -11,3 +11,4 @@ urlpatterns = [
     path('daftar_toko/', include('daftar_toko.urls')),
     path('forum/', include('forum.urls')),
     path('event/', include('event.urls')),  
+]

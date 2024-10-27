@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from django.shortcuts import render, get_object_or_404, redirect
-from favorites.models import Restaurant, FavoriteRestaurant, RestaurantReview
+from favorites.models import Restaurant, FavoriteRestaurant, RestaurantReview,Favorite
 from django.http import HttpResponse,  HttpResponseRedirect
 from django.core import serializers
 from django.contrib.auth.decorators import login_required
@@ -18,7 +18,12 @@ from django.utils.html import strip_tags
 
 def show_restaurant(request):
 
-    return render(request, "add_fav.html")
+    return render(request, "favorites.html")
+
+def favorites_view(request):
+    user_favorites = Favorite.objects.filter(user=request.user).values_list('restaurant', flat=True)
+    restaurants = Restaurant.objects.filter(id__in=user_favorites)
+    return render(request, 'favorites.html', {'restaurants': restaurants})
 
 def show_fav_restaurant(request):
     favorite_restaurants = FavoriteRestaurant.objects.filter(user=request.user)
@@ -26,10 +31,7 @@ def show_fav_restaurant(request):
     context = {
         'favorite_restaurants': favorite_restaurants,
     }
-    return render(request, "add_fav.html", context)
-
-def show_restaurant_review(request):
-    ...
+    return render(request, "favorites.html", context)
 
 def add_favorite(request,restaurant_id):
     #add code
@@ -126,7 +128,7 @@ def list_favorites(request):
     #add code
     favorites = FavoriteRestaurant.objects.filter(user=request.user)
     
-    return render(request, 'add_fav.html', {'favorites': favorites})
+    return render(request, 'favorites.html', {'favorites': favorites})
 
 def show_xml(request):
     dataRestaurant = Restaurant.objects.filter(user=request.user)

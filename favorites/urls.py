@@ -1,10 +1,11 @@
 from django.urls import path
-from favorites.views import show_restaurant, show_restaurant_review, add_favorite, remove_favorite, add_review, remove_review, list_favorites, show_xml, show_json, show_xml_by_id, show_json_by_id
+from favorites.views import show_restaurant, favorites_view, show_restaurant_review, add_favorite, remove_favorite, add_review, remove_review, list_favorites, show_xml, show_json, show_xml_by_id, show_json_by_id
 
 app_name = 'favorites'
 
 urlpatterns = [
     path('', show_restaurant, name ='show_restaurant'),
+    path('favorites/', favorites_view, name='favorites'),
     path('show_restaurant_review/', show_restaurant_review, name ='show_restaurant_review'),
     path('add_favorite/', add_favorite, name='add_favorite'),
     path('remove_favorite/', remove_favorite, name='remove_favorite'),

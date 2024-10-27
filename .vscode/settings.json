@@ -1,0 +1,9 @@
+{
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "./favorites",
+    "-p",
+    "*test.py"
+  ]
+}

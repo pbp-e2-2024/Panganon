@@ -12,7 +12,7 @@
 ### **Modul Utama**
 
 - **Modul Daftar Toko**  
-  Pengguna dapat mencari tempat makan berdasarkan kategori makanan, status halal, dan lokasi terdekat menggunakan GPS.
+  Pengguna dapat mencari tempat makan berdasarkan kategori makanan, status halal, dan lokasi.
 
   *Dikerjakan oleh Ilham Ghani Adrin Sapta*
 
@@ -39,16 +39,17 @@ Untuk mengumpulkan *dataset*, kami menggunakan **Selenium** untuk melakukan pros
 
 ## **5. Role atau peran pengguna beserta deskripsinya (karena bisa saja lebih dari satu jenis pengguna yang mengakses aplikasi)**
 ### **Admin**
-- Mengelola dan memverifikasi data tempat makan yang terdaftar.
-- Mengelola *role* pengguna (memblokir/menghapus akun dan postingan yang melanggar kebijakan).
+- Mengelola data tempat makan yang terdaftar.
+- Mengelola akun pengguna.
 - Mengelola diskusi di forum dan ulasan pengguna.  
+- Mengelola event yang terdaftar.
 
 ### **User**
-- Mencari tempat makan berdasarkan kategori, status halal, atau lokasi terdekat.
+- Mencari tempat makan berdasarkan kategori, status halal, atau lokasi.
 - Menambahkan tempat makan ke daftar favorit.
-- Memberikan ulasan dan *rating* untuk tempat makan.
+- Membuat profil about me.
 - Membuat atau mengikuti diskusi di forum.
-- Melakukan pemesanan makanan secara daring (untuk restoran yang mendukung).
+- Membuat berita festival makan di event.
 
 ## **6. Tautan deployment aplikasi**
 [Panganon](http://brian-altan-panganon.pbp.cs.ui.ac.id/)

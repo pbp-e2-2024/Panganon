@@ -1,45 +1,80 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block meta %}
+<title>Panganon</title>
+{% endblock meta %}
+
 {% block content %}
 <body>
-    <div class="container">
-        <div id="messages"></div>
-
-        
-
-        {% if user_favorites %}
-            <div>
-                <h1 class="justify-center text-center" style="margin-top: 20px;">Your Favorites</h1>
-            </div>
-            <div class="bg-gray-100 rounded-3xl shadow-md p-4">
-                {% for favorite in user_favorites %}
-                    <div class="px-6 py-4 space-y-6">
-                        <div class="mb-4 p-8 bg-white rounded-2xl text-black hover:bg-gray-200 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none transition duration-200"">
-                            <div class="m-3">
-                                <label for="name" class="text-xl font-semibold">{{ favorite.restaurant.name }}</label>
-                                <p class="block text-sm font-medium text-gray-700">Deskripsi: {{ favorite.restaurant.description }}</p>
-                                <p class="block text-sm font-medium text-gray-700">Address: {{ favorite.restaurant.address }}</p>
-                                <p class="block text-sm font-medium text-gray-700">Status: {{ favorite.restaurant.halal_status }}</p>
-                                <p class="block text-sm font-medium text-gray-700">Jam Operasi: {{ favorite.restaurant.operating_hours }}</p>
-                            </div>
-                            <div class="pl-10 m-1 flex justify-end">
-                                <button class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300" 
-                                        onclick="removeFavorite({{ restaurant.id }})">Remove Favorite</button>
-                                <button class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300" 
-                                        onclick="showReviewForm({{ restaurant.id }})">Add Review</button>
-                                <button class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300" 
-                                        onclick="removeReview({{ restaurant.review.id }})">Remove Review</button>
-                            </div>
+    {% for favorite in user_favorites %}
+    <div class="bg-gray-100 rounded-3xl shadow-md p-4">
+        <div class="mb-4 p-8 bg-white rounded-2xl text-black hover:bg-gray-200 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none transition duration-200">
+            <div class="flex justify-between items-start">
+                <div>
+                    <p class="text-xl font-semibold">{{ favorite.name }}</p>
+                    <p class="text-sm">Rating: {{ favorite.rating }}</p>
+                    <p class="text-sm">Address: {{ favorite.address }}</p>
+                    
+                    <div class="mt-4">
+                        <button onclick="addFavorite({{ favorite.id }})" 
+                                class="flex items-center gap-2 px-4 py-2 rounded-lg {% if restaurant in user.favoriterestaurant_set.all %}bg-red-500 hover:bg-red-600{% else %}bg-blue-500 hover:bg-blue-600{% endif %} text-white transition-all duration-200"
+                                data-is-favorite="{% if favorite in user.favoriterestaurant_set.all %}true{% else %}false{% endif %}">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                 class="h-5 w-5" 
+                                 fill="{% if restaurant in user.favoriterestaurant_set.all %}currentColor{% else %}none{% endif %}" 
+                                 viewBox="0 0 24 24" 
+                                 stroke="currentColor" 
+                                 stroke-width="2">
+                                <path stroke-linecap="round" 
+                                      stroke-linejoin="round" 
+                                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                            <span class="favorite-text">
+                                {% if restaurant in user.favorite_restaurant_set.all %}
+                                    Remove from Favorites
+                                {% else %}
+                                    Add to Favorites
+                                {% endif %}
+                            </span>
+                        </button>
+                        <div class="pl-10 m-1 flex items-center gap-2 px-4 py-2 rounded-lg ">
+                            <button class=" py-2 px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300" 
+                                    onclick="removeFavorite({{ restaurant.id }})">Remove Favorite</button>
+                            <button class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300" 
+                                    onclick="showReviewForm({{ restaurant.id }})">Add Review</button>
+                            <button class="px-3 py-2 hover:bg-yellow-200 border-radius-45px rounded transition duration-300" 
+                                    onclick="removeReview({{ restaurant.review.id }})">Remove Review</button>
+                        </div>
                     </div>
+                </div>
                 
-                {% endfor %}
             </div>
-        {% else %}
-        <div class="bg-gray-100 rounded-3xl shadow-md p-4"><p class="justify-center text-center" style="margin-top: 20px;">No favorite restaurants found. Please add some to your favorites list.</p></div>
-        {% endif %}
+        </div>
     </div>
+    {% endfor %}
+
 
     <script>
+        function addFavorite(restaurantId) {
+        fetch(`/favorites/add_favorite/${restaurantId}/`, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}',
+                'Content-Type': 'application/json',
+            },
+            credentials: 'same-origin'
+        })
+        .then(response => response.json())
+        .then(data => {
+            showMessage(data.message, data.success);
+            location.reload(); // Reload the page to reflect changes
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+
         function showReviewForm(restaurantId) {
             const reviewForm = document.getElementById(`review-form-${restaurantId}`);
             reviewForm.style.display = reviewForm.style.display === 'none' ? 'block' : 'none';

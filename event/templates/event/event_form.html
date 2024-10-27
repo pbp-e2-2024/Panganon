@@ -1,42 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>{{ form_title }} Event</title>
-</head>
-<body class="bg-green-50 flex items-center justify-center min-h-screen">
+{% extends 'base.html' %}
 
-<div class="bg-white rounded-lg shadow-lg sm:max-w-md w-full mx-auto mt-10 p-8">
-    <h1 class="text-2xl font-bold mb-6 text-green-700 text-center">{{ form_title }} Event</h1>
+{% block title %}{{ form_title }} Event{% endblock %}
 
-    <form id="eventForm" method="post" class="space-y-6">
+{% load static %}
+
+{% block content %}
+<style>
+    /* Background image styling */
+    body {
+        background-image: url("{% static 'images/background-event.jpg' %}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /* Semi-transparent form styling without heavy blur */
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    /* Button styling */
+    .button {
+        background-color: #1f2937;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        background-color: #333333;
+    }
+</style>
+
+<div class="form-container sm:max-w-md w-full mx-auto p-8 border border-gray-300">
+    <h1 class="text-3xl font-semibold mb-6 text-gray-800 text-center">{{ form_title }} Event</h1>
+
+    <form id="eventForm" method="post" class="space-y-6 leading-loose">
         {% csrf_token %}
         
         <div class="relative">
-            <label for="event-name" class="block text-green-800 mb-2">Event Name</label>
-            <input type="text" id="event-name" name="name" placeholder="Event Name" class="rounded-lg border border-green-300 w-full py-2 px-4 bg-green-50 text-green-900 placeholder-green-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" value="{{ form.name.value|default_if_none:'' }}"/>
+            <label for="event-name" class="block text-gray-700 font-medium mb-2">Nama Acara</label>
+            <input type="text" id="event-name" name="name" placeholder="Event Name"
+                   class="rounded-lg border border-gray-300 w-full py-2 px-4 bg-white text-gray-800 
+                          placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500" 
+                   value="{{ form.name.value|default_if_none:'' }}" />
         </div>
 
         <div class="relative">
-            <label for="event-description" class="block text-green-800 mb-2">Description</label>
-            <textarea id="event-description" name="description" placeholder="Description" class="rounded-lg border border-green-300 w-full py-2 px-4 bg-green-50 text-green-900 placeholder-green-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">{{ form.description.value|default_if_none:'' }}</textarea>
+            <label for="event-description" class="block text-gray-700 font-medium mb-2">Keterangan </label>
+            <textarea id="event-description" name="description" placeholder="Description"
+                      class="rounded-lg border border-gray-300 w-full py-2 px-4 bg-white text-gray-800 
+                             placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500">{{ form.description.value|default_if_none:'' }}</textarea>
         </div>
 
         <div class="relative">
-            <label for="event-location" class="block text-green-800 mb-2">Location</label>
-            <input type="text" id="event-location" name="location" placeholder="Location" class="rounded-lg border border-green-300 w-full py-2 px-4 bg-green-50 text-green-900 placeholder-green-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" value="{{ form.location.value|default_if_none:'' }}"/>
+            <label for="event-location" class="block text-gray-700 font-medium mb-2">Lokasi Acara</label>
+            <input type="text" id="event-location" name="location" placeholder="Location"
+                   class="rounded-lg border border-gray-300 w-full py-2 px-4 bg-white text-gray-800 
+                          placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500" 
+                   value="{{ form.location.value|default_if_none:'' }}" />
         </div>
 
         <div class="relative">
-            <label for="event-date" class="block text-green-800 mb-2">Date</label>
-            <input type="datetime-local" id="event-date" name="date" class="rounded-lg border border-green-300 w-full py-2 px-4 bg-green-50 text-green-900 placeholder-green-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" value="{{ form.date.value|date:'Y-m-d H:i'|default_if_none:'' }}"/>
+            <label for="event-date" class="block text-gray-700 font-medium mb-2">Tanggal Acara
+            </label>
+            <input type="datetime-local" id="event-date" name="date"
+                   class="rounded-lg border border-gray-300 w-full py-2 px-4 bg-white text-gray-800 
+                          placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500" 
+                   value="{{ form.date.value|date:'Y-m-d H:i'|default_if_none:'' }}" />
         </div>
 
         <div class="flex justify-end mt-4">
-            <a href="{% url 'event_list' %}" class="text-green-600 hover:underline mr-4">Cancel</a>
-            <button type="submit" id="submitBtn" class="py-2 px-4 bg-green-500 hover:bg-green-600 text-white rounded-md">{{ form_button_text }}</button>
+            <a href="{% url 'event_list' %}" class="text-gray-600 hover:underline mr-4">Cancel</a>
+            <button type="submit" id="submitBtn" class="button py-2 px-4 rounded-md">
+                {{ form_button_text }}
+            </button>
         </div>
     </form>
 
@@ -60,7 +96,6 @@
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                // Mengarahkan ke halaman daftar acara setelah sukses membuat acara
                 window.location.href = "{% url 'event_list' %}";
             } else {
                 let errorDiv = document.getElementById('formErrors');
@@ -70,8 +105,12 @@
                 }
                 errorDiv.classList.remove('hidden');
             }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            document.getElementById('formErrors').innerHTML = `<p>Unexpected error. Please try again later.</p>`;
+            document.getElementById('formErrors').classList.remove('hidden');
         });
     });
 </script>
-</body>
-</html>
+{% endblock %}

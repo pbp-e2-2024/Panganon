@@ -3,12 +3,14 @@ from django.contrib import messages
 from about_me.models import UserProfile
 from authentication.models import User
 from django.contrib.auth.hashers import make_password, check_password
+from django.http import JsonResponse
+from django.core.exceptions import ObjectDoesNotExist
 import re
 
 def show_main(request):
     if 'user_id' not in request.session:
         return redirect('login_user')
-    
+
     user_id = request.session['user_id']
     user = User.objects.get(id=user_id)
     
@@ -97,3 +99,18 @@ def display_image(request, user_id):
         return HttpResponse(user.image, content_type='image/jpeg')
     else:
         return HttpResponse("No image found", status=404)
+
+def user_info(request):
+    if 'user_id' not in request.session:
+        return JsonResponse({'error': 'User not logged in'}, status=401)
+
+    user_id = request.session['user_id']
+    try:
+        user = User.objects.get(id=user_id)
+        user_data = {
+            'userID': user.id,
+            'username': user.username,
+        }
+        return JsonResponse(user_data)
+    except ObjectDoesNotExist:
+        return JsonResponse({'error': 'User not found'}, status=404)

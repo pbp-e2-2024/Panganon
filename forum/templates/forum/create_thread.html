@@ -1,13 +1,16 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Create Thread</title>
     <style>
         body {
-            background-color: #f0f8ff;
-            color: #333333;
-            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -15,17 +18,18 @@
         .forum-container {
             width: 50%;
             margin: 50px auto;
-            background-color: #ffffff;
+            background-color: #f9f9f9;
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 350px;
         }
 
         .back-to-forum {
             display: inline-block;
             margin-bottom: 20px;
             padding: 10px 20px;
-            background-color: #007acc;
+            background-color: #000000;
             color: #ffffff;
             text-decoration: none;
             border-radius: 5px;
@@ -35,13 +39,14 @@
         }
 
         .back-to-forum:hover {
-            background-color: #005f99;
+            background-color: #333333;
         }
 
         h1 {
-            color: #007acc;
+            color: #000000;
             margin-bottom: 20px;
             text-align: center;
+            font-size: 28px;
         }
 
         form {
@@ -55,11 +60,11 @@
             padding: 10px;
             margin-bottom: 20px;
             border-radius: 5px;
-            border: 1px solid #cccccc;
+            border: 1px solid #e0e0e0;
         }
 
         button {
-            background-color: #007acc;
+            background-color: #000000;
             color: #ffffff;
             border: none;
             padding: 10px 20px;
@@ -69,7 +74,7 @@
         }
 
         button:hover {
-            background-color: #005f99;
+            background-color: #333333;
         }
     </style>
 </head>
@@ -85,3 +90,5 @@
     </div>
 </body>
 </html>
+
+{% endblock %}

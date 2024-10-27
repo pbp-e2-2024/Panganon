@@ -60,40 +60,6 @@
         </ul>
         <a href="{% url 'about_me:all_forum_posts' user.id %}" class="text-blue-500 mt-4 block">See More</a>
     </div>
-
-    <!-- Rating History Section -->
-    <div class="bg-white shadow rounded-lg p-6">
-        <h2 class="text-2xl font-semibold border-b pb-3 mb-4 text-gray-800">Rating History</h2>
-        <ul class="space-y-4">
-            {% for rating in ratings %}
-            <li class="p-4 border rounded-lg">
-                <p class="font-semibold text-yellow-500">Rating: {{ rating.score }} stars</p>
-                <p class="text-gray-600">{{ rating.comment }}</p>
-                <p class="text-sm text-gray-400">Rated on {{ rating.created_at }}</p>
-            </li>
-            {% empty %}
-            <p>No ratings history available</p>
-            {% endfor %}
-        </ul>
-    </div>
-
-    <!-- Recipes Section -->
-    <div class="bg-white shadow rounded-lg p-6">
-        <h2 class="text-2xl font-semibold border-b pb-3 mb-4 text-gray-800">Recipes</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
-            {% for recipe in recipes %}
-            <div class="bg-gray-100 shadow rounded-lg p-4">
-                <img src="{{ recipe.image.url }}" class="rounded w-full h-40 object-cover mb-4" alt="{{ recipe.name }}">
-                <h3 class="text-lg font-semibold text-gray-700">{{ recipe.name }}</h3>
-                <a href="{% url 'about_me:view_recipe' recipe.id %}" class="text-blue-500 mt-2 block">View Recipe</a>
-            </div>
-            {% empty %}
-            <p>No recipes yet.</p>
-            {% endfor %}
-        </div>
-        <button id="add-recipe-btn" class="mt-5 bg-black text-white px-4 py-2 rounded">Add New Recipe</button>
-        
-    </div>
 </div>
 
 <!-- Modals for Editing -->
@@ -152,45 +118,7 @@
     </div>
 </div>
 
-<!-- Modal for Adding Recipe -->
-<div id="add-recipe-modal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center overflow-y-auto">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/2 max-h-screen overflow-y-auto">
-        <h2 class="text-2xl font-semibold mb-4">Add New Recipe</h2>
-        <form id="recipe-form" method="post" action="{% url 'about_me:add_recipe' %}" enctype="multipart/form-data">
-            {% csrf_token %}
-            <div class="mb-4">
-                <label for="recipe-name" class="block text-sm font-medium text-gray-700">Recipe Name</label>
-                <input type="text" id="recipe-name" name="name" class="border p-2 w-full rounded" required>
-            </div>
-            <div class="mb-4">
-                <label for="recipe-description" class="block text-sm font-medium text-gray-700">Description (max 100 words)</label>
-                <textarea id="recipe-description" name="description" class="border p-2 w-full rounded" maxlength="100" required></textarea>
-            </div>
-            <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700">Ingredients</label>
-                <div id="ingredients-list">
-                    <input type="text" name="ingredients[]" class="border p-2 w-full rounded mb-2" placeholder="Ingredient" required>
-                </div>
-                <button type="button" id="add-ingredient" class="text-sm text-gray-600 mt-2">+ Add Ingredient</button>
-            </div>
-            <div class="mb-4">
-                <label class="block text-sm font-medium text-gray-700">Steps</label>
-                <div id="steps-list">
-                    <input type="text" name="steps[]" class="border p-2 w-full rounded mb-2" placeholder="Step" required>
-                </div>
-                <button type="button" id="add-step" class="text-sm text-gray-600 mt-2">+ Add Step</button>
-            </div>
-            <div class="mb-4">
-                <label for="recipe-image" class="block text-sm font-medium text-gray-700">Image</label>
-                <input type="file" id="recipe-image" name="image" class="border p-2 w-full rounded" accept="image/*" required>
-            </div>
-            <div class="flex justify-end space-x-4">
-                <button type="button" id="close-add-recipe-modal" class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
-                <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded">Save Recipe</button>
-            </div>
-        </form>
-    </div>
-</div>
+
 {% endif %}
 
 <!-- JavaScript untuk modal dan AJAX -->

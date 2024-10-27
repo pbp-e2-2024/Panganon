@@ -113,26 +113,27 @@
           })
           .catch(error => {
             console.error('Error fetching user info:', error);
+            document.getElementById('user-info').remove();
           });
       });
-      
+    
       const menuToggle = document.getElementById('menu-toggle');
       const mobileMenu = document.getElementById('mobile-menu');
       const closeMenu = document.getElementById('close-menu');
-
+    
       menuToggle.addEventListener('click', function() {
         mobileMenu.classList.remove('hidden');
         mobileMenu.classList.add('translate-x-0');
         mobileMenu.classList.remove('translate-x-full');
       });
-
+    
       closeMenu.addEventListener('click', function() {
         mobileMenu.classList.add('translate-x-full');
         setTimeout(() => {
           mobileMenu.classList.add('hidden');
         }, 300);
       });
-
+    
       document.addEventListener('click', function(event) {
         if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
           mobileMenu.classList.add('translate-x-full');
@@ -141,11 +142,11 @@
           }, 300);
         }
       });
-
+    
       document.addEventListener('click', function(event) {
         const userInfoDiv = document.getElementById('user-info');
         const logoutDropdown = document.getElementById('logout-dropdown');
-
+    
         if (!userInfoDiv.contains(event.target)) {
           logoutDropdown.classList.add('hidden');
         } else {

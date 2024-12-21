@@ -30,9 +30,11 @@ from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.http import HttpResponseForbidden, HttpResponse
 from .forms import SuperuserCreationForm
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 def grant_superuser(request):
-    correct_secret_key = os.getenv('SECRET_KEY')  # Retrieve SECRET_KEY from environment
+    correct_secret_key = os.getenv('SECRET_KEY')  
     if request.method == "POST":
         form = SuperuserCreationForm(request.POST)
         if form.is_valid():
@@ -40,17 +42,15 @@ def grant_superuser(request):
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
             
-            # Ensure secret key matches the environment variable
             if provided_secret_key == correct_secret_key:
                 if User.objects.filter(username=username).exists():
                     user = User.objects.get(username=username)
                     user.is_staff = True
                     user.is_superuser = True
-                    user.set_password(password)  # Optionally reset the password
+                    user.set_password(password)  
                     user.save()
                     return HttpResponse(f"User '{username}' promoted to superuser.")
                 else:
-                    # Create the superuser if they don't already exist
                     User.objects.create_superuser(username, '', password)
                     return HttpResponse(f"Superuser '{username}' created.")
             else:
@@ -58,5 +58,4 @@ def grant_superuser(request):
     else:
         form = SuperuserCreationForm()
     
-    # Render the form for GET requests
     return render(request, 'grant_superuser.html', {'form': form})

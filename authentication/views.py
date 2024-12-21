@@ -1,17 +1,16 @@
 import json
-from django.shortcuts import render, redirect # type: ignore
-from django.contrib import messages # type: ignore
+from django.shortcuts import render, redirect  # type: ignore
+from django.contrib import messages  # type: ignore
 from about_me.models import UserProfile
 from authentication.models import User
-from django.contrib.auth.hashers import make_password, check_password # type: ignore
-from django.http import JsonResponse # type: ignore
-from django.core.exceptions import ObjectDoesNotExist # type: ignore
+from django.contrib.auth.hashers import make_password, check_password  # type: ignore
+from django.http import JsonResponse  # type: ignore
+from django.core.exceptions import ObjectDoesNotExist  # type: ignore
 import re
-from django.http import HttpResponse # type: ignore
-from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout # type: ignore
-from django.views.decorators.csrf import csrf_exempt # type: ignore
+from django.http import HttpResponse  # type: ignore
+from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout  # type: ignore
+from django.views.decorators.csrf import csrf_exempt  # type: ignore
 import base64
-
 
 def show_main(request):
     if 'user_id' not in request.session:
@@ -98,14 +97,13 @@ def logout_user(request):
     messages.success(request, "Anda telah berhasil logout.")
     return redirect('login_user')
 
-
 def display_image(request, user_id):
     user = User.objects.get(id=user_id)
     if user.image:
         return HttpResponse(user.image, content_type='image/jpeg')
     else:
         return HttpResponse("No image found", status=404)
-    
+
 @csrf_exempt
 def user_info(request):
     if 'user_id' not in request.session:
@@ -244,6 +242,6 @@ def logout_flutter(request):
         }, status=200)
     except:
         return JsonResponse({
-        "status": False,
-        "message": "Logout gagal."
+            "status": False,
+            "message": "Logout gagal."
         }, status=401)

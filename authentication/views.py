@@ -199,16 +199,10 @@ def register_flutter(request):
 @csrf_exempt
 def login_flutter(request):
     if request.method == 'POST':
-        try:
-            data = json.loads(request.body)
-            username = data.get('username')
-            password = data.get('password')
-        except json.JSONDecodeError:
-            return JsonResponse({
-                "status": False,
-                "message": "Invalid JSON."
-            }, status=400)
 
+        username = request.POST['username']
+        password = request.POST['password']
+        
         # Check if the username exists
         try:
             user = User.objects.get(username=username)

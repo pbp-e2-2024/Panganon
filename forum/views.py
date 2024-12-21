@@ -91,6 +91,7 @@ def view_id(request):
         return JsonResponse({'user_id': request.session.get('user_id')})
     return JsonResponse({'error': 'Invalid method'}, status=405)
 
+@csrf_exempt
 def create_thread(request):
     if request.method == 'POST':
         title = request.POST.get('title')
@@ -255,6 +256,7 @@ def add_comment_flutter(request):
 
     return JsonResponse({'statusCode': 405, 'message': 'Method not allowed'}, status=405)
 
+@csrf_exempt
 def add_comment(request, post_id, parent_id=None):
     post = get_object_or_404(Post, id=post_id)
     parent_comment = None
@@ -305,6 +307,7 @@ def delete_comment(request, comment_id):
     comment.delete()
     return JsonResponse({'success': True})
 
+@csrf_exempt
 def edit_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
     if request.session.get('user_id') != post.created_by.id:
@@ -318,6 +321,7 @@ def edit_post(request, post_id):
     else:
         return JsonResponse({'success': False, 'error': 'Content cannot be empty'}, status=400)
 
+@csrf_exempt
 def edit_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
     if request.session.get('user_id') != comment.created_by.id:

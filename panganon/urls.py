@@ -11,5 +11,4 @@ urlpatterns = [
     path('daftar_toko/', include('daftar_toko.urls')),
     path('favorites/', include('favorites.urls')),
     path('event/', include('event.urls')),  
-    
 ]

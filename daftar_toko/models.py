@@ -1,4 +1,5 @@
 from django.db import models
+from authentication.models import User
 
 class Restaurant(models.Model):
     id = models.CharField(primary_key=True, unique=True, max_length=255, null=False)
@@ -15,3 +16,4 @@ class Restaurant(models.Model):
 
     def __str__(self):
         return self.name
+    

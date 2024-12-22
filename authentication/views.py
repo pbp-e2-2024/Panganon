@@ -1,11 +1,16 @@
-from django.shortcuts import render, redirect
-from django.contrib import messages
+import json
+from django.shortcuts import render, redirect  # type: ignore
+from django.contrib import messages  # type: ignore
 from about_me.models import UserProfile
 from authentication.models import User
-from django.contrib.auth.hashers import make_password, check_password
-from django.http import JsonResponse
-from django.core.exceptions import ObjectDoesNotExist
+from django.contrib.auth.hashers import make_password, check_password  # type: ignore
+from django.http import JsonResponse  # type: ignore
+from django.core.exceptions import ObjectDoesNotExist  # type: ignore
 import re
+from django.http import HttpResponse  # type: ignore
+from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout  # type: ignore
+from django.views.decorators.csrf import csrf_exempt  # type: ignore
+import base64
 
 def show_main(request):
     if 'user_id' not in request.session:
@@ -14,8 +19,9 @@ def show_main(request):
     user_id = request.session['user_id']
     user = User.objects.get(id=user_id)
     
-    return render(request, "authentication/main.html", {'user': user})
+    return render(request, "main.html", {'user': user})
 
+@csrf_exempt
 def login_user(request):
     if 'user_id' in request.session:
         return redirect('show_main')
@@ -44,6 +50,7 @@ def login_user(request):
     else:
         return render(request, "authentication/login.html")
 
+@csrf_exempt
 def register(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -91,8 +98,6 @@ def logout_user(request):
     messages.success(request, "Anda telah berhasil logout.")
     return redirect('login_user')
 
-from django.http import HttpResponse
-
 def display_image(request, user_id):
     user = User.objects.get(id=user_id)
     if user.image:
@@ -100,6 +105,7 @@ def display_image(request, user_id):
     else:
         return HttpResponse("No image found", status=404)
 
+@csrf_exempt
 def user_info(request):
     if 'user_id' not in request.session:
         return JsonResponse({'error': 'User not logged in'}, status=401)
@@ -114,3 +120,129 @@ def user_info(request):
         return JsonResponse(user_data)
     except ObjectDoesNotExist:
         return JsonResponse({'error': 'User not found'}, status=404)
+
+@csrf_exempt
+def register_flutter(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            username = data.get('username')
+            password1 = data.get('password1')
+            password2 = data.get('password2')
+            image_base64 = data.get('image')  # Handle image upload if provided
+        except json.JSONDecodeError:
+            return JsonResponse({
+                "status": False,
+                "message": "Invalid JSON."
+            }, status=400)
+
+        # Check if the passwords match
+        if password1 != password2:
+            return JsonResponse({
+                "status": False,
+                "message": "Passwords do not match."
+            }, status=400)
+
+        # Check if username is already taken
+        if User.objects.filter(username=username).exists():
+            return JsonResponse({
+                "status": False,
+                "message": "Username is already taken."
+            }, status=400)
+
+        # Hash the password before saving
+        hashed_password = make_password(password1)
+
+        # Create the user
+        try:
+            user = User(
+                username=username,
+                password=hashed_password 
+                  # Save the hashed password
+            )
+            user.save()
+
+            # Process and save the image if provided
+            if image_base64:
+                try:
+                    img_data = base64.b64decode(image_base64.split(',')[1])  # Decode base64 image
+                    user.image = img_data  # Store image as binary data in the model
+                    user.save()
+                except Exception as e:
+                    return JsonResponse({
+                        "status": False,
+                        "message": f"Failed to process image: {str(e)}"
+                    }, status=400)
+
+            # Create UserProfile here (if needed)
+            UserProfile.objects.create(user=user)
+
+        except Exception as e:
+            return JsonResponse({
+                "status": False,
+                "message": f"Error creating user: {str(e)}"
+            }, status=400)
+
+        # Return user_id in the response
+        return JsonResponse({
+            "status": True,
+            "message": "User successfully registered!",
+            "user_id": user.id  # Send back the user_id
+        }, status=201)
+
+    return JsonResponse({
+        "status": False,
+        "message": "Method not allowed."
+    }, status=405)
+
+@csrf_exempt
+def login_flutter(request):
+    if request.method == 'POST':
+
+        username = request.POST['username']
+        password = request.POST['password']
+        
+        # Check if the username exists
+        try:
+            user = User.objects.get(username=username)
+        except User.DoesNotExist:
+            return JsonResponse({
+                "status": False,
+                "message": "Username not found."
+            }, status=400)
+
+        # Check if the password matches the hashed password
+        if check_password(password, user.password):
+            request.session['user_id'] = user.id
+            return JsonResponse({
+                "username": user.username,
+                "status": True,
+                "message": "Login successful!"
+            }, status=200)
+        else:
+            return JsonResponse({
+                "status": False,
+                "message": "Incorrect password."
+            }, status=401)
+
+    return JsonResponse({
+        "status": False,
+        "message": "Method not allowed."
+    }, status=405)
+
+@csrf_exempt
+def logout_flutter(request):
+    username = request.user.username
+
+    try:
+        auth_logout(request)
+        return JsonResponse({
+            "username": username,
+            "status": True,
+            "message": "Logout berhasil!"
+        }, status=200)
+    except:
+        return JsonResponse({
+            "status": False,
+            "message": "Logout gagal."
+        }, status=401)

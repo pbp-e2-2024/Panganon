@@ -1,0 +1,8 @@
+django
+gunicorn
+whitenoise
+psycopg2-binary
+requests
+urllib3
+pillow
+django-cors-headers

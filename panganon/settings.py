@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-v^=&9_(-sxik9!7ru39c!l*t5h6r*jwi8_our1v-n4nf+sc+&x
 PRODUCTION = os.getenv("Production", False)
 DEBUG = not PRODUCTION
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1","brian-altan-panganon.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1","brian-altan-panganon.pbp.cs.ui.ac.id", "10.0.2.2"]
 
 # Application definition
 INSTALLED_APPS = [
@@ -43,15 +43,18 @@ INSTALLED_APPS = [
     'forum',
     'about_me',
     'event',
-
+    'favorites',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  
+    'corsheaders.middleware.CorsMiddleware',      
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    'panganon.middleware.disable_csrf_admin.DisableCSRFForAdminMiddleware',  
+    'django.middleware.csrf.CsrfViewMiddleware',  
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -139,4 +142,11 @@ else:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://brian-altan-panganon.pbp.cs.ui.ac.id/", "https://brian-altan-panganon.pbp.cs.ui.ac.id/"]
+CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://brian-altan-panganon.pbp.cs.ui.ac.id/", "https://brian-altan-panganon.pbp.cs.ui.ac.id/", 'http://localhost:56027']
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'

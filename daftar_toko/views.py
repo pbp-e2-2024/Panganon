@@ -9,6 +9,43 @@ from django.shortcuts import render
 from django.core import serializers
 from .models import Restaurant
 
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import get_object_or_404
+from .models import Restaurant
+from django.contrib.auth.models import User
+import json
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+
+from favorites.models import FavoriteRestaurant
+from authentication.models import User
+
+
+
+# Add to favorites
+# @login_required(login_url='/auth/login')
+@csrf_exempt
+def addfavorite(request, restaurant_id):
+    if 'user_id' not in request.session:
+        messages.error(request, "Anda harus login terlebih dahulu.")
+        return redirect('login_user')
+    if request.method == 'POST':
+        
+        user_id = request.session.get('user_id')
+        restaurant = get_object_or_404(Restaurant, id=restaurant_id)
+        user = User.objects.get(id=user_id)
+        favorite, created = FavoriteRestaurant.objects.get_or_create(user=user, restaurant=restaurant )
+
+
+        if created:
+       
+            return JsonResponse({'success': True, 'message': f'{restaurant.name} added to favorites.'})
+        else:
+            return JsonResponse({'success': False, 'message': f'{restaurant.name} is already in your favorites.'})
+    return JsonResponse({'success': False, 'message': 'Invalid request method.'}, status=400)
+
+# Daftar restoran
 @csrf_exempt
 def restaurant_list(request):
     if 'user_id' not in request.session:
@@ -88,3 +125,6 @@ def show_xml_by_id(request, id):
 def show_json_by_id(request, id):
     data = Restaurant.objects.filter(pk=id)
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+
+

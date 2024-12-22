@@ -4,12 +4,12 @@ import uuid
 from daftar_toko.models import Restaurant  # Import Restaurant from daftar_toko
     
 class FavoriteRestaurant(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
-    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)  # This now references daftar_toko's Restaurant
-    added_at = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    is_favorite = models.BooleanField(default=False)
 
-    class Meta:
-        unique_together = ['user', 'restaurant']
+    def __str__(self):
+        return f"{self.user.username} - {self.restaurant.name} (Favorite: {self.is_favorite})"
 
 class RestaurantReview(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

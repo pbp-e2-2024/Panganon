@@ -1,84 +1,84 @@
-{% load static %}
-
-<div class="mb-4 p-8 bg-white rounded-2xl text-black hover:bg-gray-200 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none transition duration-200">
-    <div class="flex justify-between items-start">
-        <div>
-            <p class="text-xl font-semibold">{{ restaurant.name }}</p>
-            <p class="text-sm">Rating: {{ restaurant.rating }}</p>
-            <p class="text-sm">Address: {{ restaurant.address }}</p>
-            
-            <div class="mt-4">
-                <button onclick="toggleFavorite({{ restaurant.name }}, this)" 
-                        class="flex items-center gap-2 px-4 py-2 rounded-lg {% if restaurant in user.favoriterestaurant_set.all %}bg-red-500 hover:bg-red-600{% else %}bg-blue-500 hover:bg-blue-600{% endif %} text-white transition-all duration-200"
-                        data-is-favorite="{% if restaurant in user.favoriterestaurant_set.all %}true{% else %}false{% endif %}">
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                         class="h-5 w-5" 
-                         fill="{% if restaurant in user.favoriterestaurant_set.all %}currentColor{% else %}none{% endif %}" 
-                         viewBox="0 0 24 24" 
-                         stroke="currentColor" 
-                         stroke-width="2">
-                        <path stroke-linecap="round" 
-                              stroke-linejoin="round" 
-                              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Toko</title>
+    
+</head>
+<body>
+    {% for restaurant in toko|slice:"5" %}
+    <div class="mb-4 p-8 bg-white rounded-2xl text-black hover:bg-gray-200 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none transition duration-200">
+        <div class="flex justify-between items-start">
+            <div>
+                <p class="text-xl font-semibold">{{ restaurant.name }}</p>
+                <p class="text-sm">Rating: {{ restaurant.rating }}</p>
+                <p class="text-sm">Address: {{ restaurant.address }}</p>
+                
+            </div>
+            <div class="flex flex-col space-y-2">
+                <!-- Google Maps Link -->
+                <a href="https://www.google.com/maps/search/?api=1&query={{ restaurant.name|urlencode }}+{{ restaurant.address|urlencode }}" 
+                   target="_blank" 
+                   class="p-2 bg-white rounded-full hover:bg-gray-100 transition-all duration-200 group" 
+                   title="View on Google Maps">
+                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C8.13 2 5 5.13 5 9C5 12.87 12 22 12 22C12 22 19 12.87 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" 
+                            fill="currentColor" />
                     </svg>
-                    <span class="favorite-text">
-                        {% if restaurant in user.favorite_restaurant_set.all %}
-                            Remove from Favorites
-                        {% else %}
-                            Add to Favorites
-                        {% endif %}
-                    </span>
+                </a>
+
+                <!-- Favorite Button -->
+                <button type="button" 
+                    class="p-1 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-all duration-200" 
+                    data-restaurant-id="{{ restaurant.id }}" 
+                    onclick="addfavorite(this)">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19.84 4.61a5.5 5.5 0 0 0-7.78 0L12 4.67l-.06-.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l7.84-8.52a5.5 5.5 0 0 0 0-7.78z" 
+                              fill="{% if restaurant.is_favorited %}currentColor{% else %}none{% endif %}" />
+                    </svg>
+                    <span class="favorite-text">{% if restaurant.is_favorite %}Remove from Favorites{% else %}Add to Favorites{% endif %}</span>
                 </button>
             </div>
         </div>
-        <a href="https://www.google.com/maps/search/?api=1&query={{ restaurant.name|urlencode }}+{{ restaurant.address|urlencode }}" 
-           target="_blank" 
-           class="p-2 bg-white rounded-full hover:bg-gray-100 transition-all duration-200 group" 
-           title="View on Google Maps">
-            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2C7.589 2 4 5.589 4 10C4 14.411 7.589 18 12 18C16.411 18 20 14.411 20 10C20 5.589 16.411 2 12 2Z" fill="#34A853"/>
-                <path d="M12 2V18C16.411 18 20 14.411 20 10C20 5.589 16.411 2 12 2Z" fill="#4285F4"/>
-                <path d="M12 2C7.589 2 4 5.589 4 10C4 14.411 7.589 18 12 18" fill="#FBBC05"/>
-                <path d="M12 7C10.343 7 9 8.343 9 10C9 11.657 10.343 13 12 13C13.657 13 15 11.657 15 10C15 8.343 13.657 7 12 7Z" fill="#EA4335"/>
-                <path d="M12 22L5 15H19L12 22Z" fill="#EA4335"/>
-            </svg>
-        </a>
     </div>
-</div>
+    {% endfor %}
 
-<script>
-function toggleFavorite(restaurantId, button) {
-    const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
-    const isFavorite = button.dataset.isFavorite === 'true';
-    
-    fetch(`/favorites/add_favorite_restaurants/${restaurantId}/`, {
-        method: 'POST',
-        headers: {
-            'X-CSRFToken': csrftoken,
-            'X-Requested-With': 'XMLHttpRequest',
-        },
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'success') {
-            // Toggle button appearance
-            button.dataset.isFavorite = !isFavorite;
-            const svg = button.querySelector('svg');
-            const text = button.querySelector('.favorite-text');
+    <script>
+        function addfavorite(buttonElement) {
+            const restaurantId = buttonElement.getAttribute('data-restaurant-id');
+            // Mengambil CSRF token
             
-            if (!isFavorite) {
-                button.classList.remove('bg-blue-500', 'hover:bg-blue-600');
-                button.classList.add('bg-red-500', 'hover:bg-red-600');
-                svg.setAttribute('fill', 'currentColor');
-                text.textContent = 'Remove from Favorites';
-            } else {
-                button.classList.remove('bg-red-500', 'hover:bg-red-600');
-                button.classList.add('bg-blue-500', 'hover:bg-blue-600');
-                svg.setAttribute('fill', 'none');
-                text.textContent = 'Add to Favorites';
-            }
+            // if (!csrfToken) {
+            //     console.error('CSRF token not found');
+            //     return;
+            // }
+
+            fetch(`addfavorite/${restaurantId}/`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                     // Tambahkan CSRF token di header
+                },
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.success) {
+                    alert(data.message);
+                    buttonElement.querySelector('.favorite-text').textContent = 'Remove from Favorites';
+                } else {
+                    alert(data.message || 'Failed to add to favorites');
+                }
+            })
+            .catch(error => console.error('Error:', error));
         }
-    })
-    .catch(error => console.error('Error:', error));
-}
-</script>
+
+
+    </script>
+</body>
+</html>

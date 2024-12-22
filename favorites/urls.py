@@ -6,6 +6,6 @@ app_name = 'favorites'
 
 urlpatterns = [
     path('', favorites_view, name='favorites_view'),
-    path('remove_favorite/<str:favorite_id>/', remove_favorite, name='remove_favorite'),
+    path('remove_favorite/<str:restaurant_id>/', remove_favorite, name='remove_favorite'),
 ]
 

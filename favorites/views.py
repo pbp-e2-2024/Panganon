@@ -24,18 +24,31 @@ def favorites_view(request):
 
 @csrf_exempt
 def remove_favorite(request, restaurant_id):
-    user_id = request.session.get('user_id')
-   
-    favorite, created = FavoriteRestaurant.objects.get_or_create(user=user_id, restaurant=restaurant)
     if request.method == 'POST':
-        if not user_id.is_authenticated:
+        user_id = request.session.get('user_id')
+        
+        if not user_id:
+            return JsonResponse({'error': 'User not logged in'}, status=401)
+        
+        try:
+            user = User.objects.get(id=user_id)
+        except User.DoesNotExist:
+            return JsonResponse({'error': 'User not found'}, status=404)
+
+        if not user.is_authenticated:
             return JsonResponse({'error': 'Unauthorized'}, status=401)
 
+        # Retrieve the restaurant instance
         restaurant = get_object_or_404(Restaurant, id=restaurant_id)
-        favorite = FavoriteRestaurant.objects.filter(user=user_id, restaurant=restaurant).first()
+
+        # Check if the favorite exists
+        favorite = FavoriteRestaurant.objects.filter(user=user, restaurant=restaurant).first()
         if favorite:
             favorite.delete()
             return JsonResponse({'message': 'Favorite removed successfully', 'success': True})
+        else:
+            return JsonResponse({'error': 'Favorite not found', 'success': False})
 
-        return JsonResponse({'error': 'Favorite not found', 'success': False})
     return JsonResponse({'error': 'Invalid request method'}, status=405)
+
+    # ini gabriel

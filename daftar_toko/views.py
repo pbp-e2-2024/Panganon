@@ -2,13 +2,14 @@ from django.http import HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 from django.core import serializers
 from .models import Restaurant
+from django.views.decorators.csrf import csrf_exempt
 
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from django.core import serializers
 from .models import Restaurant
 
-
+@csrf_exempt
 def restaurant_list(request):
     if 'user_id' not in request.session:
         return redirect('login_user')
@@ -68,20 +69,22 @@ def restaurant_list(request):
 
     return render(request, 'daftar_toko.html', {'toko': queryset})
 
-
+@csrf_exempt
 def show_xml(request):
     data = Restaurant.objects.all()
     return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
 
+@csrf_exempt
 def show_json(request):
     data = Restaurant.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
-
+@csrf_exempt
 def show_xml_by_id(request, id):
     data = Restaurant.objects.filter(pk=id)
     return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
 
+@csrf_exempt
 def show_json_by_id(request, id):
     data = Restaurant.objects.filter(pk=id)
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")

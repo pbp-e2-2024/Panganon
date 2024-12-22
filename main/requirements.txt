@@ -6,4 +6,3 @@ requests
 urllib3
 pillow
 django-cors-headers
-djangorestframework
